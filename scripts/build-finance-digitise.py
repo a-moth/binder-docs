@@ -13,7 +13,7 @@ def digitised_log():
     p.field(LEFT, 80, "Month", 55, 300)
     scanned, archived, end = 394, 474, TABLE_X + TABLE_W
     rows = 20
-    table(p, [(TABLE_X, "Date"), (100, "What it is"), (230, "Amount"), (310, "Saved to"),
+    table(p, [(TABLE_X, "What it is"), (170, "Amount"), (250, "Saved to"),
               (scanned, "Scanned"), (archived, "Archived")], rows)
     centre_checks(p, scanned, archived, TABLE_Y, rows)
     centre_checks(p, archived, end, TABLE_Y, rows)

@@ -81,8 +81,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
   (description + one box for currency and cost) and currency transfers. Each
   day is summarised by category onto Weekly; each week onto Monthly. No
   instructions on the page. No mushroom on this page (the budget box sits there).
-- **Finance › Digitise** is a log of digitised paperwork: date, what it is,
-  amount (currency + cost), where the file is saved, Scanned ☐, Archived ☐
+- **Finance › Digitise** is a log of digitised paperwork: what it is,
+  amount (currency + cost), a wide where the file is saved, Scanned ☐, Archived ☐
   (paper moved to the Archive pocket).
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
@@ -255,4 +255,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `finance/tracked/pantry-stock-claude.*` | 5 pantry items: donut, count, meal ideas | Awaiting user's edits |
 | `finance/tracked/freezer-stock-claude.*` | 5 freezer items: donut, count, meal ideas | Awaiting user's edits |
 | `finance/daily/daily-planner-claude.*` | Daily planner: day/date, Admin-blue budget left (3 currencies), costs, transfers | Awaiting user's edits |
-| `finance/digitise/digitised-log-claude.*` | Digitised log: date, what, amount, saved to, Scanned / Archived | Awaiting user's edits |
+| `finance/digitise/digitised-log-claude.*` | Digitised log: what, amount, saved to (wide), Scanned / Archived | Awaiting user's edits |
