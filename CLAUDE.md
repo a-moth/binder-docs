@@ -126,6 +126,13 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.
+- **Health** (pre-filled details are OK on Health pages):
+  - Yearly (main area): recurring check-ups, annual / biannual / quarterly.
+  - Letters: stored letters only, no page to build.
+  - Diagnoses: a summary list plus one page per diagnosis.
+  - Treatment: medications, therapies, medication history, therapy history.
+  - Look ahead: upcoming appointments plus health goals.
+  - Potential: suspected / undiagnosed conditions plus treatments to try.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
