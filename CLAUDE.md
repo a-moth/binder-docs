@@ -68,9 +68,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
   filled in digitally each month, then printed and filed here. Yearly holds the
   recurring payments (annual, semiannual, quarterly).
 - No debt tracking needed: last month's costs are paid off the next month.
-- Subscription status: two columns, one box each. **Use** (write T or A for
-  Trial / Active beside the box) and **Unused** (write P or C for Paused /
-  Cancelled).
+- Subscription status: two unnamed columns at the end of each row, each with
+  two stacked, labelled boxes: **Trial** above **Active**, then **Paused**
+  above **Cancelled**.
 - Groceries and Cash pages are laminated and wiped. No instruction notes on
   the pages themselves; the Cash page has a space to glue a cash pocket. Items left in the
   pantry or freezer move to the Pantry / Freezer stock pages (donut = how much is
@@ -228,7 +228,7 @@ Binder files Claude has created (filenames end in `-claude`):
 | File | What | Status |
 |------|------|--------|
 | `work/projects/projects-three-section-claude.pdf` | Export of the user's Projects page | Awaiting user's edits |
-| `finance/tracked/subscriptions-claude.*` | Subscriptions: cost, currency, renews, Use (T/A) / Unused (P/C) | Awaiting user's edits |
+| `finance/tracked/subscriptions-claude.*` | Subscriptions: cost, currency, renews, Trial/Active + Paused/Cancelled stacked boxes | Awaiting user's edits |
 | `finance/tracked/savings-pockets-claude.*` | 4 glue-on pocket spaces with goal, pocket # and Reached | Awaiting user's edits |
 | `finance/tracked/goals-claude.*` | Wants list: description, wanted on, est. cost | Awaiting user's edits |
 | `finance/tracked/cash-pocket-claude.*` | Laminated current cash (EUR/GBP/USD/other) + cash pocket space | Awaiting user's edits |

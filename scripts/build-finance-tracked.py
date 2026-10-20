@@ -39,15 +39,17 @@ def subscriptions():
     p.field(LEFT, 80, "Updated", 75, 300)
     p.field(LEFT, 112, "Total per month", 125, 470)
     use, unused, end = 394, 474, TABLE_X + TABLE_W
-    rows = 20
+    rows, row_h, box, gap = 17, 34.0, 11.0, 4.0
     table(p, [(TABLE_X, "Name"), (190, "Cost"), (250, "Currency"), (320, "Renews"),
-              (use, None), (unused, None)], rows)
-    # One box per status column; write T/A (Use) or P/C (Unused) beside it.
-    for x0, x1, label, hint in [(use, unused, "Use", "T / A"), (unused, end, "Unused", "P / C")]:
-        p.text(x0 + 3, HEAD_Y - 14, x1 - x0, 16, hint, SANS_BOLD, 10)
-        p.text(x0 + 3, HEAD_Y, x1 - x0 - 4, 20, label)
+              (use, None), (unused, None)], rows, row_h)
+    # Two unnamed status columns, two stacked boxes in each cell.
+    pad = (row_h - 2 * box - gap) / 2
+    for x0, labels in [(use, ("Trial", "Active")), (unused, ("Paused", "Cancelled"))]:
         for i in range(rows):
-            p.checkbox(x0 + 8, TABLE_Y + i * ROW + (ROW - CHECK) / 2)
+            for j, label in enumerate(labels):
+                y = TABLE_Y + i * row_h + pad + j * (box + gap)
+                p.rect(x0 + 7, y, box, box, fill=LENS, width=INNER)
+                p.text(x0 + 7 + box + 4, y - 1, 60, box + 2, label, SANS_BOLD, 9)
     return p
 
 
