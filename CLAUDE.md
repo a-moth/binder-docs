@@ -84,6 +84,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Finance › Digitise** is a log of digitised paperwork: what it is,
   amount (currency + cost), a wide "saved to" column (where the file is),  Scanned ☐, Archived ☐
   (paper moved to the Archive pocket).
+- **Home › Yearly** is for jobs, not costs: Annual / Biannual / Quarterly
+  home jobs, same layout as Finance Yearly.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -184,6 +186,8 @@ finance/
   budgets/
     budget-templates.sla    Monthly, Weekly ×2
     budget-pages-1.pdf          one-off: Monthly, Yearly, Daily log Mon–Sun
+home/
+  yearly-jobs-claude.sla/.pdf   Yearly home jobs (section main area, Claude draft)
 home/strategy/cleaning/
   cleaning-docs-templates(-fillable).sla/.pdf   10 focus/task worksheets
 work/projects/
@@ -195,7 +199,8 @@ assets/custom/                mushroomvarious (mushroom patch), bigmushroom, ori
 scripts/                      make-icons.py · make-custom.py · relink-images.py ·
                               split-sla-page.py · export-pdf.sh · setup-tools.sh ·
                               sla_build.py (page-drawing helpers) · build-finance-tracked.py ·
-                              build-finance-daily.py · build-finance-digitise.py
+                              build-finance-daily.py · build-finance-digitise.py ·
+                              build-home-yearly.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -209,7 +214,7 @@ down, Task break down, Set up environment.
 | Section   | Main area | Sub-tabs → status |
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
-| Home      | Yearly ⬜ | Progress ⬜ · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory ⬜ |
+| Home      | Yearly 📝 (jobs draft) | Progress ⬜ · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory ⬜ |
 | Health    | Yearly ⬜ | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
@@ -225,8 +230,8 @@ section context (✅ for the original seven; ⬜ divider and laminate tab for Tr
 - **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
 - **Stale PDFs:** every PDF predates the new icons and the Yearly split, so all
   of them need re-exporting from Scribus.
-- **Yearly worksheets** for Home, Health and Work don't exist yet (the Finance
-  one could be the base).
+- **Yearly worksheets** for Health and Work don't exist yet (the Finance
+  one could be the base). Home's is a jobs version of it.
 - **Travel** has no divider or laminate tab yet (colour: reserve beige).
 - **brownleaves.png** was mapped to Lucide `leaf` (brown highlight). Check that
   this is the right match.
@@ -256,3 +261,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `finance/tracked/freezer-stock-claude.*` | 5 freezer items: donut, count, meal ideas | Awaiting user's edits |
 | `finance/daily/daily-planner-claude.*` | Daily planner: day/date, Admin-blue budget left (3 currencies), costs, transfers | Awaiting user's edits |
 | `finance/digitise/digitised-log-claude.*` | Digitised log: what, amount, saved to (wide), Scanned / Archived | Awaiting user's edits |
+| `home/yearly-jobs-claude.*` | Yearly home jobs: annual / biannual / quarterly checklists | Awaiting user's edits |
