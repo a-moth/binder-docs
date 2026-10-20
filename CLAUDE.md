@@ -89,9 +89,10 @@ The user hand-edits everything Claude makes until it's right for the binder.
   Under each task: **When** (month/date to do it) and **Length** (estimated time; the user's word is "Length").
 - **Home › Progress** (both pages laminated, no instructions on them):
   - Rooms page: Bedroom, Office, Living room, Kitchen, each with a progress
-    donut and up to 10 current-project lines to tick off.
+    donut (10 slots, one per line) and up to 10 current-project lines to tick off.
   - Project page: one project per page, printed in multiples, in no fixed
-    order. Donut top left with a Started date under it (no Done date). Title
+    order. Donut top left (one slot per task line, 12) with a Started date
+    under it (no Done date). Title
     and a large taped-notes area to the right of the donut. Task list where
     each task has **Item #** and **Month** boxes pointing to its cost in
     Finance. A paper holder sits behind each project page (not mentioned on

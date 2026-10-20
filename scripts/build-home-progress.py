@@ -24,7 +24,7 @@ def rooms_progress():
         y = top + i * (h + gap)
         p.rect(LEFT, y, RIGHT - LEFT, h)
         cx, cy = p.ring(LEFT + 12 + outer, y + h / 2, outer, inner)
-        p.segments(cx, cy, outer, inner, 8)
+        p.segments(cx, cy, outer, inner, 10)  # one slot per project line
         tx = LEFT + 24 + 2 * outer
         p.text(tx, y + 6, 250, 24, room, MONO, 16, color=BROWN)
         col_w = (RIGHT - 10 - tx) / 2
@@ -37,17 +37,23 @@ def rooms_progress():
     return p
 
 
+NOTES_BOTTOM = 420.0
+TASK_TOP = NOTES_BOTTOM + 16 + 32   # first task row
+TASK_STEP = WRITE_GAP + 1
+TASK_ROWS = int((BOTTOM - 20 - TASK_TOP) // TASK_STEP) + 1
+
+
 def project():
     p = Page("PROJECT", mushroom=False)
     outer, inner = 55.0, 30.0
     cx, cy = p.ring(LEFT + outer, 88 + outer, outer, inner)
-    p.segments(cx, cy, outer, inner, 8)
+    p.segments(cx, cy, outer, inner, TASK_ROWS)  # one slot per task line
     p.field(LEFT, 88 + 2 * outer + 18, "Started", 62, LEFT + 2 * outer + 6, 12)
 
     nx = LEFT + 2 * outer + 22
     p.field(nx, 88, "Project", 65, RIGHT)
     ny = 124.0
-    notes_bottom = 420.0
+    notes_bottom = NOTES_BOTTOM
     p.rect(nx, ny, RIGHT - nx, notes_bottom - ny)
     p.text(nx + 7, ny + 6, 200, 24, "Notes", MONO, 16, color=BROWN)
     p.rect(nx + 10, ny + 36, RIGHT - nx - 20, notes_bottom - ny - 46, fill=LENS, width=INNER)
@@ -58,13 +64,12 @@ def project():
     p.text(LEFT, ty, 200, 24, "Tasks", MONO, 16, color=BROWN)
     p.text(item_x, ty + 8, box_w, 16, "Item #", SANS_BOLD, 10)
     p.text(month_x, ty + 8, box_w, 16, "Month", SANS_BOLD, 10)
-    y = ty + 32
-    while y + 20 < BOTTOM:
+    for i in range(TASK_ROWS):
+        y = TASK_TOP + i * TASK_STEP
         p.checkbox(LEFT, y + 2)
         p.line(LEFT + CHECK + 6, y + 16, item_x - 10 - (LEFT + CHECK + 6))
         p.rect(item_x, y, box_w, 18, fill=LENS, width=INNER)
         p.rect(month_x, y, RIGHT - month_x, 18, fill=LENS, width=INNER)
-        y += WRITE_GAP + 1
     return p
 
 
