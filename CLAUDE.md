@@ -131,9 +131,11 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Icons:** see Rules 5–6. The checklist sits top-left on every master page.
 - **Spacing:** keep at least ~14 pt between a box and the header bar or another
   box, so outlines never read as doubled lines.
-- **Centring small labels:** this container's Scribus ignores centre alignment
-  in narrow text frames, so `sla_build` callers centre short labels by hand
-  (measure the glyph width with `pdftotext -bbox`).
+- **Centring labels:** this container's Scribus (1.6.1) ignores centre
+  alignment for **Latin Modern Sans Bold** text at any frame width (tested 17.5
+  to 200 pt); Mono text centres fine. Widening the frame doesn't help, so centre
+  Sans Bold labels by hand (measure the glyph width with `pdftotext -bbox`).
+  The user's Scribus 1.6.3 may not have this quirk.
 - **Contrast:** text needs at least 4.5:1 against its fill (3:1 for icons).
   On Admin blue use **white** text (5.2:1). Cream on Admin is only 3.7:1, which
   is fine for the checklist icon but not for text.
