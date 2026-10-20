@@ -31,12 +31,12 @@ def block(p, y, h):
     p.text(cx + CHECK + 5, cy - 3, 200, 20, "Incompletely treats", SANS, 12)
     # Taped notes beside the checkboxes.
     nx, ny = 300.0, y + 42
-    nb = cy + 26
+    photo = 96.0
+    nb = y + h - 10 - photo - 10  # notes run down to the detail strip at the bottom
     p.text(nx, ny - 4, 120, 24, "Notes", MONO, 16, color=BROWN)
     p.rect(nx, ny + 24, RIGHT - 10 - nx, nb - ny - 24, fill=LENS, width=INNER)
     # Unlined space underneath, with a square for a pill photo.
-    dy = nb + 12
-    photo = min(96.0, y + h - 10 - dy)
+    dy = nb + 10
     p.rect(RIGHT - 10 - photo, dy, photo, photo, fill=LENS, width=INNER)
 
 

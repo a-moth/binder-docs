@@ -149,9 +149,10 @@ The user hand-edits everything Claude makes until it's right for the binder.
   - Treatment: medications, therapies, medication history, therapy history,
     all on one shared page type, two per page, with a Page box at the top.
     Each: name; ☐ Fully treats / ☐ Treats fully in combination with ___ ___ ___
-    / ☐ Incompletely treats; a taped-notes area beside those; unlined space
-    underneath (for dose + ramp-up, side effects + severity) with a square for
-    a pill photo. None of those uses are printed. No mushroom on this page.
+    / ☐ Incompletely treats; a tall taped-notes area beside those (down to the
+    pill photo square); unlined space under the checkboxes and along the bottom
+    (for dose + ramp-up, side effects + severity), with a square for a pill
+    photo. None of those uses are printed. No mushroom on this page.
   - Look ahead: appointments and goals on **separate pages**, two per page.
     Appointment: date, time, who, where, a taped-notes area (questions / what
     to bring, not printed) that takes most of the block, and an Outcome box
