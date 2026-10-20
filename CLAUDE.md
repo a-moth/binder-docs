@@ -98,7 +98,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
     Finance. A paper holder sits behind each project page (not mentioned on
     the page). No mushroom on this page.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
-  checkboxes centred in the same cell, no separate currency column) · Room.
+  checkboxes on the right of the same cell, each symbol centred in the gap
+  after its box; no separate currency column) · Room.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -130,6 +131,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Icons:** see Rules 5–6. The checklist sits top-left on every master page.
 - **Spacing:** keep at least ~14 pt between a box and the header bar or another
   box, so outlines never read as doubled lines.
+- **Centring small labels:** this container's Scribus ignores centre alignment
+  in narrow text frames, so `sla_build` callers centre short labels by hand
+  (measure the glyph width with `pdftotext -bbox`).
 - **Contrast:** text needs at least 4.5:1 against its fill (3:1 for icons).
   On Admin blue use **white** text (5.2:1). Cream on Admin is only 3.7:1, which
   is fine for the checklist icon but not for text.
