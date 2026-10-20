@@ -162,6 +162,12 @@ The user hand-edits everything Claude makes until it's right for the binder.
     goal text box (empty text box to type into), progress donut (one slot per
     step, 10) and step lines.
   - Potential: suspected / undiagnosed conditions plus treatments to try.
+    Treatments to try go under Medications › Future (with a Treatments page
+    number), no separate page. Event log page per potential diagnosis, 3 events
+    per page: Date, a Notes taping box (what happened), a Trigger box, a 1–10
+    Severity scale to circle and a How long scale (15m … 10d) to mark. No
+    mushroom. The potential diagnosis page itself still needs the user's
+    description of how it differs from a diagnosis page.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -274,6 +280,8 @@ health/treatment/
 health/look-ahead/
   appointments-claude.sla/.pdf     2 appointments per page (Claude draft)
   goals-claude.sla/.pdf            2 goals per page, donut + 10 steps (Claude draft)
+health/potential/
+  <name>-events-claude.sla/.pdf    event logs: mcas · cci · neuropathy (+ events-blank)
 health/diagnoses/
   summary(-blank)-claude.sla/.pdf  diagnosis summary list (pre-filled + blank)
   <diagnosis>-claude.sla/.pdf      gastroparesis · migraines · me · cptsd · adhd ·
@@ -308,7 +316,7 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-home-inventory.py · build-home-monthly.py ·
                               build-home-weekly.py · build-health-yearly.py ·
                               build-health-diagnoses.py · build-health-treatment.py ·
-                              build-health-lookahead.py
+                              build-health-lookahead.py · build-health-potential.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -323,7 +331,7 @@ down, Task break down, Set up environment.
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
-| Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential ⬜ |
+| Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (event logs; condition pages pending) |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
@@ -382,3 +390,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/treatment/treatments-claude.*` | Treatments: 2 per page, how well it treats, taped notes, details + pill photo square | Awaiting user's edits |
 | `health/look-ahead/appointments-claude.*` | Appointments: date/time/who/where, taped notes, outcome | Awaiting user's edits |
 | `health/look-ahead/goals-claude.*` | Health goals: goal text box, 10-slot donut, 10 steps | Awaiting user's edits |
+| `health/potential/{mcas,cci,neuropathy}-events-claude.*`, `events-blank-claude.*` | Event logs: 3 per page, date, notes, trigger, severity + duration scales | Awaiting user's edits |
