@@ -151,3 +151,29 @@ class Page:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(head + body + "\n    " + tail, encoding="utf-8")
         return out
+
+
+# --- tables (Weekly page layout) ---------------------------------------------
+TABLE_X, TABLE_W = 39.6, 514.8  # Weekly page table panel
+HEAD_Y, TABLE_Y = 183.0, 204.0  # column labels, table top
+
+
+def table(p, cols, rows, row_h=ROW, top=TABLE_Y):
+    """Weekly-page table: cream panel, 2.83 pt brown grid. cols = [(x0, label)]."""
+    bottom = top + rows * row_h
+    p.rect(TABLE_X, top, TABLE_W, bottom - top, fill=CREAM, stroke=CREAM, width=1)
+    for i in range(rows + 1):
+        p.line(TABLE_X - 0.9, top + i * row_h, TABLE_W + 1.1, MAIN, BROWN)
+    xs = [x for x, _ in cols[1:]]
+    for x in xs:
+        p.line(x, top, bottom - top, MAIN, BROWN, rot=90)
+    ends = [x for x, _ in cols[1:]] + [TABLE_X + TABLE_W]
+    for (x, label), x1 in zip(cols, ends):
+        if label:
+            p.text(x + 1, HEAD_Y, x1 - x - 2, 20, label)
+    return bottom
+
+
+def centre_checks(p, x0, x1, top, rows, row_h=ROW):
+    for i in range(rows):
+        p.checkbox((x0 + x1 - CHECK) / 2, top + i * row_h + (row_h - CHECK) / 2)

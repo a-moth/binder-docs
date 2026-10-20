@@ -5,35 +5,11 @@ Usage: python3 scripts/build-finance-tracked.py
 Then:  python3 scripts/relink-images.py && scripts/export-pdf.sh finance/tracked/*-claude.sla
 Rerunning overwrites the drafts, so stop using this once the user starts editing them.
 """
-from sla_build import (BOTTOM, BROWN, CHECK, CREAM, INNER, LEFT, LENS, MAIN, MONO,
-                       MONO_ITALIC, RIGHT, ROOT, ROW, SANS_BOLD, WRITE_GAP, Page)
+from sla_build import (BOTTOM, BROWN, CHECK, CREAM, HEAD_Y, INNER, LEFT, LENS, MAIN, MONO,
+                       MONO_ITALIC, RIGHT, ROOT, ROW, SANS_BOLD, TABLE_W, TABLE_X, TABLE_Y,
+                       WRITE_GAP, Page, centre_checks, table)
 
 DIR = "finance/tracked"
-TABLE_X, TABLE_W = 39.6, 514.8  # Weekly page table panel
-HEAD_Y, TABLE_Y = 183.0, 204.0  # column labels, table top
-
-
-def table(p, cols, rows, row_h=ROW, top=TABLE_Y):
-    """Weekly-page table: cream panel, 2.83 pt brown grid. cols = [(x0, label)]."""
-    bottom = top + rows * row_h
-    p.rect(TABLE_X, top, TABLE_W, bottom - top, fill=CREAM, stroke=CREAM, width=1)
-    for i in range(rows + 1):
-        p.line(TABLE_X - 0.9, top + i * row_h, TABLE_W + 1.1, MAIN, BROWN)
-    xs = [x for x, _ in cols[1:]]
-    for x in xs:
-        p.line(x, top, bottom - top, MAIN, BROWN, rot=90)
-    ends = [x for x, _ in cols[1:]] + [TABLE_X + TABLE_W]
-    for (x, label), x1 in zip(cols, ends):
-        if label:
-            p.text(x + 1, HEAD_Y, x1 - x - 2, 20, label)
-    return bottom
-
-
-def centre_checks(p, x0, x1, top, rows, row_h=ROW):
-    for i in range(rows):
-        p.checkbox((x0 + x1 - CHECK) / 2, top + i * row_h + (row_h - CHECK) / 2)
-
-
 def subscriptions():
     p = Page("SUBSCRIPTIONS")
     p.field(LEFT, 80, "Updated", 75, 300)
