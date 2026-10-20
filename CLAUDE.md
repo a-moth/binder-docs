@@ -154,7 +154,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
     a pill photo. None of those uses are printed. No mushroom on this page.
   - Look ahead: appointments and goals on **separate pages**, two per page.
     Appointment: date, time, who, where, a taped-notes area (questions / what
-    to bring, not printed), an Outcome box underneath. Goal: typed in
+    to bring, not printed) that takes most of the block, and an Outcome box
+    (two lines) underneath. No mushroom on the appointments page, so the
+    blocks start right under the header. Goal: typed in
     digitally, printed and laminated, then filled in and redone over time:
     goal text box (empty text box to type into), progress donut (one slot per
     step, 10) and step lines.

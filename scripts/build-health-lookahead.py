@@ -24,9 +24,9 @@ def appointment(p, y, h):
     p.field(mid + 4, y + 36, "Where", 52, RIGHT - 10)
     ny = y + 70
     p.text(LEFT + 8, ny, 200, 24, "Notes", MONO, 16, color=BROWN)
-    notes_h = 92.0
+    oy = y + h - 82  # Outcome: title + two lines at the bottom of the block
+    notes_h = oy - 10 - (ny + 26)  # taped-notes area takes the rest
     p.rect(LEFT + 10, ny + 26, RIGHT - LEFT - 20, notes_h, fill=LENS, width=INNER)
-    oy = ny + 26 + notes_h + 10
     p.text(LEFT + 8, oy, 200, 24, "Outcome", MONO, 16, color=BROWN)
     ly = oy + 46
     while ly < y + h - 6:
@@ -60,12 +60,14 @@ def goal(p, y, h):
 
 
 def pages():
-    a = Page("APPOINTMENTS")
+    # Appointments start right under the header (no mushroom) to give the notes room.
+    a = Page("APPOINTMENTS", mushroom=False)
     g = Page("GOALS")
+    a_top = 88.0
+    a_h = (BOTTOM - a_top - GAP) / 2
     for i in range(2):
-        y = TOP + i * (BLOCK_H + GAP)
-        appointment(a, y, BLOCK_H)
-        goal(g, y, BLOCK_H)
+        appointment(a, a_top + i * (a_h + GAP), a_h)
+        goal(g, TOP + i * (BLOCK_H + GAP), BLOCK_H)
     return a, g
 
 
