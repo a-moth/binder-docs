@@ -10,6 +10,7 @@ Printable A4 templates for a ring binder, designed in Scribus 1.6.3.
 |--------------------|---------------------------------------------------------|
 | `core/`            | Cover, section dividers, laminate tabs, section sheets  |
 | `finance/`         | Yearly budget; `budgets/` monthly, weekly, daily pages  |
+| `finance/tracked/` | Subscriptions, savings, goals, cash, groceries, stock (drafts) |
 | `home/strategy/cleaning/` | Focus and task worksheets (plain + fillable)     |
 | `work/projects/`   | Projects page                                           |
 | `travel/`          | Documents, paperwork, planning (to come)                |

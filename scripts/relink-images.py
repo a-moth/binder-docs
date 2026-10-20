@@ -20,15 +20,10 @@ from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
-# Which area's colour a document's checklist uses.
-DOC_AREA = {
-    "core/core-layouts.sla": "core",
-    "finance/yearly-budget.sla": "finance",
-    "finance/budgets/budget-templates.sla": "finance",
-    "home/strategy/cleaning/cleaning-docs-templates.sla": "home",
-    "home/strategy/cleaning/cleaning-docs-templates-fillable.sla": "home",
-    "work/projects/projects-three-section.sla": "work",
-}
+# A document's area (its checklist colour) is its top-level folder.
+def doc_area(rel):
+    return pathlib.PurePath(rel).parts[0]
+
 
 CORE_ICONS = {
     "user-group.png": "core/users-brown-highlight.png",
@@ -101,6 +96,9 @@ def relink(rel, area):
 
 
 if __name__ == "__main__":
-    for rel, area in DOC_AREA.items():
-        relink(rel, area)
+    import subprocess
+    files = subprocess.run(["git", "ls-files", "--others", "--cached", "--exclude-standard", "*.sla"],
+                           cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+    for rel in files:
+        relink(rel, doc_area(rel))
         print(rel)
