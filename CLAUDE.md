@@ -284,6 +284,7 @@ core/                         shared pages for every section
   core-layouts.sla          p1 cover · p2 section goal + stored docs ·
                                 p3 section context · p4–10 dividers · p11 laminate tabs
   core-layouts-*.pdf            exports: cover, section-docs, section-context, laminate
+  travel-divider-claude.sla/.pdf  Travel section divider (Claude draft, plane icon)
 finance/
   yearly-budget.sla         Yearly budget (section main area)
   tracked/                  filed, filled-in Yearly/Monthly copies + Claude drafts:
@@ -364,7 +365,7 @@ down, Task break down, Set up environment.
 | Travel    | n/a       | Documents ⬜ · Paperwork ⬜ · Planning ⬜ |
 
 Every section also uses the shared `core/` pages: divider, section goal and
-section context (✅ for the original seven; ⬜ divider and laminate tab for Travel).
+section context (✅ for the original seven; Travel: divider 📝, laminate tab ⬜).
 
 ## Missing / known issues
 
@@ -373,7 +374,8 @@ section context (✅ for the original seven; ⬜ divider and laminate tab for Tr
   of them need re-exporting from Scribus.
 - **Yearly worksheet** for Work doesn't exist yet (the Finance one could be
   the base). Home's is a tasks version of it, Health's a check-ups version.
-- **Travel** has no divider or laminate tab yet (colour: reserve beige).
+- **Travel** has a divider draft (`core/travel-divider-claude`, plane icon) but
+  no laminate tab yet (colour: reserve beige).
 - **brownleaves.png** was mapped to Lucide `leaf` (brown highlight). Check that
   this is the right match.
 - **Design system vs laminate:** the design system lists 9 cardstock sections
@@ -418,3 +420,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/potential/{mcas,cci,neuropathy}-events-claude.*`, `events-blank-claude.*` | Event logs: 3 per page, date, notes, trigger, severity + duration scales | Awaiting user's edits |
 | `health/potential/{mcas,cci,neuropathy}-claude.*`, `potential-blank-claude.*` | Potential diagnosis: typical occurrences, medications with Effect lines, events reference | Awaiting user's edits |
 | `<section>/<sub-tab>/cover-claude.*` (30) | Sub-tab covers: mini divider with name + icon, for cardstock | Awaiting user's edits |
+| `core/travel-divider-claude.*` | Travel section divider: copy of the divider layout, plane icon | Awaiting user's edits |

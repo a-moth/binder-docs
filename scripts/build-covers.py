@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Draw a cover (mini divider) for every sub-tab (Claude drafts, labelled -claude).
+"""Draw a cover (mini divider) for every sub-tab, plus the Travel section divider
+(Claude drafts, labelled -claude).
 
 Same layout as the user's section dividers in core/core-layouts.sla: a cream box with
 the name in Mono 16 and an icon, and the mushroom patch below-left. Printed on the
@@ -56,3 +57,6 @@ if __name__ == "__main__":
             cover(section, name, icon).write(f"{section}/{folder}/cover-claude.sla")
             n += 1
     print(n, "covers")
+    # Travel's section divider (the user's other dividers live in core-layouts.sla).
+    cover("travel", "Travel", "plane").write("core/travel-divider-claude.sla")
+    print("core/travel-divider-claude.sla")
