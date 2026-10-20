@@ -143,9 +143,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
     Diagnoses: gastroparesis, migraines, ME, CPTSD, ADHD, autism, POTS, hEDS,
     allergies. Blank templates (empty text boxes to type into) exist for the
     summary and the detail page.
-  - Potential diagnoses (for the Potential tab, later): MCAS, CCI, neuropathy.
-    Each needs a page like a diagnosis page (including the Medications box)
-    plus a second page to log events that point to it.
+  - Potential diagnoses: MCAS, CCI, neuropathy (pages in Potential, below).
   - Treatment: medications, therapies, medication history, therapy history,
     all on one shared page type, two per page, with a Page box at the top.
     Each: name; ☐ Fully treats / ☐ Treats fully in combination with ___ ___ ___
@@ -166,8 +164,10 @@ The user hand-edits everything Claude makes until it's right for the binder.
     number), no separate page. Event log page per potential diagnosis, 3 events
     per page: Date, a Notes taping box (what happened), a Trigger box, a 1–10
     Severity scale to circle and a How long scale (15m … 10d) to mark. No
-    mushroom. The potential diagnosis page itself still needs the user's
-    description of how it differs from a diagnosis page.
+    mushroom. Potential diagnosis page: name (header), **Typical occurrences**
+    (lined box, a few handwritten lines), Medications (past / now / future),
+    and **Events reference** (date + event log page). MCAS, CCI, neuropathy,
+    plus blanks.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -281,6 +281,7 @@ health/look-ahead/
   appointments-claude.sla/.pdf     2 appointments per page (Claude draft)
   goals-claude.sla/.pdf            2 goals per page, donut + 10 steps (Claude draft)
 health/potential/
+  <name>-claude.sla/.pdf           potential diagnosis: mcas · cci · neuropathy (+ potential-blank)
   <name>-events-claude.sla/.pdf    event logs: mcas · cci · neuropathy (+ events-blank)
 health/diagnoses/
   summary(-blank)-claude.sla/.pdf  diagnosis summary list (pre-filled + blank)
@@ -331,7 +332,7 @@ down, Task break down, Set up environment.
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
-| Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (event logs; condition pages pending) |
+| Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (condition pages + event logs) |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
@@ -391,3 +392,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/look-ahead/appointments-claude.*` | Appointments: date/time/who/where, taped notes, outcome | Awaiting user's edits |
 | `health/look-ahead/goals-claude.*` | Health goals: goal text box, 10-slot donut, 10 steps | Awaiting user's edits |
 | `health/potential/{mcas,cci,neuropathy}-events-claude.*`, `events-blank-claude.*` | Event logs: 3 per page, date, notes, trigger, severity + duration scales | Awaiting user's edits |
+| `health/potential/{mcas,cci,neuropathy}-claude.*`, `potential-blank-claude.*` | Potential diagnosis: typical occurrences, medications, events reference | Awaiting user's edits |

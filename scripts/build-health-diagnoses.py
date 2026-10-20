@@ -11,7 +11,7 @@ Then:  python3 scripts/relink-images.py && scripts/export-pdf.sh health/diagnose
 Rerunning overwrites the drafts, so stop using this once the user starts editing them.
 """
 from sla_build import (BOTTOM, BROWN, INNER, LEFT, LENS, MONO, RIGHT, ROOT, SANS, SANS_BOLD,
-                       TABLE_X, TABLE_Y, WRITE_GAP, Page, table)
+                       TABLE_X, TABLE_Y, Page, lined_box, medications, table)
 
 # (file slug, name as printed)
 DIAGNOSES = [
@@ -39,32 +39,6 @@ def summary(names):
                 p.rect(x0 + 5, y, box, box, fill=LENS, width=INNER)
                 p.text(x0 + 5 + box + 3, y - 1, 60, box + 2, label, SANS_BOLD, 9)
     return p
-
-
-def lined_box(p, x, y, w, h, title):
-    p.rect(x, y, w, h)
-    p.text(x + 7, y + 6, w - 14, 24, title, MONO, 16, color=BROWN)
-    ly = y + 50
-    while ly < y + h - 8:
-        p.line(x + 7, ly, w - 14)
-        ly += WRITE_GAP
-
-
-def medications(p, y, h):
-    """Past / Now / Future medication lines, each with a square for its Treatments page."""
-    p.rect(LEFT, y, RIGHT - LEFT, h)
-    p.text(LEFT + 7, y + 6, 200, 24, "Medications", MONO, 16, color=BROWN)
-    col_gap = 12.0
-    col_w = (RIGHT - LEFT - 14 - 2 * col_gap) / 3
-    sq_w, sq_h = 22.0, 16.0
-    for c, label in enumerate(["Past", "Now", "Future"]):
-        x = LEFT + 7 + c * (col_w + col_gap)
-        p.text(x, y + 32, col_w, 18, label, SANS_BOLD, 12)
-        ly = y + 70
-        while ly < y + h - 6:
-            p.line(x, ly, col_w - sq_w - 6)
-            p.rect(x + col_w - sq_w, ly - sq_h + 1, sq_w, sq_h, fill=LENS, width=INNER)
-            ly += 25
 
 
 def detail(name):
