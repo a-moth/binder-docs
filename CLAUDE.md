@@ -94,7 +94,7 @@ work/projects/
   projects-three-section.sla.xml                    Projects page (no PDF yet)
 travel/documents/  travel/paperwork/  travel/planning/   empty, for future documents
 assets/<area>/                Lucide icons, every colour variant (see assets/README.md)
-assets/custom/                mushroomvarious (mark on circle), bigmushroom, original mark
+assets/custom/                mushroomvarious (mushroom patch), bigmushroom, original mark
 scripts/                      make-icons.py · make-custom.py · relink-images.py · split-sla-page.py
 ```
 
