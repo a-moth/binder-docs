@@ -102,7 +102,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
   each item has a detail page (room-by-room / step checklist with When + Length,
   plus notes). Items:
   - Every season: vacuum/sweep all floors (monthly), refresh bathroom = clean
-    bathtub + refresh toilet cleaner (monthly), update pantry (monthly), update
+    bathtub + refresh toilet cleaner (monthly), change bedding (monthly, no
+    detail page), update pantry (monthly), update
     freezer (monthly), update inventory (start of season), review binder in
     total (start of season).
   - Spring & Autumn: sort through all kitchen cabinets, sort through under-bed
@@ -111,6 +112,17 @@ The user hand-edits everything Claude makes until it's right for the binder.
     storage (start of season).
   - Pantry / freezer / inventory updates have no detail page: the overview
     points to the Pantry stock, Freezer stock and Inventory pages.
+- **Home › Weekly** (laminated, reused every week), one tick box per time due:
+  - Cleaning: wash dishes 3×, laundry (reminder only; really every 1–2
+    weeks), bins / recycling 1×, wipe kitchen surfaces 1×.
+  - Admin: weekly finance summary, paperwork / post, work admin,
+    appointments (scheduling + attendance).
+  - Exercise: "Average ___k steps a day" (goal left blank) and a box for the
+    week's average, checked on Sunday. No per-day step boxes. Other exercise is
+    covered by leaving the house.
+  - Community: leave the house 2×, contact Vanu / Alyx / Louise / Zoe weekly,
+    contact Gwen 3×, every Monday check Meetup for free events (Eventbrite's
+    Free filter as a backup).
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.
@@ -228,6 +240,8 @@ home/monthly/
   overview-claude.sla/.pdf         month, season, every seasonal item + where it lives
   <item>-claude.sla/.pdf           detail pages: vacuum · refresh-bathroom · review-binder ·
                                    kitchen-cabinets · under-bed-sort · swap-clothes · radiators
+home/weekly/
+  weekly-claude.sla/.pdf           laminated weekly tasks by area (Claude draft)
 home/inventory/
   inventory-claude.sla/.pdf        Item · Replacement (£/$/€ boxes) · Room (Claude draft)
 home/strategy/cleaning/
@@ -243,7 +257,8 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               sla_build.py (page-drawing helpers) · build-finance-tracked.py ·
                               build-finance-daily.py · build-finance-digitise.py ·
                               build-home-yearly.py · build-home-progress.py ·
-                              build-home-inventory.py · build-home-monthly.py
+                              build-home-inventory.py · build-home-monthly.py ·
+                              build-home-weekly.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -257,7 +272,7 @@ down, Task break down, Set up environment.
 | Section   | Main area | Sub-tabs → status |
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
-| Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly ⬜ · Inventory 📝 (draft) |
+| Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
 | Health    | Yearly ⬜ | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
@@ -308,5 +323,6 @@ Binder files Claude has created (filenames end in `-claude`):
 | `home/progress/rooms-progress-claude.*` | Rooms progress: 4 rooms, donut + 10 tick-off project lines | Awaiting user's edits |
 | `home/progress/project-claude.*` | Project: donut + started, title, taped notes, tasks with Finance item # / month | Awaiting user's edits |
 | `home/inventory/inventory-claude.*` | Inventory: item, replacement cost with £/$/€ boxes, room | Awaiting user's edits |
-| `home/monthly/overview-claude.*` | Monthly overview: month, season, all seasonal items, how often, page | Awaiting user's edits |
+| `home/monthly/overview-claude.*` | Monthly overview: month, season, all seasonal items (incl. change bedding), how often, page | Awaiting user's edits |
 | `home/monthly/{vacuum,refresh-bathroom,review-binder,kitchen-cabinets,under-bed-sort,swap-clothes,radiators}-claude.*` | Monthly item detail pages: checklist with When + Length, notes | Awaiting user's edits |
+| `home/weekly/weekly-claude.*` | Weekly: cleaning, admin, exercise (steps average), community tick boxes | Awaiting user's edits |

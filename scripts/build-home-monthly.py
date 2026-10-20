@@ -32,6 +32,7 @@ GROUPS = [
     ("Every season", [
         ("Vacuum / sweep all floors", MONTHLY, "vacuum"),
         ("Refresh bathroom", MONTHLY, "refresh-bathroom"),
+        ("Change bedding", MONTHLY, ""),
         ("Update pantry", MONTHLY, "see Pantry stock"),
         ("Update freezer", MONTHLY, "see Freezer stock"),
         ("Update inventory", START, "see Inventory"),
@@ -75,7 +76,9 @@ def overview():
             p.checkbox(LEFT + 9, ry + 4)
             p.text(LEFT + 9 + CHECK + 6, ry + 1, FREQ_X - LEFT - 30, 20, item, SANS, 12)
             p.text(FREQ_X, ry + 3, 120, 18, freq, SANS_BOLD, 10)
-            if ref.startswith("see "):
+            if not ref:
+                pass  # single job: no detail page
+            elif ref.startswith("see "):
                 p.text(PAGE_X, ry + 3, RIGHT - PAGE_X - 8, 18, ref, SANS_BOLD, 10)
             else:
                 p.rect(PAGE_X, ry + 2, 50, 18, fill=LENS, width=INNER)
