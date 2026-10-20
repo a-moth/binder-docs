@@ -76,6 +76,11 @@ The user hand-edits everything Claude makes until it's right for the binder.
   the pages themselves; the Cash page has a space to glue a cash pocket. Items left in the
   pantry or freezer move to the Pantry / Freezer stock pages (donut = how much is
   left, count in the middle, meal ideas beside it). 4–6 items per stock page.
+- **Finance › Daily** is a laminated *planning* page: Day + Date, a large
+  Admin-blue **Budget left** box with 3 currency budgets, cost lines
+  (description + one box for currency and cost) and currency transfers. Each
+  day is summarised by category onto Weekly; each week onto Monthly. No
+  instructions on the page. No mushroom on this page (the budget box sits there).
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -164,6 +169,8 @@ finance/
   tracked/                  filed, filled-in Yearly/Monthly copies + Claude drafts:
                             subscriptions · savings-pockets · goals · cash-pocket ·
                             groceries-weekly · pantry-stock · freezer-stock (-claude.sla/.pdf)
+  daily/
+    daily-planner-claude.sla/.pdf   Daily planning page (Claude draft)
   budgets/
     budget-templates.sla    Monthly, Weekly ×2
     budget-pages-1.pdf          one-off: Monthly, Yearly, Daily log Mon–Sun
@@ -177,7 +184,8 @@ assets/<area>/                Lucide icons, every colour variant (see assets/REA
 assets/custom/                mushroomvarious (mushroom patch), bigmushroom, original mark
 scripts/                      make-icons.py · make-custom.py · relink-images.py ·
                               split-sla-page.py · export-pdf.sh · setup-tools.sh ·
-                              sla_build.py (page-drawing helpers) · build-finance-tracked.py
+                              sla_build.py (page-drawing helpers) · build-finance-tracked.py ·
+                              build-finance-daily.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -190,7 +198,7 @@ down, Task break down, Set up environment.
 
 | Section   | Main area | Sub-tabs → status |
 |-----------|-----------|-------------------|
-| Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise ⬜ · Weekly ✅ · Daily ✅ (one-off PDF) |
+| Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise ⬜ · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly ⬜ | Progress ⬜ · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory ⬜ |
 | Health    | Yearly ⬜ | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
@@ -236,3 +244,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `finance/tracked/groceries-weekly-claude.*` | Laminated weekly groceries: cost, Eaten / Freezer / Pantry | Awaiting user's edits |
 | `finance/tracked/pantry-stock-claude.*` | 5 pantry items: donut, count, meal ideas | Awaiting user's edits |
 | `finance/tracked/freezer-stock-claude.*` | 5 freezer items: donut, count, meal ideas | Awaiting user's edits |
+| `finance/daily/daily-planner-claude.*` | Daily planner: day/date, Admin-blue budget left (3 currencies), costs, transfers | Awaiting user's edits |

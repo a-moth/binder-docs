@@ -20,6 +20,9 @@ BROWN = "Autumn brown dark"
 CREAM = "Autumn cream base"
 LENS = "Autumn camera lens highlight"
 HIGHLIGHT = "Autumn brown highlight"
+ADMIN = "Admin blue"
+# Colours added to every built page on top of the template's Autumn set.
+EXTRA_COLOURS = {ADMIN: (98, 110, 122)}  # Admin cardstock (Ask Herby Design System)
 MAIN = 2.83464566929134    # 1 mm outline
 INNER = 1.41732283464567   # 0.5 mm outline
 LEFT, RIGHT = 42.0, 554.6  # header bar span
@@ -135,6 +138,11 @@ class Page:
     def write(self, rel):
         src = TEMPLATE.read_text(encoding="utf-8")
         head = src[:src.index("<PAGEOBJECT")]
+        last = head.rindex("<COLOR ")
+        cut = head.index("\n", last) + 1
+        extra = "".join(f'        <COLOR NAME="{n}" SPACE="RGB" R="{r}" G="{g}" B="{b}"/>\n'
+                        for n, (r, g, b) in EXTRA_COLOURS.items() if f'NAME="{n}"' not in head)
+        head = head[:cut] + extra + head[cut:]
         tail = src[src.rindex("</DOCUMENT>"):]
         out = ROOT / rel
         to_assets = pathlib.Path(*[".."] * (len(pathlib.PurePath(rel).parts) - 1), "assets")
