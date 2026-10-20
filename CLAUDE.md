@@ -98,7 +98,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
     Finance. A paper holder sits behind each project page (not mentioned on
     the page). No mushroom on this page.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
-  checkboxes in the same cell, no separate currency column) · Room.
+  checkboxes centred in the same cell, no separate currency column) · Room.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
