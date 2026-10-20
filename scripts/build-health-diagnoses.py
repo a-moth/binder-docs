@@ -3,8 +3,9 @@
 
   summary        (and summary-blank) one table: diagnosis, date, treated by, page, and two stacked status
                  pairs (Active / Resolved, Managed / Unmanaged)
-  <diagnosis>    (and diagnosis-blank) one page each: diagnosed date + by, symptoms, triggers, care team,
-                 treatments, and an unlined notes area for taping notes
+  <diagnosis>    (and diagnosis-blank) one page each: diagnosed date + by, symptoms, triggers,
+                 medications (past / now / future, each with its Treatments page number),
+                 care team, treatments, and an unlined notes area for taping notes
 Usage: python3 scripts/build-health-diagnoses.py
 Then:  python3 scripts/relink-images.py && scripts/export-pdf.sh health/diagnoses/*-claude.sla
 Rerunning overwrites the drafts, so stop using this once the user starts editing them.
@@ -49,18 +50,38 @@ def lined_box(p, x, y, w, h, title):
         ly += WRITE_GAP
 
 
+def medications(p, y, h):
+    """Past / Now / Future medication lines, each with a square for its Treatments page."""
+    p.rect(LEFT, y, RIGHT - LEFT, h)
+    p.text(LEFT + 7, y + 6, 200, 24, "Medications", MONO, 16, color=BROWN)
+    col_gap = 12.0
+    col_w = (RIGHT - LEFT - 14 - 2 * col_gap) / 3
+    sq_w, sq_h = 22.0, 16.0
+    for c, label in enumerate(["Past", "Now", "Future"]):
+        x = LEFT + 7 + c * (col_w + col_gap)
+        p.text(x, y + 32, col_w, 18, label, SANS_BOLD, 12)
+        ly = y + 70
+        while ly < y + h - 6:
+            p.line(x, ly, col_w - sq_w - 6)
+            p.rect(x + col_w - sq_w, ly - sq_h + 1, sq_w, sq_h, fill=LENS, width=INNER)
+            ly += 25
+
+
 def detail(name):
     # Header title: the diagnosis name (blank template: an empty text box to type into).
     p = Page(name if name in ("", "hEDS") else name.upper())
     p.field(LEFT, 80, "Diagnosed", 80, 300)
     p.field(LEFT, 112, "By", 30, 300)
-    top, gap, h = 190.0, 14.0, 150.0
+    top, gap, h = 190.0, 14.0, 120.0
     w = (RIGHT - LEFT - gap) / 2
-    for r, (a, b) in enumerate([("Symptoms", "Triggers"), ("Care team", "Treatments")]):
-        y = top + r * (h + gap)
-        lined_box(p, LEFT, y, w, h, a)
-        lined_box(p, LEFT + w + gap, y, w, h, b)
-    ny = top + 2 * (h + gap)
+    lined_box(p, LEFT, top, w, h, "Symptoms")
+    lined_box(p, LEFT + w + gap, top, w, h, "Triggers")
+    my = top + h + gap
+    medications(p, my, 150.0)
+    y = my + 150.0 + gap
+    lined_box(p, LEFT, y, w, h, "Care team")
+    lined_box(p, LEFT + w + gap, y, w, h, "Treatments")
+    ny = y + h + gap
     p.rect(LEFT, ny, RIGHT - LEFT, BOTTOM - ny)
     p.text(LEFT + 7, ny + 6, 200, 24, "Notes", MONO, 16, color=BROWN)
     p.rect(LEFT + 10, ny + 36, RIGHT - LEFT - 20, BOTTOM - ny - 46, fill=LENS, width=INNER)

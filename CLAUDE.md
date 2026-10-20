@@ -135,16 +135,23 @@ The user hand-edits everything Claude makes until it's right for the binder.
   - Diagnoses: a summary list plus one page per diagnosis. Summary columns:
     diagnosis, date, treated by, page, and two unnamed stacked status pairs
     **Active / Resolved** and **Managed / Unmanaged**. Detail page: diagnosed
-    date + by, symptoms, triggers, care team, treatments, and an unlined
+    date + by, symptoms, triggers, **Medications** (Past / Now / Future lines,
+    each with a square for its Treatments page number), care team,
+    treatments, and an unlined
     **Notes** taping area (don't say what it's for). Letters / evidence live
     in a pocket behind each page (not mentioned on the page).
     Diagnoses: gastroparesis, migraines, ME, CPTSD, ADHD, autism, POTS, hEDS,
     allergies. Blank templates (empty text boxes to type into) exist for the
     summary and the detail page.
   - Potential diagnoses (for the Potential tab, later): MCAS, CCI, neuropathy.
-    Each needs a page like a diagnosis page plus a second page to log events
-    that point to it.
-  - Treatment: medications, therapies, medication history, therapy history.
+    Each needs a page like a diagnosis page (including the Medications box)
+    plus a second page to log events that point to it.
+  - Treatment: medications, therapies, medication history, therapy history,
+    all on one shared page type, two per page, with a Page box at the top.
+    Each: name; ☐ Fully treats / ☐ Treats fully in combination with ___ ___ ___
+    / ☐ Incompletely treats; a taped-notes area beside those; unlined space
+    underneath (for dose + ramp-up, side effects + severity) with a square for
+    a pill photo. None of those uses are printed. No mushroom on this page.
   - Look ahead: upcoming appointments plus health goals.
   - Potential: suspected / undiagnosed conditions plus treatments to try.
 - Goals are wants: date first wanted (to decide later whether to erase it or
@@ -254,6 +261,8 @@ finance/
     budget-pages-1.pdf          one-off: Monthly, Yearly, Daily log Mon–Sun
 health/
   yearly-checkups-claude.sla/.pdf  Yearly check-ups (section main area, Claude draft)
+health/treatment/
+  treatments-claude.sla/.pdf       2 medications / therapies per page (Claude draft)
 health/diagnoses/
   summary(-blank)-claude.sla/.pdf  diagnosis summary list (pre-filled + blank)
   <diagnosis>-claude.sla/.pdf      gastroparesis · migraines · me · cptsd · adhd ·
@@ -287,7 +296,7 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-home-yearly.py · build-home-progress.py ·
                               build-home-inventory.py · build-home-monthly.py ·
                               build-home-weekly.py · build-health-yearly.py ·
-                              build-health-diagnoses.py
+                              build-health-diagnoses.py · build-health-treatment.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -302,7 +311,7 @@ down, Task break down, Set up environment.
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
-| Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
+| Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
@@ -357,4 +366,5 @@ Binder files Claude has created (filenames end in `-claude`):
 | `home/weekly/weekly-claude.*` | Weekly: cleaning, admin, exercise (steps average), community tick boxes | Awaiting user's edits |
 | `health/yearly-checkups-claude.*` | Yearly check-ups: annual / biannual / quarterly, When + Booked + Clinic | Awaiting user's edits |
 | `health/diagnoses/summary-claude.*`, `summary-blank-claude.*` | Diagnoses summary: date, treated by, page, Active/Resolved + Managed/Unmanaged | Awaiting user's edits |
-| `health/diagnoses/{gastroparesis,migraines,me,cptsd,adhd,autism,pots,heds,allergies}-claude.*`, `diagnosis-blank-claude.*` | Diagnosis pages: diagnosed/by, symptoms, triggers, care team, treatments, notes area | Awaiting user's edits |
+| `health/diagnoses/{gastroparesis,migraines,me,cptsd,adhd,autism,pots,heds,allergies}-claude.*`, `diagnosis-blank-claude.*` | Diagnosis pages: diagnosed/by, symptoms, triggers, medications past/now/future, care team, treatments, notes area | Awaiting user's edits |
+| `health/treatment/treatments-claude.*` | Treatments: 2 per page, how well it treats, taped notes, details + pill photo square | Awaiting user's edits |
