@@ -16,14 +16,14 @@ def inventory():
     rows, repl, room = 20, 250, 440
     table(p, [(TABLE_X, "Item"), (repl, "Replacement"), (room, "Room")], rows)
     # Currency is part of the replacement cell: amount on the left, £ / $ / € boxes on the right.
-    box, step = 10.0, 25.0
+    box, step = 11.5, 29.0
     x0 = room - 6 - step * len(CURRENCIES)
     for i in range(rows):
         y = TABLE_Y + i * ROW + (ROW - box) / 2
         for j, sym in enumerate(CURRENCIES):
             x = x0 + j * step
             p.rect(x, y, box, box, fill=LENS, width=INNER)
-            p.text(x + box + 3.5, y - 2, 10, box + 4, sym, SANS_BOLD, 10)
+            p.text(x + box + 3, y - 4, 14, box + 8, sym, SANS_BOLD, 14)
     return p
 
 
