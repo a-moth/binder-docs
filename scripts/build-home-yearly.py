@@ -3,7 +3,7 @@
 
 Same layout as the user's finance/yearly-budget.sla (three cream columns with
 checkbox lines), with Annual / Biannual / Quarterly *tasks*, and under each task a
-When (month/date) and Time (estimated time) line.
+When (month/date) and Length (estimated time) line.
 Usage: python3 scripts/build-home-yearly.py
 Then:  python3 scripts/relink-images.py && scripts/export-pdf.sh home/yearly-tasks-claude.sla
 Rerunning overwrites the draft, so stop using this once the user starts editing it.
@@ -27,12 +27,12 @@ def yearly_tasks():
         while y + 40 < COL_Y + COL_H:
             p.checkbox(x + 7, y)
             p.line(lx, y + 15, rx - lx)
-            # When / Time on the line below the task.
+            # When / Length on the line below the task.
             sub = y + 22
             p.text(lx, sub, 30, 16, "When", SANS_BOLD, 9)
             p.line(lx + 27, sub + 13, 42)
-            p.text(lx + 74, sub, 28, 16, "Time", SANS_BOLD, 9)
-            p.line(lx + 98, sub + 13, rx - (lx + 98))
+            p.text(lx + 74, sub, 34, 16, "Length", SANS_BOLD, 9)
+            p.line(lx + 106, sub + 13, rx - (lx + 106))
             y += ROW_STEP
     return p
 

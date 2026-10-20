@@ -86,7 +86,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
   (paper moved to the Archive pocket).
 - **Home › Yearly** is for tasks, not costs: Annual / Biannual / Quarterly
   home tasks (the user's word is "tasks", not "jobs"), same layout as Finance Yearly.
-  Under each task: **When** (month/date to do it) and **Time** (estimated time).
+  Under each task: **When** (month/date to do it) and **Length** (estimated time; the user's word is "Length").
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -262,4 +262,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `finance/tracked/freezer-stock-claude.*` | 5 freezer items: donut, count, meal ideas | Awaiting user's edits |
 | `finance/daily/daily-planner-claude.*` | Daily planner: day/date, Admin-blue budget left (3 currencies), costs, transfers | Awaiting user's edits |
 | `finance/digitise/digitised-log-claude.*` | Digitised log: what, amount, saved to (wide), Scanned / Archived | Awaiting user's edits |
-| `home/yearly-tasks-claude.*` | Yearly home tasks: annual / biannual / quarterly, each with When + Time | Awaiting user's edits |
+| `home/yearly-tasks-claude.*` | Yearly home tasks: annual / biannual / quarterly, each with When + Length | Awaiting user's edits |
