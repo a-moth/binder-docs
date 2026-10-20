@@ -72,7 +72,18 @@ PRIDE_ORDER = ["physical", "neurodivergent", "invisible", "psychiatric", "sensor
 INK = "#3A1A08"      # hb-ink: brand text colour, used on all pride colours
 OUTLINE = "#988C78"  # mark-outline taupe
 
+# Pride tile corners: top-left/bottom-right big, top-right/bottom-left small.
+TILE_RADII = (7, 2.5, 7, 2.5)  # tl, tr, br, bl on the 24 px grid
+
 _cache = {}
+
+
+def rounded_rect(x, y, w, h, radii):
+    tl, tr, br, bl = radii
+    return (f"M{x + tl} {y}H{x + w - tr}A{tr} {tr} 0 0 1 {x + w} {y + tr}"
+            f"V{y + h - br}A{br} {br} 0 0 1 {x + w - br} {y + h}"
+            f"H{x + bl}A{bl} {bl} 0 0 1 {x} {y + h - bl}"
+            f"V{y + tl}A{tl} {tl} 0 0 1 {x + tl} {y}Z")
 
 
 def pride_tile(svg):
@@ -86,9 +97,9 @@ def pride_tile(svg):
     return (
         '<!-- @license lucide-static v' + LUCIDE_VERSION + ' - ISC -->\n'
         '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">'
-        '<clipPath id="tile"><rect width="24" height="24"/></clipPath>'
+        '<clipPath id="tile"><path d="' + rounded_rect(0, 0, 24, 24, TILE_RADII) + '"/></clipPath>'
         f'<g clip-path="url(#tile)"><g transform="rotate(45 12 12)">{stripes}</g></g>'
-        f'<rect x="0.5" y="0.5" width="23" height="23" fill="none" stroke="{OUTLINE}"/>'
+        f'<path d="{rounded_rect(0.5, 0.5, 23, 23, [r - 0.5 for r in TILE_RADII])}" fill="none" stroke="{OUTLINE}"/>'
         f'<g transform="translate(12 12) scale(0.7) translate(-12 -12)" fill="none" '
         f'stroke="{INK}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'
         f"{body}</g></svg>\n")

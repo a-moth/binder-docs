@@ -24,6 +24,7 @@ Media) · archive `#A08A75` · travel `#DAD0C4` (reserve beige, the spare cardst
 Special variant: `work/list-checks-pride.*` is a Lucide icon drawn in brand ink (`#3A1A08`) on
 diagonal stripes in disability-flag order (physical, neurodivergent, invisible, psychiatric,
 sensory), using the brand pride colours, with a taupe (`#988C78`) outline. It's used for the Work
-checklist. Add more in `PRIDE_TILES` in the script.
+checklist. Its corners are rounded: big at top-left and bottom-right, small at the other two
+(`TILE_RADII`). Add more tiles in `PRIDE_TILES` in the script.
 
 `custom/` holds the non-Lucide illustrations, drawn by `scripts/make-custom.py`.

@@ -14,7 +14,7 @@ import pathlib
 import cairosvg
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "assets" / "custom"
-PNG_SIZE = 1024
+PNG_SIZE = 2048  # high enough that print edges stay smooth
 
 # Brand pride colours in disability-flag order (Ask Herby Design System).
 PRIDE = ["#C07D78", "#D8C68A", "#DEDAD0", "#8FAEBD", "#7F9E7C"]
