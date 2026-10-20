@@ -5,8 +5,8 @@ Usage: python3 scripts/relink-images.py
 Rules:
   checklist.png         -> assets/<area>/list-checks-admin.png  (cream on an Admin-blue
                            tile; Work uses the pride-stripe tile list-checks-pride.png)
-  section divider icons -> assets/<area>/<icon>-brown-highlight.png
-                           (dividers print on cardstock in the section colour)
+  section divider icons -> assets/<area>/<icon>-cream-outline.png
+                           (they sit on the dividers' cream box; 4.9:1)
   other Lucide icons    -> assets/core/<icon>-brown-highlight.png
   custom illustrations  -> assets/custom/<file>   (supplied by hand)
 Every frame linked into assets/ is scaled to its frame (checklists stretched to fill,
@@ -49,9 +49,14 @@ def target(pfile, area):
         return target("checklist.png", area)
     if name in CUSTOM:
         return f"custom/{name}"
-    m = re.fullmatch(r"(\w+)/([\w-]+?)(?:-brown-highlight)?\.png", pfile)
-    if m and (ROOT / "assets" / m[1] / f"{m[2]}-brown-highlight.png").exists():
-        return f"{m[1]}/{m[2]}-brown-highlight.png"
+    m = re.fullmatch(r"(\w+)/([\w-]+?)(?:-brown-highlight|-cream-outline)?\.png", pfile)
+    # Section icons on the dividers (core-layouts) sit on the cream box: cream outline,
+    # because brown highlight is only 2.6:1 on cream.
+    variant = "cream-outline" if area == "core" and m and m[1] != "core" else "brown-highlight"
+    if pfile.endswith("-cream-outline.png"):
+        variant = "cream-outline"  # already chosen on purpose (covers): keep it
+    if m and (ROOT / "assets" / m[1] / f"{m[2]}-{variant}.png").exists():
+        return f"{m[1]}/{m[2]}-{variant}.png"
     return None  # leave anything else (e.g. photos) untouched
 
 

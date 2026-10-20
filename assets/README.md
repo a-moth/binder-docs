@@ -9,7 +9,8 @@ is duplicated into every area that uses it.
 
 | Colour suffix     | Hex       | Meaning                                         |
 |-------------------|-----------|-------------------------------------------------|
-| `brown-highlight` | `#AD7A4F` | Autumn theme default for new icons; used on dividers |
+| `brown-highlight` | `#AD7A4F` | Autumn theme default for new icons |
+| `cream-outline`   | `#6C5641` | Icons on the cream divider / cover boxes (4.9:1 on cream) |
 | `section`         | per area  | Cardstock colour of the area (see below)        |
 | `physical`        | `#C07D78` | Disability pride: physical                      |
 | `neurodivergent`  | `#D8C68A` | Disability pride: neurodivergent                |

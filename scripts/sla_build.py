@@ -48,11 +48,16 @@ def _rect_path(w, h):
 
 
 class Page:
-    def __init__(self, title, mushroom=True):
+    def __init__(self, title, mushroom=True, header=True):
+        """header=False: a divider-style page on the "Normal" master (no header bar,
+        no checklist, no title); place the mushroom yourself with image()."""
         self.objects = []
-        # Title inside the header bar, right-aligned (as on every existing page).
-        self.text(343.2, 41.8, 207.4, 30.4, title, MONO, 20, align=2, valign=1, inset_bottom=5.669)
-        self.mushroom = mushroom  # drawn last in write(), so it sits on top (as on the user's pages)
+        self.header = header
+        if header:
+            # Title inside the header bar, right-aligned (as on every existing page).
+            self.text(343.2, 41.8, 207.4, 30.4, title, MONO, 20, align=2, valign=1,
+                      inset_bottom=5.669)
+        self.mushroom = mushroom and header  # drawn last in write(), on top as on the user's pages
 
     # --- primitives -------------------------------------------------------
     def rect(self, x, y, w, h, fill=CREAM, stroke=BROWN, width=MAIN):
@@ -146,6 +151,10 @@ class Page:
         extra = "".join(f'        <COLOR NAME="{n}" SPACE="RGB" R="{r}" G="{g}" B="{b}"/>\n'
                         for n, (r, g, b) in EXTRA_COLOURS.items() if f'NAME="{n}"' not in head)
         head = head[:cut] + extra + head[cut:]
+        if not self.header:
+            i = head.index("<PAGE ")
+            j = head.index(">", i)
+            head = head[:i] + head[i:j].replace('MNAM="cleaning page"', 'MNAM="Normal"') + head[j:]
         tail = src[src.rindex("</DOCUMENT>"):]
         out = ROOT / rel
         to_assets = pathlib.Path(*[".."] * (len(pathlib.PurePath(rel).parts) - 1), "assets")

@@ -22,6 +22,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent / "assets"
 
 COLOURS = {
     "brown-highlight": "#AD7A4F",
+    "cream-outline": "#6C5641",  # Autumn; icons on the cream divider/cover boxes (4.9:1)
     "physical": "#C07D78",
     "neurodivergent": "#D8C68A",
     "invisible": "#DEDAD0",
@@ -48,13 +49,13 @@ AREAS = {
     "finance": ["list-checks", "circle-dollar-sign", "circle-euro",
                 "circle-pound-sterling", "coins", "wallet", "receipt",
                 "piggy-bank", "calendar-range", "scan-line", "snowflake",
-                "package", "utensils"],
+                "package", "utensils", "calendar"],
     "home": ["list-checks", "house", "house-heart", "broom-sparkles",
              "brush-cleaning", "sparkles", "package", "trending-up", "target",
-             "calendar-range"],
+             "calendar-range", "calendar"],
     "health": ["list-checks", "heart", "heart-pulse", "pill-bottle", "salad",
                "scan-heart", "stethoscope", "mail", "clipboard-list",
-               "telescope", "calendar-range"],
+               "telescope", "calendar-range", "search"],
     "work": ["list-checks", "briefcase", "folder-kanban", "workflow", "users",
              "calendar-days", "layout-template", "archive", "calendar-range"],
     "learning": ["list-checks", "book", "book-text", "book-open",
