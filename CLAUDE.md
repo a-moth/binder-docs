@@ -82,7 +82,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
   day is summarised by category onto Weekly; each week onto Monthly. No
   instructions on the page. No mushroom on this page (the budget box sits there).
 - **Finance › Digitise** is a log of digitised paperwork: what it is,
-  amount (currency + cost), a wide where the file is saved, Scanned ☐, Archived ☐
+  amount (currency + cost), a wide "saved to" column (where the file is),  Scanned ☐, Archived ☐
   (paper moved to the Archive pocket).
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
