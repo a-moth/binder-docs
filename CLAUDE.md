@@ -128,6 +128,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
   after its box; no separate currency column) · Room.
 - **Health** (pre-filled details are OK on Health pages):
   - Yearly (main area): recurring check-ups, annual / biannual / quarterly.
+    Under each: When + Booked ☐, then Clinic. Pre-filled: annual eye test,
+    general blood panel, testosterone levels, medication review; dentist
+    every 6 months (biannual).
   - Letters: stored letters only, no page to build.
   - Diagnoses: a summary list plus one page per diagnosis.
   - Treatment: medications, therapies, medication history, therapy history.
@@ -238,6 +241,8 @@ finance/
   budgets/
     budget-templates.sla    Monthly, Weekly ×2
     budget-pages-1.pdf          one-off: Monthly, Yearly, Daily log Mon–Sun
+health/
+  yearly-checkups-claude.sla/.pdf  Yearly check-ups (section main area, Claude draft)
 home/
   yearly-tasks-claude.sla/.pdf  Yearly home tasks (section main area, Claude draft)
 home/progress/
@@ -265,7 +270,7 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-finance-daily.py · build-finance-digitise.py ·
                               build-home-yearly.py · build-home-progress.py ·
                               build-home-inventory.py · build-home-monthly.py ·
-                              build-home-weekly.py
+                              build-home-weekly.py · build-health-yearly.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -280,7 +285,7 @@ down, Task break down, Set up environment.
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
-| Health    | Yearly ⬜ | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
+| Health    | Yearly 📝 (check-ups draft) | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
@@ -295,8 +300,8 @@ section context (✅ for the original seven; ⬜ divider and laminate tab for Tr
 - **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
 - **Stale PDFs:** every PDF predates the new icons and the Yearly split, so all
   of them need re-exporting from Scribus.
-- **Yearly worksheets** for Health and Work don't exist yet (the Finance
-  one could be the base). Home's is a tasks version of it.
+- **Yearly worksheet** for Work doesn't exist yet (the Finance one could be
+  the base). Home's is a tasks version of it, Health's a check-ups version.
 - **Travel** has no divider or laminate tab yet (colour: reserve beige).
 - **brownleaves.png** was mapped to Lucide `leaf` (brown highlight). Check that
   this is the right match.
@@ -333,3 +338,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `home/monthly/overview-claude.*` | Monthly overview: month, season, all seasonal items (incl. change bedding), how often, page | Awaiting user's edits |
 | `home/monthly/{vacuum,refresh-bathroom,review-binder,kitchen-cabinets,under-bed-sort,swap-clothes,radiators}-claude.*` | Monthly item detail pages: checklist with When + Length, notes | Awaiting user's edits |
 | `home/weekly/weekly-claude.*` | Weekly: cleaning, admin, exercise (steps average), community tick boxes | Awaiting user's edits |
+| `health/yearly-checkups-claude.*` | Yearly check-ups: annual / biannual / quarterly, When + Booked + Clinic | Awaiting user's edits |
