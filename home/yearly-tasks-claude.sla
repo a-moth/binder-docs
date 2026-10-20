@@ -116,7 +116,7 @@
                 <DefaultStyle />
                 <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="Annual" />
                 <para />
-                <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="jobs" />
+                <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="tasks" />
                 <trail />
             </StoryText>
         </PAGEOBJECT>
@@ -164,7 +164,7 @@
                 <DefaultStyle />
                 <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="Biannual" />
                 <para />
-                <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="jobs" />
+                <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="tasks" />
                 <trail />
             </StoryText>
         </PAGEOBJECT>
@@ -212,7 +212,7 @@
                 <DefaultStyle />
                 <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="Quarterly" />
                 <para />
-                <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="jobs" />
+                <ITEXT FONT="Latin Modern Mono 10 Regular" FONTSIZE="16" FCOLOR="Autumn brown dark" CH="tasks" />
                 <trail />
             </StoryText>
         </PAGEOBJECT>
