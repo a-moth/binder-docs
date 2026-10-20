@@ -18,12 +18,12 @@ is duplicated into every area that uses it.
 | `sensory`         | `#7F9E7C` | Disability pride: sensory                       |
 
 Section colours: core `#B6BCC0` · finance `#5F6C42` · home `#715C4D` · health `#AE857F` ·
-work `#8B7D78` · learning `#A3AF9F` · archive `#A08A75`. Resources and travel have no
-cardstock colour yet, so they get no `section` variant.
+work `#8B7D78` · learning `#A3AF9F` · archive `#A08A75` · travel `#DAD0C4` (reserve beige,
+the spare cardstock). Resources has no cardstock colour yet, so it gets no `section` variant.
 
 Special variant: `work/list-checks-pride.*` is a Lucide icon drawn in brand ink (`#3A1A08`) on
 diagonal stripes in disability-flag order (physical, neurodivergent, invisible, psychiatric,
 sensory), using the brand pride colours, with a taupe (`#988C78`) outline. It's used for the Work
 checklist. Add more in `PRIDE_TILES` in the script.
 
-`custom/` holds the hand-made illustrations (not generated).
+`custom/` holds the non-Lucide illustrations, drawn by `scripts/make-custom.py`.

@@ -9,8 +9,8 @@ Rules:
                            (dividers print on cardstock in the section colour)
   other Lucide icons    -> assets/core/<icon>-brown-highlight.png
   custom illustrations  -> assets/custom/<file>   (supplied by hand)
-Frames that are relinked to a new image are set to fit-to-frame (SCALETYPE=0 -> 1)
-so a different pixel size can't change the printed size.
+Every frame linked into assets/ is set to fit-to-frame (SCALETYPE=0 -> 1) so a
+different pixel size can't change the printed size.
 """
 import os
 import pathlib
@@ -70,10 +70,8 @@ def relink(rel, area):
         dest = target(m[1].removeprefix(to_assets + "/"), area)  # rerun-safe
         if not dest:
             return tag
-        new = f"{to_assets}/{dest}"
-        if new != m[1] and not dest.startswith("custom/"):
-            tag = tag.replace('SCALETYPE="0"', 'SCALETYPE="1"')
-        return tag.replace(m[0], f'PFILE="{new}"')
+        tag = tag.replace('SCALETYPE="0"', 'SCALETYPE="1"')
+        return tag.replace(m[0], f'PFILE="{to_assets}/{dest}"')
 
     text = re.sub(r"<(?:PAGEOBJECT|MASTEROBJECT)\b[^>]*>", fix, text)
     path.write_text(text, encoding="utf-8")

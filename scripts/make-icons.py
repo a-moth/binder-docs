@@ -39,7 +39,7 @@ SECTION_COLOURS = {
     "learning": "#A3AF9F",
     "resources": None,
     "archive": "#A08A75",
-    "travel": None,
+    "travel": "#DAD0C4",  # reserve beige, the unused cardstock
 }
 
 AREAS = {
