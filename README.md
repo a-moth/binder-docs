@@ -1,8 +1,8 @@
 # binder-docs
 
 > **Note:** The files in the first commit initialise this repository. They are
-> the starting set of binder templates (Scribus `.sla.xml` sources and exported
-> PDFs), uploaded as-is.
+> the starting set of binder templates (Scribus sources, uploaded as `.sla.xml` and
+> since renamed to `.sla`, and exported PDFs), uploaded as-is.
 
 Printable A4 templates for a ring binder, designed in Scribus 1.6.3.
 
@@ -16,5 +16,5 @@ Printable A4 templates for a ring binder, designed in Scribus 1.6.3.
 | `assets/`          | Lucide icons in every theme colour, plus custom art     |
 | `scripts/`         | Icon generator and Scribus helpers                      |
 
-Edit the `.sla.xml` source in Scribus, then export the PDF next to it.
+Edit the `.sla` source in Scribus, then export the PDF next to it.
 See [`CLAUDE.md`](CLAUDE.md) for the full binder map and the list of missing files.

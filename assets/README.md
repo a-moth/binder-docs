@@ -18,8 +18,8 @@ is duplicated into every area that uses it.
 | `sensory`         | `#7F9E7C` | Disability pride: sensory                       |
 
 Section colours: core `#B6BCC0` · finance `#5F6C42` · home `#715C4D` · health `#AE857F` ·
-work `#8B7D78` · learning `#A3AF9F` · archive `#A08A75` · travel `#DAD0C4` (reserve beige,
-the spare cardstock). Resources has no cardstock colour yet, so it gets no `section` variant.
+work `#8B7D78` · learning `#A3AF9F` · resources `#E0C1B6` (Media pink; Resources replaces
+Media) · archive `#A08A75` · travel `#DAD0C4` (reserve beige, the spare cardstock).
 
 Special variant: `work/list-checks-pride.*` is a Lucide icon drawn in brand ink (`#3A1A08`) on
 diagonal stripes in disability-flag order (physical, neurodivergent, invisible, psychiatric,

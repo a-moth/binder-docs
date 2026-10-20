@@ -37,7 +37,7 @@ SECTION_COLOURS = {
     "health": "#AE857F",
     "work": "#8B7D78",
     "learning": "#A3AF9F",
-    "resources": None,
+    "resources": "#E0C1B6",  # Media pink (Resources is the old Media section)
     "archive": "#A08A75",
     "travel": "#DAD0C4",  # reserve beige, the unused cardstock
 }
