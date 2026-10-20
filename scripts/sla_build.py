@@ -193,18 +193,23 @@ def lined_box(p, x, y, w, h, title):
         ly += WRITE_GAP
 
 
-def medications(p, y, h):
-    """Past / Now / Future medication lines, each with a square for its Treatments page."""
+def medications(p, y, h, effect=False):
+    """Past / Now / Future medication lines, each with a square for its Treatments page.
+    effect=True adds an "Effect" line under each one (how it affected symptoms)."""
     p.rect(LEFT, y, RIGHT - LEFT, h)
     p.text(LEFT + 7, y + 6, 200, 24, "Medications", MONO, 16, color=BROWN)
     col_gap = 12.0
     col_w = (RIGHT - LEFT - 14 - 2 * col_gap) / 3
     sq_w, sq_h = 22.0, 16.0
+    step = 50 if effect else 25
     for c, label in enumerate(["Past", "Now", "Future"]):
         x = LEFT + 7 + c * (col_w + col_gap)
         p.text(x, y + 32, col_w, 18, label, SANS_BOLD, 12)
         ly = y + 70
-        while ly < y + h - 6:
+        while ly + (24 if effect else 0) < y + h - 6:
             p.line(x, ly, col_w - sq_w - 6)
             p.rect(x + col_w - sq_w, ly - sq_h + 1, sq_w, sq_h, fill=LENS, width=INNER)
-            ly += 25
+            if effect:
+                p.text(x, ly + 7, 40, 16, "Effect", SANS_BOLD, 9)
+                p.line(x + 32, ly + 21, col_w - 32)
+            ly += step

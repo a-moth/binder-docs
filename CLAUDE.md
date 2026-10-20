@@ -165,7 +165,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
     per page: Date, a Notes taping box (what happened), a Trigger box, a 1–10
     Severity scale to circle and a How long scale (15m … 10d) to mark. No
     mushroom. Potential diagnosis page: name (header), **Typical occurrences**
-    (lined box, a few handwritten lines), Medications (past / now / future),
+    (lined box, a few handwritten lines), Medications (past / now / future,
+    each with an **Effect** line underneath for how it affected symptoms),
     and **Events reference** (date + event log page). MCAS, CCI, neuropathy,
     plus blanks.
 - Goals are wants: date first wanted (to decide later whether to erase it or
@@ -392,4 +393,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/look-ahead/appointments-claude.*` | Appointments: date/time/who/where, taped notes, outcome | Awaiting user's edits |
 | `health/look-ahead/goals-claude.*` | Health goals: goal text box, 10-slot donut, 10 steps | Awaiting user's edits |
 | `health/potential/{mcas,cci,neuropathy}-events-claude.*`, `events-blank-claude.*` | Event logs: 3 per page, date, notes, trigger, severity + duration scales | Awaiting user's edits |
-| `health/potential/{mcas,cci,neuropathy}-claude.*`, `potential-blank-claude.*` | Potential diagnosis: typical occurrences, medications, events reference | Awaiting user's edits |
+| `health/potential/{mcas,cci,neuropathy}-claude.*`, `potential-blank-claude.*` | Potential diagnosis: typical occurrences, medications with Effect lines, events reference | Awaiting user's edits |

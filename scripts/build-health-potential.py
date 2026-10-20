@@ -2,7 +2,7 @@
 """Draw the Health > Potential pages (Claude drafts, labelled -claude).
 
   <name>          potential diagnosis: name, typical occurrences, medications
-                  (past / now / future + Treatments page), events reference
+                  (past / now / future + Treatments page + Effect line), events reference
                   (date + event log page)
   <name>-events   three events per page: date, a taped-notes box (what happened), a
                   trigger box, a 1-10 severity scale to circle and a 15 min - 10 day
@@ -63,10 +63,11 @@ def events_page(title):
 def potential(name):
     p = Page(name)
     top, gap = 190.0, 14.0
-    lined_box(p, LEFT, top, RIGHT - LEFT, 130.0, "Typical occurrences")
-    my = top + 130.0 + gap
-    medications(p, my, 150.0)
-    ey = my + 150.0 + gap
+    occ_h, med_h = 120.0, 222.0
+    lined_box(p, LEFT, top, RIGHT - LEFT, occ_h, "Typical occurrences")
+    my = top + occ_h + gap
+    medications(p, my, med_h, effect=True)  # Effect line under each medication
+    ey = my + med_h + gap
     # Events reference: date + the event log page it's on.
     p.rect(LEFT, ey, RIGHT - LEFT, BOTTOM - ey)
     p.text(LEFT + 7, ey + 6, 250, 24, "Events reference", MONO, 16, color=BROWN)
