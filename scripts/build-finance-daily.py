@@ -17,15 +17,16 @@ def daily():
     p.field(LEFT, 112, "Date", 45, 290)
 
     # Budget left: large Admin-blue box under the title, three currency budgets.
-    bx, by, bw, bh = 330.0, 80.0, RIGHT - 330.0, 132.0
+    bx, by, bw, bh = 330.0, 88.0, RIGHT - 330.0, 132.0  # 14 pt below the header bar
     p.rect(bx, by, bw, bh, fill=ADMIN)
-    p.text(bx + 10, by + 6, bw - 20, 24, "Budget left", MONO, 16, color=CREAM)
+    # White on Admin blue: 5.2:1 contrast (cream is only 3.7:1).
+    p.text(bx + 10, by + 6, bw - 20, 24, "Budget left", MONO, 16, color="White")
     for i in range(3):
         p.rect(bx + 10, by + 36 + i * 31, bw - 20, 25, fill=CREAM, width=INNER)
 
     # Costs: description line + one box holding currency and cost.
     box_x, box_w, gap = 430.0, X1 - 430.0, 30.0
-    y = 234.0
+    y = by + bh + 14
     p.text(X0, y, 200, 24, "Costs", MONO, 16)
     p.text(X0, y + 26, 200, 18, "Description of cost", SANS_BOLD, 10)
     p.text(box_x, y + 26, box_w, 18, "Currency + cost", SANS_BOLD, 10)

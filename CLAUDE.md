@@ -110,6 +110,11 @@ The user hand-edits everything Claude makes until it's right for the binder.
   - Comic Relief Bold 12 appears only in `core/core-layouts.sla`
     (Google Fonts; `setup-tools.sh` installs it).
 - **Icons:** see Rules 5–6. The checklist sits top-left on every master page.
+- **Spacing:** keep at least ~14 pt between a box and the header bar or another
+  box, so outlines never read as doubled lines.
+- **Contrast:** text needs at least 4.5:1 against its fill (3:1 for icons).
+  On Admin blue use **white** text (5.2:1). Cream on Admin is only 3.7:1, which
+  is fine for the checklist icon but not for text.
 
 ## Colour sources
 
