@@ -68,9 +68,11 @@ The user hand-edits everything Claude makes until it's right for the binder.
   filled in digitally each month, then printed and filed here. Yearly holds the
   recurring payments (annual, semiannual, quarterly).
 - No debt tracking needed: last month's costs are paid off the next month.
-- Subscription status has two groups: **Use case** (Trial / Active) and
-  **No use case** (Paused / Cancelled).
-- Groceries and Cash pocket pages are laminated and wiped. Items left in the
+- Subscription status: two columns, one box each. **Use** (write T or A for
+  Trial / Active beside the box) and **Unused** (write P or C for Paused /
+  Cancelled).
+- Groceries and Cash pages are laminated and wiped. No instruction notes on
+  the pages themselves; the Cash page has a space to glue a cash pocket. Items left in the
   pantry or freezer move to the Pantry / Freezer stock pages (donut = how much is
   left, count in the middle, meal ideas beside it). 4–6 items per stock page.
 - Goals are wants: date first wanted (to decide later whether to erase it or
@@ -226,10 +228,10 @@ Binder files Claude has created (filenames end in `-claude`):
 | File | What | Status |
 |------|------|--------|
 | `work/projects/projects-three-section-claude.pdf` | Export of the user's Projects page | Awaiting user's edits |
-| `finance/tracked/subscriptions-claude.*` | Subscriptions: cost, currency, renews, Use case / No use case | Awaiting user's edits |
+| `finance/tracked/subscriptions-claude.*` | Subscriptions: cost, currency, renews, Use (T/A) / Unused (P/C) | Awaiting user's edits |
 | `finance/tracked/savings-pockets-claude.*` | 4 glue-on pocket spaces with goal, pocket # and Reached | Awaiting user's edits |
-| `finance/tracked/goals-claude.*` | Wants list: includes, wanted on, est. cost | Awaiting user's edits |
-| `finance/tracked/cash-pocket-claude.*` | Laminated current cash (EUR/GBP/USD/other) + notes | Awaiting user's edits |
+| `finance/tracked/goals-claude.*` | Wants list: description, wanted on, est. cost | Awaiting user's edits |
+| `finance/tracked/cash-pocket-claude.*` | Laminated current cash (EUR/GBP/USD/other) + cash pocket space | Awaiting user's edits |
 | `finance/tracked/groceries-weekly-claude.*` | Laminated weekly groceries: cost, Eaten / Freezer / Pantry | Awaiting user's edits |
 | `finance/tracked/pantry-stock-claude.*` | 5 pantry items: donut, count, meal ideas | Awaiting user's edits |
 | `finance/tracked/freezer-stock-claude.*` | 5 freezer items: donut, count, meal ideas | Awaiting user's edits |
