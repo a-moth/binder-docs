@@ -1,0 +1,8 @@
+<!-- @license lucide-static v1.60.0 - ISC -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><clipPath id="tile"><path d="M7 0H21.5A2.5 2.5 0 0 1 24 2.5V17A7 7 0 0 1 17 24H2.5A2.5 2.5 0 0 1 0 21.5V7A7 7 0 0 1 7 0Z"/></clipPath><g clip-path="url(#tile)"><rect width="24" height="24" fill="#626E7A"/></g><path d="M7.0 0.5H21.5A2.0 2.0 0 0 1 23.5 2.5V17.0A6.5 6.5 0 0 1 17.0 23.5H2.5A2.0 2.0 0 0 1 0.5 21.5V7.0A6.5 6.5 0 0 1 7.0 0.5Z" fill="none" stroke="#988C78"/><g transform="translate(12 12) scale(0.7) translate(-12 -12)" fill="none" stroke="#EAD7AD" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M13 5h8" />
+  <path d="M13 12h8" />
+  <path d="M13 19h8" />
+  <path d="m3 17 2 2 4-4" />
+  <path d="m3 7 2 2 4-4" />
+</g></svg>

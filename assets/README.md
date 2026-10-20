@@ -21,6 +21,9 @@ Section colours: core `#B6BCC0` · finance `#5F6C42` · home `#715C4D` · health
 work `#8B7D78` · learning `#A3AF9F` · resources `#E0C1B6` (Media pink; Resources replaces
 Media) · archive `#A08A75` · travel `#DAD0C4` (reserve beige, the spare cardstock).
 
+Checklist tiles: `<area>/list-checks-admin.*` is the checklist in Autumn cream (`#EAD7AD`) on
+an Admin-blue (`#626E7A`) rounded tile with the taupe outline, used on every page except Work.
+
 Special variant: `work/list-checks-pride.*` is a Lucide icon drawn in brand ink (`#3A1A08`) on
 diagonal stripes in disability-flag order (physical, neurodivergent, invisible, psychiatric,
 sensory), using the brand pride colours, with a taupe (`#988C78`) outline. It's used for the Work

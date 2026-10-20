@@ -72,6 +72,8 @@ PRIDE_TILES = {"work": ["list-checks"]}
 PRIDE_ORDER = ["physical", "neurodivergent", "invisible", "psychiatric", "sensory"]
 INK = "#3A1A08"      # hb-ink: brand text colour, used on all pride colours
 OUTLINE = "#988C78"  # mark-outline taupe
+ADMIN = "#626E7A"    # Admin cardstock blue (Ask Herby Design System)
+CREAM_INK = "#EAD7AD"  # Autumn cream base, the icon colour on Admin blue
 
 # Pride tile corners: top-left/bottom-right big, top-right/bottom-left small.
 TILE_RADII = (7, 2.5, 7, 2.5)  # tl, tr, br, bl on the 24 px grid
@@ -87,23 +89,33 @@ def rounded_rect(x, y, w, h, radii):
             f"V{y + tl}A{tl} {tl} 0 0 1 {x + tl} {y}Z")
 
 
-def pride_tile(svg):
-    """Lucide icon in ink on diagonal stripes in disability-flag order."""
+def tile(svg, background, ink):
+    """Lucide icon drawn in `ink` on a rounded tile filled with `background` (SVG markup)."""
     body = re.search(r"<svg[^>]*>(.*)</svg>", svg, re.S)[1]
+    return (
+        '<!-- @license lucide-static v' + LUCIDE_VERSION + ' - ISC -->\n'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">'
+        '<clipPath id="tile"><path d="' + rounded_rect(0, 0, 24, 24, TILE_RADII) + '"/></clipPath>'
+        f'<g clip-path="url(#tile)">{background}</g>'
+        f'<path d="{rounded_rect(0.5, 0.5, 23, 23, [r - 0.5 for r in TILE_RADII])}" fill="none" stroke="{OUTLINE}"/>'
+        f'<g transform="translate(12 12) scale(0.7) translate(-12 -12)" fill="none" '
+        f'stroke="{ink}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'
+        f"{body}</g></svg>\n")
+
+
+def pride_tile(svg):
+    """Lucide icon in brand ink on diagonal stripes in disability-flag order."""
     band = 24 * 2 ** 0.5 / len(PRIDE_ORDER)
     stripes = "".join(
         f'<rect x="-12" y="{12 - 2.5 * band + i * band:.3f}" width="48" '
         f'height="{band + 0.05:.3f}" fill="{COLOURS[c]}"/>'
         for i, c in enumerate(PRIDE_ORDER))
-    return (
-        '<!-- @license lucide-static v' + LUCIDE_VERSION + ' - ISC -->\n'
-        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">'
-        '<clipPath id="tile"><path d="' + rounded_rect(0, 0, 24, 24, TILE_RADII) + '"/></clipPath>'
-        f'<g clip-path="url(#tile)"><g transform="rotate(45 12 12)">{stripes}</g></g>'
-        f'<path d="{rounded_rect(0.5, 0.5, 23, 23, [r - 0.5 for r in TILE_RADII])}" fill="none" stroke="{OUTLINE}"/>'
-        f'<g transform="translate(12 12) scale(0.7) translate(-12 -12)" fill="none" '
-        f'stroke="{INK}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'
-        f"{body}</g></svg>\n")
+    return tile(svg, f'<g transform="rotate(45 12 12)">{stripes}</g>', INK)
+
+
+def admin_tile(svg):
+    """Lucide icon in cream on a plain Admin-blue tile."""
+    return tile(svg, f'<rect width="24" height="24" fill="{ADMIN}"/>', CREAM_INK)
 
 
 def write(stem, svg):
@@ -133,6 +145,7 @@ def main():
                 write(out / f"{icon}-{cname}", svg.replace("currentColor", hexcode))
         for icon in PRIDE_TILES.get(area, []):
             write(out / f"{icon}-pride", pride_tile(lucide(icon)))
+        write(out / "list-checks-admin", admin_tile(lucide("list-checks")))
         print(f"{area}: {len(icons)} icons x {len(colours)} colours")
 
 

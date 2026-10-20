@@ -3,8 +3,8 @@
 
 Usage: python3 scripts/relink-images.py
 Rules:
-  checklist.png         -> assets/<area>/list-checks-section.png  (page's area colour;
-                           Work uses the pride-stripe tile list-checks-pride.png)
+  checklist.png         -> assets/<area>/list-checks-admin.png  (cream on an Admin-blue
+                           tile; Work uses the pride-stripe tile list-checks-pride.png)
   section divider icons -> assets/<area>/<icon>-brown-highlight.png
                            (dividers print on cardstock in the section colour)
   other Lucide icons    -> assets/core/<icon>-brown-highlight.png
@@ -33,15 +33,16 @@ CORE_ICONS = {
     "signpointingright.png": "core/signpost-brown-highlight.png",
     "brownleaves.png": "core/leaf-brown-highlight.png",
 }
-# Areas whose checklist uses a special variant instead of the section colour.
+# Checklist variant per area: Admin-blue tile by default, Work keeps the pride tile.
 CHECKLIST_VARIANT = {"work": "pride"}
+CHECKLIST_DEFAULT = "admin"
 CUSTOM = {"mushroomvarious.png", "bigmushroom.png"}
 
 
 def target(pfile, area):
     name = pfile.split("/")[-1]
     if name == "checklist.png":
-        return f"{area}/list-checks-{CHECKLIST_VARIANT.get(area, 'section')}.png"
+        return f"{area}/list-checks-{CHECKLIST_VARIANT.get(area, CHECKLIST_DEFAULT)}.png"
     if name in CORE_ICONS:
         return CORE_ICONS[name]
     if name.startswith("list-checks-"):
