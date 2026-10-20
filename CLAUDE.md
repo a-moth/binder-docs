@@ -97,6 +97,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
     each task has **Item #** and **Month** boxes pointing to its cost in
     Finance. A paper holder sits behind each project page (not mentioned on
     the page). No mushroom on this page.
+- **Home › Inventory**: Item · Replacement (cost to replace) · Currency · Room.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -202,6 +203,8 @@ home/
 home/progress/
   rooms-progress-claude.sla/.pdf   4 rooms: donut + 10 project lines each (Claude draft)
   project-claude.sla/.pdf          one project per page (Claude draft)
+home/inventory/
+  inventory-claude.sla/.pdf        Item · Replacement · Currency · Room (Claude draft)
 home/strategy/cleaning/
   cleaning-docs-templates(-fillable).sla/.pdf   10 focus/task worksheets
 work/projects/
@@ -214,7 +217,8 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               split-sla-page.py · export-pdf.sh · setup-tools.sh ·
                               sla_build.py (page-drawing helpers) · build-finance-tracked.py ·
                               build-finance-daily.py · build-finance-digitise.py ·
-                              build-home-yearly.py · build-home-progress.py
+                              build-home-yearly.py · build-home-progress.py ·
+                              build-home-inventory.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -228,7 +232,7 @@ down, Task break down, Set up environment.
 | Section   | Main area | Sub-tabs → status |
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
-| Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory ⬜ |
+| Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory 📝 (draft) |
 | Health    | Yearly ⬜ | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
@@ -278,3 +282,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `home/yearly-tasks-claude.*` | Yearly home tasks: annual / biannual / quarterly, each with When + Length | Awaiting user's edits |
 | `home/progress/rooms-progress-claude.*` | Rooms progress: 4 rooms, donut + 10 tick-off project lines | Awaiting user's edits |
 | `home/progress/project-claude.*` | Project: donut + started, title, taped notes, tasks with Finance item # / month | Awaiting user's edits |
+| `home/inventory/inventory-claude.*` | Inventory: item, replacement cost + currency, room | Awaiting user's edits |
