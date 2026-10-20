@@ -87,6 +87,15 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Home › Yearly** is for tasks, not costs: Annual / Biannual / Quarterly
   home tasks (the user's word is "tasks", not "jobs"), same layout as Finance Yearly.
   Under each task: **When** (month/date to do it) and **Length** (estimated time; the user's word is "Length").
+- **Home › Progress** (both pages laminated, no instructions on them):
+  - Rooms page: Bedroom, Office, Living room, Kitchen, each with a progress
+    donut and up to 10 current-project lines to tick off.
+  - Project page: one project per page, printed in multiples, in no fixed
+    order. Donut top left with a Started date under it (no Done date). Title
+    and a large taped-notes area to the right of the donut. Task list where
+    each task has **Item #** and **Month** boxes pointing to its cost in
+    Finance. A paper holder sits behind each project page (not mentioned on
+    the page). No mushroom on this page.
 - Goals are wants: date first wanted (to decide later whether to erase it or
   keep it until it gets a pocket) and estimated cost, compared with savings at a
   glance. Savings pockets are folded and glued/taped to the page, with the goal
@@ -189,6 +198,9 @@ finance/
     budget-pages-1.pdf          one-off: Monthly, Yearly, Daily log Mon–Sun
 home/
   yearly-tasks-claude.sla/.pdf  Yearly home tasks (section main area, Claude draft)
+home/progress/
+  rooms-progress-claude.sla/.pdf   4 rooms: donut + 10 project lines each (Claude draft)
+  project-claude.sla/.pdf          one project per page (Claude draft)
 home/strategy/cleaning/
   cleaning-docs-templates(-fillable).sla/.pdf   10 focus/task worksheets
 work/projects/
@@ -201,7 +213,7 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               split-sla-page.py · export-pdf.sh · setup-tools.sh ·
                               sla_build.py (page-drawing helpers) · build-finance-tracked.py ·
                               build-finance-daily.py · build-finance-digitise.py ·
-                              build-home-yearly.py
+                              build-home-yearly.py · build-home-progress.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -215,7 +227,7 @@ down, Task break down, Set up environment.
 | Section   | Main area | Sub-tabs → status |
 |-----------|-----------|-------------------|
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
-| Home      | Yearly 📝 (tasks draft) | Progress ⬜ · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory ⬜ |
+| Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly ⬜ · Weekly ⬜ · Inventory ⬜ |
 | Health    | Yearly ⬜ | Letters ⬜ · Diagnoses ⬜ · Treatment ⬜ · Look ahead ⬜ · Potential ⬜ |
 | Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
@@ -263,3 +275,5 @@ Binder files Claude has created (filenames end in `-claude`):
 | `finance/daily/daily-planner-claude.*` | Daily planner: day/date, Admin-blue budget left (3 currencies), costs, transfers | Awaiting user's edits |
 | `finance/digitise/digitised-log-claude.*` | Digitised log: what, amount, saved to (wide), Scanned / Archived | Awaiting user's edits |
 | `home/yearly-tasks-claude.*` | Yearly home tasks: annual / biannual / quarterly, each with When + Length | Awaiting user's edits |
+| `home/progress/rooms-progress-claude.*` | Rooms progress: 4 rooms, donut + 10 tick-off project lines | Awaiting user's edits |
+| `home/progress/project-claude.*` | Project: donut + started, title, taped notes, tasks with Finance item # / month | Awaiting user's edits |
