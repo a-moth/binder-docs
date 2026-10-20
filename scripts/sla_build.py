@@ -52,8 +52,7 @@ class Page:
         self.objects = []
         # Title inside the header bar, right-aligned (as on every existing page).
         self.text(343.2, 41.8, 207.4, 30.4, title, MONO, 20, align=2, valign=1, inset_bottom=5.669)
-        if mushroom:
-            self.image(491.7, 87.5, 89.6891408450705, 92.057336142841, "custom/mushroomvarious.png")
+        self.mushroom = mushroom  # drawn last in write(), so it sits on top (as on the user's pages)
 
     # --- primitives -------------------------------------------------------
     def rect(self, x, y, w, h, fill=CREAM, stroke=BROWN, width=MAIN):
@@ -84,7 +83,8 @@ class Page:
             f'VAlign="{valign}" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" '
             f'path="{p}" copath="{p}" {b} NEXTITEM="-1" BACKITEM="-1">'
             f'<StoryText><DefaultStyle FONT="{font}"{fc}/>'
-            f'<ITEXT FONT="{font}" FONTSIZE="{size}"{fc} CH={quoteattr(s)}/>'
+            + "<para/>".join(f'<ITEXT FONT="{font}" FONTSIZE="{size}"{fc} CH={quoteattr(part)}/>'
+                             for part in s.split("\n")) +
             f'<trail{trail}/></StoryText></PAGEOBJECT>')
 
     def image(self, x, y, w, h, asset):
@@ -136,6 +136,9 @@ class Page:
 
     # --- output -----------------------------------------------------------
     def write(self, rel):
+        if self.mushroom:
+            self.image(491.7, 87.5, 89.6891408450705, 92.057336142841, "custom/mushroomvarious.png")
+            self.mushroom = False
         src = TEMPLATE.read_text(encoding="utf-8")
         head = src[:src.index("<PAGEOBJECT")]
         last = head.rindex("<COLOR ")
