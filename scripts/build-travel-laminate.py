@@ -16,7 +16,7 @@ from sla_build import PAGE_X, PAGE_Y, ROOT, Page
 
 SRC_PAGE = "10"            # laminate sheet in core-layouts.sla
 STRIP_X = (190.0, 280.0)   # page-relative x range of the Health strip
-LABELS = {"LETTERS": ("TRAVEL", None), "DIGANOSES": ("DOCUMENTS", "11"),  # sic: source typo
+LABELS = {"LETTERS": ("TRAVEL", None), "DIAGNOSES": ("DOCUMENTS", "11"),
           "HEALTH": ("PAPERWORK", "11"), "TREATMENT": ("PLANNING", "11")}
 KEEP_SQUARES = 4
 _ids = itertools.count(1_930_000_000, 7919)

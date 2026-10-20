@@ -461,7 +461,7 @@
         <PAGEOBJECT XPOS="341.312462296035" YPOS="9105.93277143174" OwnPage="10" ItemID="34251567" PTYPE="4" WIDTH="76.442253521127" HEIGHT="16.843773281269" FRTYPE="0" CLIPEDIT="0" ROT="270" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L76.4423 0 L76.4423 16.8438 L0 16.8438 L0 0 Z" copath="M0 0 L76.4423 0 L76.4423 16.8438 L0 16.8438 L0 0 Z" gXpos="341.312462296035" gYpos="7342.15324387268" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="1" FONT="Comic Relief Bold" FONTSIZE="11" FCOLOR="Autumn outline of cream base"/>
-                <ITEXT FONT="Comic Relief Bold" FONTSIZE="11" FCOLOR="Autumn outline of cream base" CH="DIGANOSES"/>
+                <ITEXT FONT="Comic Relief Bold" FONTSIZE="11" FCOLOR="Autumn outline of cream base" CH="DIAGNOSES"/>
                 <trail ALIGN="1"/>
             </StoryText>
         </PAGEOBJECT>

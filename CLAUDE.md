@@ -384,7 +384,6 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 - **Design system vs laminate:** the design system lists 9 cardstock sections
   (Front, Admin, Finance, Home, Health, Work, Learning, Media, Archive).
   Resources = Media. Admin blue `#626E7A` is used for the checklist tile.
-- The laminate tab says "DIGANOSES". It should probably read "DIAGNOSES".
 - The core Scribus file also contains the text "DAILYY".
 
 ## Later (parked)
