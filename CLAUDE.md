@@ -417,10 +417,13 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 - **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
 - **Work images missing:** these user files link images that aren't in the repo,
   so their `-claude.pdf` exports have no images (the user's own PDFs do):
-  `work/ask-herby-business-templates-*` (`mark.png`; maybe
-  `assets/custom/ask-herby-mark.png`, not confirmed), `work/client-overview-template-test*`
+  `work/client-overview-template-test*`
   (`../binder/autumn-binder-icons/*.png`), `work/cognitive load day board`
   (`../../Downloads/sun*.png`, `user-round.png`). Re-export once the images are added.
+- **Ask Herby mark:** the `work/ask-herby-business-templates-*` files linked a
+  missing `mark.png` (240 px). With the user's OK they now link
+  `assets/custom/ask-herby-mark.png` (same mark, 375 px), with the frame scale
+  adjusted so it prints at the same size.
 - **PDFs:** every `.sla` was re-exported (plain + fillable) with windowed Scribus
   1.6.3. The user's older exports (`core/core-layouts-*.pdf`, the cleaning PDFs,
   `budget-pages-1.pdf`) are kept as they were, next to the new `-claude.pdf`.
