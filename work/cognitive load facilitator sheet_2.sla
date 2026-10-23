@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.6.3">
+    <DOCUMENT ANZPAGES="2" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="1" DFONT="DejaVu Sans Book" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="1" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPPr="ISO Coated v2 300% (basICColor)" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="ISO Coated v2 300% (basICColor)" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="ISO Coated v2 300% (basICColor)" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="en_GB" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20.001" MAJGRID="100.001" SHOWGRID="0" SHOWGUIDES="0" showcolborders="0" SHOWFRAME="0" SHOWControl="0" SHOWLAYERM="0" SHOWMARGIN="0" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="0" showrulers="0" showBleed="0" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.502" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20.001" ScratchLeft="100.001" ScratchRight="100.001" ScratchTop="20.001" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10.001" dispY="10.001" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="2 0 4 1 3" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PDF 1.4" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF 1.6" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-1a" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="1" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="1" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PDF/X-4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="1" checkFontNotEmbedded="1" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
+        <COLOR NAME="Black" SPACE="CMYK" C="0" M="0" Y="0" K="100"/>
+        <COLOR NAME="Blue" SPACE="RGB" R="0" G="0" B="255"/>
+        <COLOR NAME="Cool Black" SPACE="CMYK" C="60" M="0" Y="0" K="100"/>
+        <COLOR NAME="Cyan" SPACE="CMYK" C="100" M="0" Y="0" K="0"/>
+        <COLOR NAME="Green" SPACE="RGB" R="0" G="255" B="0"/>
+        <COLOR NAME="Magenta" SPACE="CMYK" C="0" M="100" Y="0" K="0"/>
+        <COLOR NAME="Red" SPACE="RGB" R="255" G="0" B="0"/>
+        <COLOR NAME="Registration" SPACE="CMYK" C="100" M="100" Y="100" K="100" Register="1"/>
+        <COLOR NAME="Rich Black" SPACE="CMYK" C="60" M="40" Y="40" K="100"/>
+        <COLOR NAME="Warm Black" SPACE="CMYK" C="0" M="60" Y="29.8039215686275" K="100"/>
+        <COLOR NAME="White" SPACE="CMYK" C="0" M="0" Y="0" K="0"/>
+        <COLOR NAME="Yellow" SPACE="CMYK" C="0" M="0" Y="100" K="0"/>
+        <COLOR NAME="alert" SPACE="CMYK" C="15" M="35" Y="15" K="0"/>
+        <COLOR NAME="base" SPACE="CMYK" C="0" M="0" Y="10" K="5"/>
+        <COLOR NAME="caution" SPACE="CMYK" C="0" M="0" Y="20" K="20"/>
+        <COLOR NAME="ink" SPACE="RGB" R="34" G="34" B="38"/>
+        <COLOR NAME="muted" SPACE="RGB" R="91" G="90" B="96"/>
+        <COLOR NAME="orchid" SPACE="RGB" R="216" G="175" B="190"/>
+        <COLOR NAME="outline" SPACE="RGB" R="88" G="87" B="92"/>
+        <COLOR NAME="paper" SPACE="RGB" R="255" G="255" B="255"/>
+        <COLOR NAME="rule" SPACE="RGB" R="88" G="87" B="92"/>
+        <COLOR NAME="straw" SPACE="RGB" R="219" G="213" B="185"/>
+        <COLOR NAME="work-admin" SPACE="RGB" R="222" G="218" B="208"/>
+        <COLOR NAME="work-general" SPACE="RGB" R="143" G="174" B="189"/>
+        <COLOR NAME="work-interpersonal" SPACE="RGB" R="216" G="198" B="138"/>
+        <COLOR NAME="work-legal" SPACE="RGB" R="127" G="158" B="124"/>
+        <COLOR NAME="work-travel" SPACE="RGB" R="192" G="125" B="120"/>
+        <HYPHEN/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="DejaVu Sans Book" FONTSIZE="12" FONTFEATURES="" FEATURES="inherit" FCOLOR="Black" FSHADE="100" HyphenWordMin="3" SCOLOR="Black" BGCOLOR="None" BGSHADE="100" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="en_GB"/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" DIRECTION="0" LINESPMode="0" LINESP="18" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" ParagraphEffectOffset="0" DROP="0" DROPLIN="2" Bullet="0" Numeration="0" HyphenConsecutiveLines="2" KeepLinesStart="0" BCOLOR="None" BSHADE="100" FONT="Latin Modern Mono 10 Italic" FONTFEATURES="-liga,-clig"/>
+        <STYLE NAME="Title" ALIGN="1" OpticalMargins="14" FONT="Latin Modern Mono 12 Regular" FONTSIZE="24" FONTFEATURES="-liga,-clig" FSHADE="100" BGCOLOR="None" BGSHADE="100"/>
+        <STYLE NAME="Intro text" FONT="Latin Modern Mono 10 Italic" FONTSIZE="18"/>
+        <TableStyle NAME="Default Table Style" DefaultStyle="1" FillColor="None" FillShade="100">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </TableStyle>
+        <CellStyle NAME="Default Cell Style" DefaultStyle="1" FillColor="None" FillShade="100" LeftPadding="1" RightPadding="1" TopPadding="1" BottomPadding="1">
+            <TableBorderLeft>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderLeft>
+            <TableBorderRight>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderRight>
+            <TableBorderTop>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderTop>
+            <TableBorderBottom>
+                <TableBorderLine Width="1" PenStyle="1" Color="Black" Shade="100"/>
+            </TableBorderBottom>
+        </CellStyle>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" SELECT="0" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="1" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PrintEngine="3" markLength="20.0013" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="KONICA-MINOLTA-WPH" filename="" separationName="All" printerCommand=""/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="0" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="ISO Coated v2 300% (basICColor)" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="20.0012598425197" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="0" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="1" PageLayout="0" openAction="">
+            <Subset Name="Latin Modern Sans 10 Bold"/>
+            <Subset Name="Latin Modern Sans 10 Oblique"/>
+            <Subset Name="Latin Modern Sans 10 Regular"/>
+            <LPI Color="" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <NotesStyles>
+            <notesStyle Name="Default" Start="1" Endnotes="0" Type="Type_1_2_3" Range="0" Prefix="" Suffix=")" AutoHeight="1" AutoWidth="1" AutoRemove="1" AutoWeld="1" SuperNote="1" SuperMaster="1" MarksStyle="" NotesStyle=""/>
+        </NotesStyles>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Facing Pages" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="Section 1" From="0" To="1" Type="Type_1_2_3" Start="1" Reversed="0" Active="1" FillChar="0" FieldWidth="0"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" NUM="0" NAM="Normal" MNAM="" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="20.001" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" NUM="0" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGE PAGEXPOS="100.001" PAGEYPOS="901.890763779528" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" NUM="1" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0" pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+        <PAGEOBJECT XPOS="120.001" YPOS="40.001" OwnPage="0" ItemID="1837443495" PTYPE="6" WIDTH="555.275590551181" HEIGHT="801.889763779528" FRTYPE="0" CLIPEDIT="1" PWIDTH="2.5" PCOLOR2="straw" PLINEART="1" ANNAME="Page frame" path="M0 0 L555.276 0 L555.276 801.89 L0 801.89 L0 0 Z" copath="M0 0 L555.276 0 L555.276 801.89 L0 801.89 L0 0 Z" gXpos="120.001" gYpos="40.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="120.001" YPOS="921.890763779528" OwnPage="1" ItemID="1837470503" PTYPE="6" WIDTH="555.275590551181" HEIGHT="801.889763779528" FRTYPE="0" CLIPEDIT="1" PWIDTH="2.5" PCOLOR2="straw" PLINEART="1" ANNAME="Copy of Page frame" path="M0 0 L555.276 0 L555.276 801.89 L0 801.89 L0 0 Z" copath="M0 0 L555.276 0 L555.276 801.89 L0 801.89 L0 0 Z" gXpos="120.001" gYpos="921.890763779528" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="140.001" YPOS="60.001" OwnPage="0" ItemID="1837438551" PTYPE="4" WIDTH="515.275590551181" HEIGHT="24" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Title" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 24 L0 24 L0 0 Z" copath="M0 0 L515.276 0 L515.276 24 L0 24 L0 0 Z" gXpos="140.001" gYpos="60.001" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="21" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="17.3" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="17.3" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Facilitator Sheet"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="21" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="83.001" OwnPage="0" ItemID="1837540951" PTYPE="4" WIDTH="515.275590551181" HEIGHT="16" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Subtitle" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 16 L0 16 L0 0 Z" copath="M0 0 L515.276 0 L515.276 16 L0 16 L0 0 Z" gXpos="140.001" gYpos="83.001" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="14" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="11" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Oblique" FONTSIZE="11" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cognitive load workshop  ·  about 60 minutes  ·  teams of 3 to 5"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="14" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="107.001" OwnPage="0" ItemID="1837375239" PTYPE="6" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="You need header" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="107.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="148.001" YPOS="110.001" OwnPage="0" ItemID="1837399143" PTYPE="4" WIDTH="499.275590551181" HEIGHT="16" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="You need header text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L499.276 0 L499.276 16 L0 16 L0 0 Z" copath="M0 0 L499.276 0 L499.276 16 L0 16 L0 0 Z" gXpos="148.001" gYpos="110.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="14" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="11" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="11" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="You need"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="14" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="127.001" OwnPage="0" ItemID="1837595991" PTYPE="6" WIDTH="515.275590551181" HEIGHT="80" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="You need box" path="M0 0 L515.276 0 L515.276 80 L0 80 L0 0 Z" copath="M0 0 L515.276 0 L515.276 80 L0 80 L0 0 Z" gXpos="140.001" gYpos="127.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="148.001" YPOS="135.001" OwnPage="0" ItemID="1837526215" PTYPE="4" WIDTH="499.275590551181" HEIGHT="64" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="You need text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L499.276 0 L499.276 64 L0 64 L0 0 Z" copath="M0 0 L499.276 0 L499.276 64 L0 64 L0 0 Z" gXpos="148.001" gYpos="135.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Per team: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="One Day board, one full set of cut cards (Cards sheets 1 to 4), a pen and a coin or marker."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Per person: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="The Cognitive Load at Work guide (2 pages), to look things up during each round."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Before you start: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Give each team a different person card from Cards sheet 1, top row. Keep the Team colleague (sheet 1, row 2, first card) aside for round 4."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="221.001" OwnPage="0" ItemID="1837815191" PTYPE="4" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Heading: Where to look" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="221.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="14.4" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="14.4" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Where to look"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="243.001" OwnPage="0" ItemID="1837580727" PTYPE="4" WIDTH="515.275590551181" HEIGHT="200" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Where to look text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 200 L0 200 L0 0 Z" copath="M0 0 L515.276 0 L515.276 200 L0 200 L0 0 Z" gXpos="140.001" gYpos="243.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Guide: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cognitive Load at Work, 2 pages. Referred to by page and section heading."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Day board: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Person card and Constraint card spaces (left), three time slots with This slot and Running total boxes, the Load track and the rounds strip (bottom)."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Sheet 1: people and constraints. Sheets 2 and 3: demand cards. Sheets 3 and 4: change cards. Sheet 4: blank cards."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="On a card: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Top strip: points or the overload line, and the white tag (load type or lever). Body: what it is. Bottom line: work type, or Needs on change cards."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="365.001" OwnPage="0" ItemID="1837925511" PTYPE="4" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Heading: Rounds" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="365.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="14.4" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="14.4" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Rounds"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="387.001" OwnPage="0" ItemID="1837949639" PTYPE="6" WIDTH="20" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds head 0" path="M0 0 L20 0 L20 18 L0 18 L0 0 Z" copath="M0 0 L20 0 L20 18 L0 18 L0 0 Z" gXpos="140.001" gYpos="387.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="160.001" YPOS="387.001" OwnPage="0" ItemID="1837521015" PTYPE="6" WIDTH="70" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds head 1" path="M0 0 L70 0 L70 18 L0 18 L0 0 Z" copath="M0 0 L70 0 L70 18 L0 18 L0 0 Z" gXpos="160.001" gYpos="387.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="165.001" YPOS="390.001" OwnPage="0" ItemID="1837612247" PTYPE="4" WIDTH="60" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds head 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L60 0 L60 13 L0 13 L0 0 Z" copath="M0 0 L60 0 L60 13 L0 13 L0 0 Z" gXpos="165.001" gYpos="390.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Round"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="230.001" YPOS="387.001" OwnPage="0" ItemID="1838110999" PTYPE="6" WIDTH="42" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds head 2" path="M0 0 L42 0 L42 18 L0 18 L0 0 Z" copath="M0 0 L42 0 L42 18 L0 18 L0 0 Z" gXpos="230.001" gYpos="387.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="235.001" YPOS="390.001" OwnPage="0" ItemID="1838202487" PTYPE="4" WIDTH="32" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds head 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32 0 L32 13 L0 13 L0 0 Z" copath="M0 0 L32 0 L32 13 L0 13 L0 0 Z" gXpos="235.001" gYpos="390.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Time"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="272.001" YPOS="387.001" OwnPage="0" ItemID="1838250023" PTYPE="6" WIDTH="233.275590551181" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds head 3" path="M0 0 L233.276 0 L233.276 18 L0 18 L0 0 Z" copath="M0 0 L233.276 0 L233.276 18 L0 18 L0 0 Z" gXpos="272.001" gYpos="387.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="277.001" YPOS="390.001" OwnPage="0" ItemID="1838242951" PTYPE="4" WIDTH="223.275590551181" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds head 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L223.276 0 L223.276 13 L0 13 L0 0 Z" copath="M0 0 L223.276 0 L223.276 13 L0 13 L0 0 Z" gXpos="277.001" gYpos="390.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="What teams do"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="505.276590551181" YPOS="387.001" OwnPage="0" ItemID="1838300487" PTYPE="6" WIDTH="150" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds head 4" path="M0 0 L150 0 L150 18 L0 18 L0 0 Z" copath="M0 0 L150 0 L150 18 L0 18 L0 0 Z" gXpos="505.276590551181" gYpos="387.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="510.276590551181" YPOS="390.001" OwnPage="0" ItemID="1838235559" PTYPE="4" WIDTH="140" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds head 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L140 0 L140 13 L0 13 L0 0 Z" copath="M0 0 L140 0 L140 13 L0 13 L0 0 Z" gXpos="510.276590551181" gYpos="390.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Where to look"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="405.001" OwnPage="0" ItemID="1838396455" PTYPE="6" WIDTH="20" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 1 cell 1" path="M0 0 L20 0 L20 89.2 L0 89.2 L0 0 Z" copath="M0 0 L20 0 L20 89.2 L0 89.2 L0 0 Z" gXpos="140.001" gYpos="405.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="410.001" OwnPage="0" ItemID="1838290023" PTYPE="4" WIDTH="10" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 1 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L10 0 L10 81.2 L0 81.2 L0 0 Z" copath="M0 0 L10 0 L10 81.2 L0 81.2 L0 0 Z" gXpos="145.001" gYpos="410.001" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="1"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="160.001" YPOS="405.001" OwnPage="0" ItemID="1838405639" PTYPE="6" WIDTH="70" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 1 cell 2" path="M0 0 L70 0 L70 89.2 L0 89.2 L0 0 Z" copath="M0 0 L70 0 L70 89.2 L0 89.2 L0 0 Z" gXpos="160.001" gYpos="405.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="165.001" YPOS="410.001" OwnPage="0" ItemID="1838363063" PTYPE="4" WIDTH="60" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 1 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L60 0 L60 81.2 L0 81.2 L0 0 Z" copath="M0 0 L60 0 L60 81.2 L0 81.2 L0 0 Z" gXpos="165.001" gYpos="410.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Build the day"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="230.001" YPOS="405.001" OwnPage="0" ItemID="1838356743" PTYPE="6" WIDTH="42" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 1 cell 3" path="M0 0 L42 0 L42 89.2 L0 89.2 L0 0 Z" copath="M0 0 L42 0 L42 89.2 L0 89.2 L0 0 Z" gXpos="230.001" gYpos="405.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="235.001" YPOS="410.001" OwnPage="0" ItemID="1838382679" PTYPE="4" WIDTH="32" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 1 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32 0 L32 81.2 L0 81.2 L0 0 Z" copath="M0 0 L32 0 L32 81.2 L0 81.2 L0 0 Z" gXpos="235.001" gYpos="410.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="10 min"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="272.001" YPOS="405.001" OwnPage="0" ItemID="1838473159" PTYPE="6" WIDTH="233.275590551181" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 1 cell 4" path="M0 0 L233.276 0 L233.276 89.2 L0 89.2 L0 0 Z" copath="M0 0 L233.276 0 L233.276 89.2 L0 89.2 L0 0 Z" gXpos="272.001" gYpos="405.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="277.001" YPOS="410.001" OwnPage="0" ItemID="1838463815" PTYPE="4" WIDTH="223.275590551181" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 1 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L223.276 0 L223.276 81.2 L0 81.2 L0 0 Z" copath="M0 0 L223.276 0 L223.276 81.2 L0 81.2 L0 0 Z" gXpos="277.001" gYpos="410.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Put the person card in the Day board's Person card space. Lay out the suggested day (page 2) in the time slots. For each card, take the points in its top strip and add the person card's Costs more. Write each slot's sum in This slot and the day so far in Running total. Move the marker on the Load track."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="505.276590551181" YPOS="405.001" OwnPage="0" ItemID="1838383207" PTYPE="6" WIDTH="150" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 1 cell 5" path="M0 0 L150 0 L150 89.2 L0 89.2 L0 0 Z" copath="M0 0 L150 0 L150 89.2 L0 89.2 L0 0 Z" gXpos="505.276590551181" gYpos="405.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="510.276590551181" YPOS="410.001" OwnPage="0" ItemID="1838408903" PTYPE="4" WIDTH="140" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 1 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L140 0 L140 81.2 L0 81.2 L0 0 Z" copath="M0 0 L140 0 L140 81.2 L0 81.2 L0 0 Z" gXpos="510.276590551181" gYpos="410.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Guide p.1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Four kinds of load"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Person card"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="body: Starts at, Costs more"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Demand card"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="top strip: points, load type"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="494.201" OwnPage="0" ItemID="1838852343" PTYPE="6" WIDTH="20" HEIGHT="61.8" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 2 cell 1" path="M0 0 L20 0 L20 61.8 L0 61.8 L0 0 Z" copath="M0 0 L20 0 L20 61.8 L0 61.8 L0 0 Z" gXpos="140.001" gYpos="494.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="499.201" OwnPage="0" ItemID="1838845271" PTYPE="4" WIDTH="10" HEIGHT="53.8" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 2 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L10 0 L10 53.8 L0 53.8 L0 0 Z" copath="M0 0 L10 0 L10 53.8 L0 53.8 L0 0 Z" gXpos="145.001" gYpos="499.201" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="2"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="160.001" YPOS="494.201" OwnPage="0" ItemID="1838516439" PTYPE="6" WIDTH="70" HEIGHT="61.8" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 2 cell 2" path="M0 0 L70 0 L70 61.8 L0 61.8 L0 0 Z" copath="M0 0 L70 0 L70 61.8 L0 61.8 L0 0 Z" gXpos="160.001" gYpos="494.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="165.001" YPOS="499.201" OwnPage="0" ItemID="1838542135" PTYPE="4" WIDTH="60" HEIGHT="53.8" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 2 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L60 0 L60 53.8 L0 53.8 L0 0 Z" copath="M0 0 L60 0 L60 53.8 L0 53.8 L0 0 Z" gXpos="165.001" gYpos="499.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Find the peak"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="230.001" YPOS="494.201" OwnPage="0" ItemID="1838871927" PTYPE="6" WIDTH="42" HEIGHT="61.8" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 2 cell 3" path="M0 0 L42 0 L42 61.8 L0 61.8 L0 0 Z" copath="M0 0 L42 0 L42 61.8 L0 61.8 L0 0 Z" gXpos="230.001" gYpos="494.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="235.001" YPOS="499.201" OwnPage="0" ItemID="1838864855" PTYPE="4" WIDTH="32" HEIGHT="53.8" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 2 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32 0 L32 53.8 L0 53.8 L0 0 Z" copath="M0 0 L32 0 L32 53.8 L0 53.8 L0 0 Z" gXpos="235.001" gYpos="499.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="10 min"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="272.001" YPOS="494.201" OwnPage="0" ItemID="1838836775" PTYPE="6" WIDTH="233.275590551181" HEIGHT="61.8" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 2 cell 4" path="M0 0 L233.276 0 L233.276 61.8 L0 61.8 L0 0 Z" copath="M0 0 L233.276 0 L233.276 61.8 L0 61.8 L0 0 Z" gXpos="272.001" gYpos="494.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="277.001" YPOS="499.201" OwnPage="0" ItemID="1838837895" PTYPE="4" WIDTH="223.275590551181" HEIGHT="53.8" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 2 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L223.276 0 L223.276 53.8 L0 53.8 L0 0 Z" copath="M0 0 L223.276 0 L223.276 53.8 L0 53.8 L0 0 Z" gXpos="277.001" gYpos="499.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Draw the overload line on the Load track, using the number in the person card's top strip. Circle the first time slot whose Running total passes it. What would a manager see or hear at that moment?"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="505.276590551181" YPOS="494.201" OwnPage="0" ItemID="1838419079" PTYPE="6" WIDTH="150" HEIGHT="61.8" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 2 cell 5" path="M0 0 L150 0 L150 61.8 L0 61.8 L0 0 Z" copath="M0 0 L150 0 L150 61.8 L0 61.8 L0 0 Z" gXpos="505.276590551181" gYpos="494.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="510.276590551181" YPOS="499.201" OwnPage="0" ItemID="1838420455" PTYPE="4" WIDTH="140" HEIGHT="53.8" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 2 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L140 0 L140 53.8 L0 53.8 L0 0 Z" copath="M0 0 L140 0 L140 53.8 L0 53.8 L0 0 Z" gXpos="510.276590551181" gYpos="499.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Day board"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Load track"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Guide p.2"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Signs of overload, pink box"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="556.001" OwnPage="0" ItemID="1839131319" PTYPE="6" WIDTH="20" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 3 cell 1" path="M0 0 L20 0 L20 89.2 L0 89.2 L0 0 Z" copath="M0 0 L20 0 L20 89.2 L0 89.2 L0 0 Z" gXpos="140.001" gYpos="556.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="561.001" OwnPage="0" ItemID="1839124247" PTYPE="4" WIDTH="10" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 3 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L10 0 L10 81.2 L0 81.2 L0 0 Z" copath="M0 0 L10 0 L10 81.2 L0 81.2 L0 0 Z" gXpos="145.001" gYpos="561.001" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="3"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="160.001" YPOS="556.001" OwnPage="0" ItemID="1838883383" PTYPE="6" WIDTH="70" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 3 cell 2" path="M0 0 L70 0 L70 89.2 L0 89.2 L0 0 Z" copath="M0 0 L70 0 L70 89.2 L0 89.2 L0 0 Z" gXpos="160.001" gYpos="556.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="165.001" YPOS="561.001" OwnPage="0" ItemID="1838876311" PTYPE="4" WIDTH="60" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 3 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L60 0 L60 81.2 L0 81.2 L0 0 Z" copath="M0 0 L60 0 L60 81.2 L0 81.2 L0 0 Z" gXpos="165.001" gYpos="561.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Change the day"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="230.001" YPOS="556.001" OwnPage="0" ItemID="1839084839" PTYPE="6" WIDTH="42" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 3 cell 3" path="M0 0 L42 0 L42 89.2 L0 89.2 L0 0 Z" copath="M0 0 L42 0 L42 89.2 L0 89.2 L0 0 Z" gXpos="230.001" gYpos="556.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="235.001" YPOS="561.001" OwnPage="0" ItemID="1839077767" PTYPE="4" WIDTH="32" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 3 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32 0 L32 81.2 L0 81.2 L0 0 Z" copath="M0 0 L32 0 L32 81.2 L0 81.2 L0 0 Z" gXpos="235.001" gYpos="561.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="15 min"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="272.001" YPOS="556.001" OwnPage="0" ItemID="1839179783" PTYPE="6" WIDTH="233.275590551181" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 3 cell 4" path="M0 0 L233.276 0 L233.276 89.2 L0 89.2 L0 0 Z" copath="M0 0 L233.276 0 L233.276 89.2 L0 89.2 L0 0 Z" gXpos="272.001" gYpos="556.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="277.001" YPOS="561.001" OwnPage="0" ItemID="1839172967" PTYPE="4" WIDTH="223.275590551181" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 3 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L223.276 0 L223.276 81.2 L0 81.2 L0 0 Z" copath="M0 0 L223.276 0 L223.276 81.2 L0 81.2 L0 0 Z" gXpos="277.001" gYpos="561.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Draw a constraint card and put it in the Constraint card space. Lay change cards on top of the demand they change, then update This slot and Running total. Check each change card's Needs line against the constraint."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="505.276590551181" YPOS="556.001" OwnPage="0" ItemID="1839195047" PTYPE="6" WIDTH="150" HEIGHT="89.2" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 3 cell 5" path="M0 0 L150 0 L150 89.2 L0 89.2 L0 0 Z" copath="M0 0 L150 0 L150 89.2 L0 89.2 L0 0 Z" gXpos="505.276590551181" gYpos="556.001" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="510.276590551181" YPOS="561.001" OwnPage="0" ItemID="1839185927" PTYPE="4" WIDTH="140" HEIGHT="81.2" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 3 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L140 0 L140 81.2 L0 81.2 L0 0 Z" copath="M0 0 L140 0 L140 81.2 L0 81.2 L0 0 Z" gXpos="510.276590551181" gYpos="561.001" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="constraint cards"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheets 3–4"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="change cards, Needs line"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Guide p.2"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Four ways to lower load table"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="645.201" OwnPage="0" ItemID="1839169527" PTYPE="6" WIDTH="20" HEIGHT="73.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 4 cell 1" path="M0 0 L20 0 L20 73.5 L0 73.5 L0 0 Z" copath="M0 0 L20 0 L20 73.5 L0 73.5 L0 0 Z" gXpos="140.001" gYpos="645.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="650.201" OwnPage="0" ItemID="1839160407" PTYPE="4" WIDTH="10" HEIGHT="65.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 4 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L10 0 L10 65.5 L0 65.5 L0 0 Z" copath="M0 0 L10 0 L10 65.5 L0 65.5 L0 0 Z" gXpos="145.001" gYpos="650.201" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="4"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="160.001" YPOS="645.201" OwnPage="0" ItemID="1839410455" PTYPE="6" WIDTH="70" HEIGHT="73.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 4 cell 2" path="M0 0 L70 0 L70 73.5 L0 73.5 L0 0 Z" copath="M0 0 L70 0 L70 73.5 L0 73.5 L0 0 Z" gXpos="160.001" gYpos="645.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="165.001" YPOS="650.201" OwnPage="0" ItemID="1839413863" PTYPE="4" WIDTH="60" HEIGHT="65.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 4 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L60 0 L60 65.5 L0 65.5 L0 0 Z" copath="M0 0 L60 0 L60 65.5 L0 65.5 L0 0 Z" gXpos="165.001" gYpos="650.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Swap the person"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="230.001" YPOS="645.201" OwnPage="0" ItemID="1839427655" PTYPE="6" WIDTH="42" HEIGHT="73.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 4 cell 3" path="M0 0 L42 0 L42 73.5 L0 73.5 L0 0 Z" copath="M0 0 L42 0 L42 73.5 L0 73.5 L0 0 Z" gXpos="230.001" gYpos="645.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="235.001" YPOS="650.201" OwnPage="0" ItemID="1839420583" PTYPE="4" WIDTH="32" HEIGHT="65.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 4 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32 0 L32 65.5 L0 65.5 L0 0 Z" copath="M0 0 L32 0 L32 65.5 L0 65.5 L0 0 Z" gXpos="235.001" gYpos="650.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="10 min"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="272.001" YPOS="645.201" OwnPage="0" ItemID="1839525799" PTYPE="6" WIDTH="233.275590551181" HEIGHT="73.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 4 cell 4" path="M0 0 L233.276 0 L233.276 73.5 L0 73.5 L0 0 Z" copath="M0 0 L233.276 0 L233.276 73.5 L0 73.5 L0 0 Z" gXpos="272.001" gYpos="645.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="277.001" YPOS="650.201" OwnPage="0" ItemID="1839516679" PTYPE="4" WIDTH="223.275590551181" HEIGHT="65.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 4 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L223.276 0 L223.276 65.5 L0 65.5 L0 0 Z" copath="M0 0 L223.276 0 L223.276 65.5 L0 65.5 L0 0 Z" gXpos="277.001" gYpos="650.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Swap the person card for the Team colleague and add the same day up again. Is this a personal need, or a workplace problem?"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="505.276590551181" YPOS="645.201" OwnPage="0" ItemID="1839480647" PTYPE="6" WIDTH="150" HEIGHT="73.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 4 cell 5" path="M0 0 L150 0 L150 73.5 L0 73.5 L0 0 Z" copath="M0 0 L150 0 L150 73.5 L0 73.5 L0 0 Z" gXpos="505.276590551181" gYpos="645.201" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="510.276590551181" YPOS="650.201" OwnPage="0" ItemID="1839465383" PTYPE="4" WIDTH="140" HEIGHT="65.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 4 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L140 0 L140 65.5 L0 65.5 L0 0 Z" copath="M0 0 L140 0 L140 65.5 L0 65.5 L0 0 Z" gXpos="510.276590551181" gYpos="650.201" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="row 2, first card"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Guide p.1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="How load adds up, &quot;It is personal and shared&quot;"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="718.701" OwnPage="0" ItemID="1839578759" PTYPE="6" WIDTH="20" HEIGHT="34.4" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 5 cell 1" path="M0 0 L20 0 L20 34.4 L0 34.4 L0 0 Z" copath="M0 0 L20 0 L20 34.4 L0 34.4 L0 0 Z" gXpos="140.001" gYpos="718.701" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="723.701" OwnPage="0" ItemID="1839563751" PTYPE="4" WIDTH="10" HEIGHT="26.4" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 5 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L10 0 L10 26.4 L0 26.4 L0 0 Z" copath="M0 0 L10 0 L10 26.4 L0 26.4 L0 0 Z" gXpos="145.001" gYpos="723.701" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" CH="5"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="160.001" YPOS="718.701" OwnPage="0" ItemID="1839694119" PTYPE="6" WIDTH="70" HEIGHT="34.4" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 5 cell 2" path="M0 0 L70 0 L70 34.4 L0 34.4 L0 0 Z" copath="M0 0 L70 0 L70 34.4 L0 34.4 L0 0 Z" gXpos="160.001" gYpos="718.701" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="165.001" YPOS="723.701" OwnPage="0" ItemID="1839719815" PTYPE="4" WIDTH="60" HEIGHT="26.4" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 5 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L60 0 L60 26.4 L0 26.4 L0 0 Z" copath="M0 0 L60 0 L60 26.4 L0 26.4 L0 0 Z" gXpos="165.001" gYpos="723.701" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Debrief"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="230.001" YPOS="718.701" OwnPage="0" ItemID="1839661943" PTYPE="6" WIDTH="42" HEIGHT="34.4" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 5 cell 3" path="M0 0 L42 0 L42 34.4 L0 34.4 L0 0 Z" copath="M0 0 L42 0 L42 34.4 L0 34.4 L0 0 Z" gXpos="230.001" gYpos="718.701" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="235.001" YPOS="723.701" OwnPage="0" ItemID="1839687639" PTYPE="4" WIDTH="32" HEIGHT="26.4" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 5 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L32 0 L32 26.4 L0 26.4 L0 0 Z" copath="M0 0 L32 0 L32 26.4 L0 26.4 L0 0 Z" gXpos="235.001" gYpos="723.701" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="15 min"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="272.001" YPOS="718.701" OwnPage="0" ItemID="1839779239" PTYPE="6" WIDTH="233.275590551181" HEIGHT="34.4" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 5 cell 4" path="M0 0 L233.276 0 L233.276 34.4 L0 34.4 L0 0 Z" copath="M0 0 L233.276 0 L233.276 34.4 L0 34.4 L0 0 Z" gXpos="272.001" gYpos="718.701" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="277.001" YPOS="723.701" OwnPage="0" ItemID="1839769895" PTYPE="4" WIDTH="223.275590551181" HEIGHT="26.4" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 5 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L223.276 0 L223.276 26.4 L0 26.4 L0 0 Z" copath="M0 0 L223.276 0 L223.276 26.4 L0 26.4 L0 0 Z" gXpos="277.001" gYpos="723.701" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Whole group, with the questions on page 2."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="505.276590551181" YPOS="718.701" OwnPage="0" ItemID="1839742839" PTYPE="6" WIDTH="150" HEIGHT="34.4" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Rounds row 5 cell 5" path="M0 0 L150 0 L150 34.4 L0 34.4 L0 0 Z" copath="M0 0 L150 0 L150 34.4 L0 34.4 L0 0 Z" gXpos="505.276590551181" gYpos="718.701" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="510.276590551181" YPOS="723.701" OwnPage="0" ItemID="1839727575" PTYPE="4" WIDTH="140" HEIGHT="26.4" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Rounds row 5 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L140 0 L140 26.4 L0 26.4 L0 0 Z" copath="M0 0 L140 0 L140 26.4 L0 26.4 L0 0 Z" gXpos="510.276590551181" gYpos="723.701" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Guide p.2"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Questions to ask"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.7" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="821.890763779528" OwnPage="0" ItemID="1839822535" PTYPE="4" WIDTH="515.275590551181" HEIGHT="12" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Footer" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 12 L0 12 L0 0 Z" copath="M0 0 L515.276 0 L515.276 12 L0 12 L0 0 Z" gXpos="140.001" gYpos="821.890763779528" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="9" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="7.5" FCOLOR="muted"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="7.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Ask Herby  ·  Cognitive load workshop  ·  Facilitator Sheet  ·  page 1 of 2"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="9" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="941.890763779528" OwnPage="1" ItemID="1838923735" PTYPE="4" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Heading: Suggested days" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="941.890763779528" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="14.4" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="14.4" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Suggested days"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="963.890763779528" OwnPage="1" ItemID="1839906919" PTYPE="4" WIDTH="515.275590551181" HEIGHT="80" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days key" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 80 L0 80 L0 0 Z" copath="M0 0 L515.276 0 L515.276 80 L0 80 L0 0 Z" gXpos="140.001" gYpos="963.890763779528" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Each person card is on "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 1"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH=". Their starting load is the "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Starts at"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH=" line in the card body; their overload line is the number in the card's "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="top strip"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH=". The numbers below are what teams should end up writing in the Day board's "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH=" and "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH=" boxes, with the person's Costs more already added."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1013.89076377953" OwnPage="1" ItemID="1839904663" PTYPE="6" WIDTH="108" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Days head 0" path="M0 0 L108 0 L108 18 L0 18 L0 0 Z" copath="M0 0 L108 0 L108 18 L0 18 L0 0 Z" gXpos="140.001" gYpos="1013.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="1016.89076377953" OwnPage="1" ItemID="1839895799" PTYPE="4" WIDTH="98" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days head 0 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L98 0 L98 13 L0 13 L0 0 Z" copath="M0 0 L98 0 L98 13 L0 13 L0 0 Z" gXpos="145.001" gYpos="1016.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Person"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="248.001" YPOS="1013.89076377953" OwnPage="1" ItemID="1839934775" PTYPE="6" WIDTH="101.09186351706" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Days head 1" path="M0 0 L101.092 0 L101.092 18 L0 18 L0 0 Z" copath="M0 0 L101.092 0 L101.092 18 L0 18 L0 0 Z" gXpos="248.001" gYpos="1013.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="253.001" YPOS="1016.89076377953" OwnPage="1" ItemID="1839935895" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days head 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 13 L0 13 L0 0 Z" copath="M0 0 L91.092 0 L91.092 13 L0 13 L0 0 Z" gXpos="253.001" gYpos="1016.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Morning"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="349.09286351706" YPOS="1013.89076377953" OwnPage="1" ItemID="1840140311" PTYPE="6" WIDTH="101.09186351706" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Days head 2" path="M0 0 L101.092 0 L101.092 18 L0 18 L0 0 Z" copath="M0 0 L101.092 0 L101.092 18 L0 18 L0 0 Z" gXpos="349.09286351706" gYpos="1013.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="354.09286351706" YPOS="1016.89076377953" OwnPage="1" ItemID="1840134071" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days head 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 13 L0 13 L0 0 Z" copath="M0 0 L91.092 0 L91.092 13 L0 13 L0 0 Z" gXpos="354.09286351706" gYpos="1016.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Midday"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="450.184727034121" YPOS="1013.89076377953" OwnPage="1" ItemID="1840219431" PTYPE="6" WIDTH="101.09186351706" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Days head 3" path="M0 0 L101.092 0 L101.092 18 L0 18 L0 0 Z" copath="M0 0 L101.092 0 L101.092 18 L0 18 L0 0 Z" gXpos="450.184727034121" gYpos="1013.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="455.184727034121" YPOS="1016.89076377953" OwnPage="1" ItemID="1840242839" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days head 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 13 L0 13 L0 0 Z" copath="M0 0 L91.092 0 L91.092 13 L0 13 L0 0 Z" gXpos="455.184727034121" gYpos="1016.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Afternoon"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="551.276590551181" YPOS="1013.89076377953" OwnPage="1" ItemID="1840209223" PTYPE="6" WIDTH="104" HEIGHT="18" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR="straw" PCOLOR2="rule" PLINEART="1" ANNAME="Days head 4" path="M0 0 L104 0 L104 18 L0 18 L0 0 Z" copath="M0 0 L104 0 L104 18 L0 18 L0 0 Z" gXpos="551.276590551181" gYpos="1013.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="556.276590551181" YPOS="1016.89076377953" OwnPage="1" ItemID="1840195143" PTYPE="4" WIDTH="94" HEIGHT="13" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days head 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L94 0 L94 13 L0 13 L0 0 Z" copath="M0 0 L94 0 L94 13 L0 13 L0 0 Z" gXpos="556.276590551181" gYpos="1016.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Team colleague"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1031.89076377953" OwnPage="1" ItemID="1840296903" PTYPE="6" WIDTH="108" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 1 cell 1" path="M0 0 L108 0 L108 86 L0 86 L0 0 Z" copath="M0 0 L108 0 L108 86 L0 86 L0 0 Z" gXpos="140.001" gYpos="1031.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="1036.89076377953" OwnPage="1" ItemID="1840287783" PTYPE="4" WIDTH="98" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 1 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L98 0 L98 78 L0 78 L0 0 Z" copath="M0 0 L98 0 L98 78 L0 78 L0 0 Z" gXpos="145.001" gYpos="1036.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Design Coordinator"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Cards sheet 1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="row 1, card 1"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="248.001" YPOS="1031.89076377953" OwnPage="1" ItemID="1840368823" PTYPE="6" WIDTH="101.09186351706" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 1 cell 2" path="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" copath="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" gXpos="248.001" gYpos="1031.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="253.001" YPOS="1036.89076377953" OwnPage="1" ItemID="1840369943" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 1 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" copath="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" gXpos="253.001" gYpos="1036.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Rush-hour commute"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Stand-up meeting"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+8"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="11"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="349.09286351706" YPOS="1031.89076377953" OwnPage="1" ItemID="1840319111" PTYPE="6" WIDTH="101.09186351706" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 1 cell 3" path="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" copath="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" gXpos="349.09286351706" gYpos="1031.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="354.09286351706" YPOS="1036.89076377953" OwnPage="1" ItemID="1840345063" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 1 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" copath="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" gXpos="354.09286351706" gYpos="1036.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Team lunch"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+4"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="15"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="450.184727034121" YPOS="1031.89076377953" OwnPage="1" ItemID="1840410183" PTYPE="6" WIDTH="101.09186351706" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 1 cell 4" path="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" copath="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" gXpos="450.184727034121" gYpos="1031.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="455.184727034121" YPOS="1036.89076377953" OwnPage="1" ItemID="1840411303" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 1 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" copath="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" gXpos="455.184727034121" gYpos="1036.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Open-plan noise"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Strong scent"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 3"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+7"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="22"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="551.276590551181" YPOS="1031.89076377953" OwnPage="1" ItemID="1840453415" PTYPE="6" WIDTH="104" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 1 cell 5" path="M0 0 L104 0 L104 86 L0 86 L0 0 Z" copath="M0 0 L104 0 L104 86 L0 86 L0 0 Z" gXpos="551.276590551181" gYpos="1031.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="556.276590551181" YPOS="1036.89076377953" OwnPage="1" ItemID="1840479111" PTYPE="4" WIDTH="94" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 1 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L94 0 L94 78 L0 78 L0 0 Z" copath="M0 0 L94 0 L94 78 L0 78 L0 0 Z" gXpos="556.276590551181" gYpos="1036.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total at the end: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="14"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Compare with the number in the Team colleague card's top strip."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1117.89076377953" OwnPage="1" ItemID="1840602391" PTYPE="6" WIDTH="108" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 2 cell 1" path="M0 0 L108 0 L108 86 L0 86 L0 0 Z" copath="M0 0 L108 0 L108 86 L0 86 L0 0 Z" gXpos="140.001" gYpos="1117.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="1122.89076377953" OwnPage="1" ItemID="1840685687" PTYPE="4" WIDTH="98" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 2 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L98 0 L98 78 L0 78 L0 0 Z" copath="M0 0 L98 0 L98 78 L0 78 L0 0 Z" gXpos="145.001" gYpos="1122.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Front Desk Assistant"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Cards sheet 1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="row 1, card 2"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="248.001" YPOS="1117.89076377953" OwnPage="1" ItemID="1840743159" PTYPE="6" WIDTH="101.09186351706" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 2 cell 2" path="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" copath="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" gXpos="248.001" gYpos="1117.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="253.001" YPOS="1122.89076377953" OwnPage="1" ItemID="1840770887" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 2 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" copath="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" gXpos="253.001" gYpos="1122.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="40 unread emails"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="New booking system"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+7"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="10"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="349.09286351706" YPOS="1117.89076377953" OwnPage="1" ItemID="1840622295" PTYPE="6" WIDTH="101.09186351706" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 2 cell 3" path="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" copath="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" gXpos="349.09286351706" gYpos="1117.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="354.09286351706" YPOS="1122.89076377953" OwnPage="1" ItemID="1840615223" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 2 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" copath="M0 0 L91.092 0 L91.092 78 L0 78 L0 0 Z" gXpos="354.09286351706" gYpos="1122.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="&quot;Got a minute?&quot;"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Deadline moved"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 3"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+4"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="14"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="450.184727034121" YPOS="1117.89076377953" OwnPage="1" ItemID="1840785495" PTYPE="6" WIDTH="101.09186351706" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 2 cell 4" path="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" copath="M0 0 L101.092 0 L101.092 86 L0 86 L0 0 Z" gXpos="450.184727034121" gYpos="1117.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="452.788732394366" YPOS="1122.89076377953" OwnPage="1" ItemID="1840778423" PTYPE="4" WIDTH="96.338028169014" HEIGHT="83.3627573472324" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 2 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L96.338 0 L96.338 83.3628 L0 83.3628 L0 0 Z" copath="M0 0 L96.338 0 L96.338 83.3628 L0 83.3628 L0 0 Z" gXpos="452.788732394366" gYpos="1122.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Back-to-back meetings"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Feedback talk"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+6"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="20"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="551.276590551181" YPOS="1117.89076377953" OwnPage="1" ItemID="1840873111" PTYPE="6" WIDTH="104" HEIGHT="86" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 2 cell 5" path="M0 0 L104 0 L104 86 L0 86 L0 0 Z" copath="M0 0 L104 0 L104 86 L0 86 L0 0 Z" gXpos="551.276590551181" gYpos="1117.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="556.276590551181" YPOS="1122.89076377953" OwnPage="1" ItemID="1840860135" PTYPE="4" WIDTH="94" HEIGHT="78" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 2 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L94 0 L94 78 L0 78 L0 0 Z" copath="M0 0 L94 0 L94 78 L0 78 L0 0 Z" gXpos="556.276590551181" gYpos="1122.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total at the end: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="14"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Compare with the number in the Team colleague card's top strip."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1203.89076377953" OwnPage="1" ItemID="1841085351" PTYPE="6" WIDTH="108" HEIGHT="97.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 3 cell 1" path="M0 0 L108 0 L108 97.5 L0 97.5 L0 0 Z" copath="M0 0 L108 0 L108 97.5 L0 97.5 L0 0 Z" gXpos="140.001" gYpos="1203.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="145.001" YPOS="1208.89076377953" OwnPage="1" ItemID="1841076231" PTYPE="4" WIDTH="98" HEIGHT="89.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 3 cell 1 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L98 0 L98 89.5 L0 89.5 L0 0 Z" copath="M0 0 L98 0 L98 89.5 L0 89.5 L0 0 Z" gXpos="145.001" gYpos="1208.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Product Designer"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="12.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Cards sheet 1"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="row 1, card 3"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="248.001" YPOS="1203.89076377953" OwnPage="1" ItemID="1841167447" PTYPE="6" WIDTH="101.09186351706" HEIGHT="97.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 3 cell 2" path="M0 0 L101.092 0 L101.092 97.5 L0 97.5 L0 0 Z" copath="M0 0 L101.092 0 L101.092 97.5 L0 97.5 L0 0 Z" gXpos="248.001" gYpos="1203.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="253.001" YPOS="1208.89076377953" OwnPage="1" ItemID="1841005719" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="89.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 3 cell 2 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 89.5 L0 89.5 L0 0 Z" copath="M0 0 L91.092 0 L91.092 89.5 L0 89.5 L0 0 Z" gXpos="253.001" gYpos="1208.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Return-to-work meeting"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 3"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Chat pings"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+6"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="8"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="349.09286351706" YPOS="1203.89076377953" OwnPage="1" ItemID="1841153207" PTYPE="6" WIDTH="101.09186351706" HEIGHT="97.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 3 cell 3" path="M0 0 L101.092 0 L101.092 97.5 L0 97.5 L0 0 Z" copath="M0 0 L101.092 0 L101.092 97.5 L0 97.5 L0 0 Z" gXpos="349.09286351706" gYpos="1203.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="354.09286351706" YPOS="1208.89076377953" OwnPage="1" ItemID="1841156359" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="89.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 3 cell 3 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 89.5 L0 89.5 L0 0 Z" copath="M0 0 L91.092 0 L91.092 89.5 L0 89.5 L0 0 Z" gXpos="354.09286351706" gYpos="1208.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Switching projects"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+4"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="12"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="450.184727034121" YPOS="1203.89076377953" OwnPage="1" ItemID="1841182551" PTYPE="6" WIDTH="101.09186351706" HEIGHT="97.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 3 cell 4" path="M0 0 L101.092 0 L101.092 97.5 L0 97.5 L0 0 Z" copath="M0 0 L101.092 0 L101.092 97.5 L0 97.5 L0 0 Z" gXpos="450.184727034121" gYpos="1203.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="455.184727034121" YPOS="1208.89076377953" OwnPage="1" ItemID="1841175479" PTYPE="4" WIDTH="91.0918635170603" HEIGHT="89.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 3 cell 4 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L91.092 0 L91.092 89.5 L0 89.5 L0 0 Z" copath="M0 0 L91.092 0 L91.092 89.5 L0 89.5 L0 0 Z" gXpos="455.184727034121" gYpos="1208.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Back-to-back meetings"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="2"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9.5" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Stand-up meeting"/>
+                <breakline/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Cards sheet 2"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="This slot: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="+6"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="18"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="551.276590551181" YPOS="1203.89076377953" OwnPage="1" ItemID="1841236119" PTYPE="6" WIDTH="104" HEIGHT="97.5" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.75" PCOLOR2="rule" PLINEART="1" ANNAME="Days row 3 cell 5" path="M0 0 L104 0 L104 97.5 L0 97.5 L0 0 Z" copath="M0 0 L104 0 L104 97.5 L0 97.5 L0 0 Z" gXpos="551.276590551181" gYpos="1203.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="556.276590551181" YPOS="1208.89076377953" OwnPage="1" ItemID="1841262071" PTYPE="4" WIDTH="94" HEIGHT="89.5" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Days row 3 cell 5 text" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L94 0 L94 89.5 L0 89.5 L0 0 Z" copath="M0 0 L94 0 L94 89.5 L0 89.5 L0 0 Z" gXpos="556.276590551181" gYpos="1208.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Running total at the end: "/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="9" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="13"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="11.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="8.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Compare with the number in the Team colleague card's top strip."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="11" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1311.39076377953" OwnPage="1" ItemID="1841407863" PTYPE="4" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Heading: Scoring notes" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="1311.39076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="14.4" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="14.4" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Scoring notes"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1333.39076377953" OwnPage="1" ItemID="1841387063" PTYPE="4" WIDTH="515.275590551181" HEIGHT="200" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Scoring notes" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 200 L0 200 L0 0 Z" copath="M0 0 L515.276 0 L515.276 200 L0 200 L0 0 Z" gXpos="140.001" gYpos="1333.39076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Remove cards "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="take the whole demand card off the Day board, including the person's Costs more."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="−2 and −3 cards "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="never take a demand card below 0."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Product Designer "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="every point over the overload line becomes tomorrow's Starts at (see the Costs more line on the person card). Ask what tomorrow looks like."/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Front Desk Assistant "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="this day cannot get under the line with the printed change cards alone. Teams need a blank change card (Cards sheet 4, row 3)."/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="4"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1439.89076377953" OwnPage="1" ItemID="1839950311" PTYPE="4" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Heading: Debrief questions" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="1439.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="14.4" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="14.4" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Debrief questions"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="18" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1461.89076377953" OwnPage="1" ItemID="1841755527" PTYPE="4" WIDTH="515.275590551181" HEIGHT="140" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Debrief" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 140 L0 140 L0 0 Z" copath="M0 0 L515.276 0 L515.276 140 L0 140 L0 0 Z" gXpos="140.001" gYpos="1461.89076377953" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="3" FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="1.  "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Which demand cost the most, and was it essential to the job?"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="3"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="2.  "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Which change helped the most people at once?"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="3"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="3.  "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="How did your constraint change your choices? Was it as fixed as it looked?"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="3"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="4.  "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Which signs of overload would you have noticed at work, and which would you have missed? (Guide p.2, Signs of overload)"/>
+                <para ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="3"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="5.  "/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="10" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="What is one demand in your own team you could remove, reduce, reschedule or recover from next week? (Guide p.2, Four ways to lower load)"/>
+                <trail ALIGN="0" LINESPMode="0" LINESP="13.5" INDENT="0" FIRST="0" VOR="0" NACH="3"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1581.89076377953" OwnPage="1" ItemID="1841530439" PTYPE="6" WIDTH="515.275590551181" HEIGHT="0.75" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="rule" PLINEART="1" ANNAME="Closing rule" path="M0 0 L515.276 0 L515.276 0.75 L0 0.75 L0 0 Z" copath="M0 0 L515.276 0 L515.276 0.75 L0 0.75 L0 0 Z" gXpos="140.001" gYpos="1581.89076377953" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="140.001" YPOS="1591.89076377953" OwnPage="1" ItemID="1841556135" PTYPE="4" WIDTH="515.275590551181" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Closing line" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" copath="M0 0 L515.276 0 L515.276 20 L0 20 L0 0 Z" gXpos="140.001" gYpos="1591.89076377953" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="15" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="12" FCOLOR="ink"/>
+                <ITEXT FONT="Latin Modern Sans 10 Bold" FONTSIZE="12" FONTFEATURES="-liga,-clig" FCOLOR="ink" CH="Most overload is built into the day, not into the person."/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="15" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="140.001" YPOS="1703.78052755906" OwnPage="1" ItemID="1842067687" PTYPE="4" WIDTH="515.275590551181" HEIGHT="12" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" ANNAME="Copy of Footer" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L515.276 0 L515.276 12 L0 12 L0 0 Z" copath="M0 0 L515.276 0 L515.276 12 L0 12 L0 0 Z" gXpos="140.001" gYpos="1703.78052755906" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="9" INDENT="0" FIRST="0" VOR="0" NACH="0" FONT="Latin Modern Sans 10 Regular" FONTSIZE="7.5" FCOLOR="muted"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="7.5" FONTFEATURES="-liga,-clig" FCOLOR="muted" CH="Ask Herby  ·  Cognitive load workshop  ·  Facilitator Sheet  ·  page 2 of 2"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="9" INDENT="0" FIRST="0" VOR="0" NACH="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>
