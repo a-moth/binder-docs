@@ -222,3 +222,36 @@ def medications(p, y, h, effect=False):
                 p.text(x, ly + 7, 40, 16, "Effect", SANS_BOLD, 9)
                 p.line(x + 32, ly + 21, col_w - 32)
             ly += step
+
+
+# --- PDF form fields -----------------------------------------------------------
+# Attribute set copied from the user's cleaning-docs-templates-fillable.sla
+# (ANTYPE 3 = text field, 4 = check box, 5 = combo box; ANFLAG 4096 = multi-line,
+# 131072 = combo). A combo box's choices are its text, one paragraph each.
+_ANNOT = ('ANNOTATION="1" ANTYPE="{t}" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" '
+          'ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="" ANZIEL="0" ANACTYP="0" '
+          'ANTOOLTIP="" ANBWID="0" ANBSTY="0" ANFEED="1" ANFLAG="{flag}" ANFONT="0" ANFORMAT="0" '
+          'ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="{bcol}" '
+          'ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANITYP="0" ANOPEN="0" ANNAME={name}')
+
+
+def form_field(x, y, w, h, name, kind="text", multiline=False, size=10, page_xy=(PAGE_X, PAGE_Y),
+               own_page=0, item_id=None, options=()):
+    """XML for one PDF form field (a Scribus text frame with annotation attributes).
+    x, y are page-relative; page_xy is that page's canvas position."""
+    gx, gy = x + page_xy[0], y + page_xy[1]
+    t = {"text": 3, "check": 4, "combo": 5}[kind]
+    flag = 131072 if kind == "combo" else 4096 if multiline else 0
+    p = _rect_path(w, h)
+    annot = _ANNOT.format(t=t, flag=flag, bcol="None" if kind == "check" else "Black",
+                          name=quoteattr(name))
+    return (f'<PAGEOBJECT XPOS="{gx!r}" YPOS="{gy!r}" OwnPage="{own_page}" '
+            f'ItemID="{item_id or next(_ids)}" PTYPE="4" WIDTH="{w!r}" HEIGHT="{h!r}" FRTYPE="0" '
+            f'CLIPEDIT="0" PWIDTH="1" PLINEART="1" {annot} LOCALSCX="1" LOCALSCY="1" LOCALX="0" '
+            f'LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" '
+            f'AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="1" '
+            f'PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="{p}" copath="{p}" '
+            f'gXpos="{gx!r}" gYpos="{gy!r}" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" '
+            f'BACKITEM="-1"><StoryText><DefaultStyle FONTSIZE="{size}"/>'
+            + "<para/>".join(f"<ITEXT CH={quoteattr(o)}/>" for o in options)
+            + '<trail/></StoryText></PAGEOBJECT>')

@@ -62,6 +62,18 @@ The user hand-edits everything Claude makes until it's right for the binder.
 5. **More rules will come** as the work goes on. Add each one here when the
    user gives it.
 6. Log each new document in the "Made by Claude" list at the end of this file.
+7. **Fillable and plain, every time** (unless the user says otherwise): every
+   `.sla` Claude makes in the user's style gets a fillable twin,
+   `foo-fillable-claude.sla`, made with `python3 scripts/make-fillable.py foo-claude.sla`.
+   Both get their PDF, so a new page is four files: `foo-claude.sla/.pdf` and
+   `foo-fillable-claude.sla/.pdf`. Rerun `make-fillable.py` after changing the plain
+   `.sla`; never hand-edit the twin.
+8. **Export from windowed Scribus 1.6.3** (the user's request): `scripts/export-pdf.sh`
+   does this (a virtual screen in this container). Don't export headless.
+9. **Currency drop-downs:** in fillable twins, a fixed £ / $ / € drop-down (no
+   other entries) goes only where a page already has a currency: cells under a
+   "Currency" table heading, and the Daily planner's budget, cost and transfer
+   boxes (`CURRENCY_BOXES` in `make-fillable.py`). The user chose this scope.
 
 ## Section notes (from the user)
 
@@ -128,6 +140,15 @@ The user hand-edits everything Claude makes until it's right for the binder.
   - Community: leave the house 2×, contact Vanu / Alyx / Louise / Zoe weekly,
     contact Gwen 3×, every Monday check Meetup for free events (Eventbrite's
     Free filter as a backup).
+- **Home › Strategy** will grow beyond cleaning (not started: propose documents
+  for one at a time and wait for an OK):
+  - Grocery shopping strategies, e.g. a page to plan which of several stores
+    to get each item from (cheapest / best option).
+  - Maintenance products the user prefers: cut-offs of the products kept in a
+    folder in this sub-tab.
+  - Rest strategies: a flow chart the user will design (maybe in Canva) for
+    Claude to convert to a print-ready `.sla`. The user hasn't settled its
+    layout yet; wait for them.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.
@@ -266,15 +287,29 @@ Scribus format notes (useful when reading or editing the XML directly):
   `RATIO="0"` = stretch (proportional off), `RATIO="1"` = keep proportions.
   Headless Scribus uses the saved `LOCALSCX/Y`, so `relink-images.py` writes
   them. Checklists are always stretched to fill their frame. `ITEXT CH="…"` is the visible text.
-- The "fillable" variants hold PDF form fields. Keep them in step with their
-  plain twins.
+- The "fillable" variants hold PDF form fields: a text frame with
+  `ANNOTATION="1"` and `ANTYPE` 3 (text), 4 (check box) or 5 (drop-down; its
+  choices are the frame's text, one paragraph each, `ANFLAG="131072"`).
+  `ANFLAG="4096"` = multi-line. Keep them in step with their plain twins: Claude's
+  twins come from `scripts/make-fillable.py`, which finds the fields from the page
+  geometry (check boxes, write-on lines, small boxes, table cells, empty text
+  boxes, unlined writing boxes). The user's own `cleaning-docs-templates-fillable.sla`
+  is hand-made and is left alone.
 - `scripts/split-sla-page.py SRC PAGE OUT` moves one page into its own file.
-- **New session? Run `bash scripts/setup-tools.sh` first** (Scribus, xvfb,
-  fonts incl. Comic Relief, cairosvg).
-- `scripts/export-pdf.sh FILE.sla …` exports `FILE-claude.pdf` next to it,
-  headless, with lossless images (needs `scribus` + `xvfb-run`; Scribus 1.6.1 here, the user has 1.6.3). It
-  never saves the `.sla`. Never save a `.sla` from this container's Scribus:
-  that would downgrade the file version.
+- **New session? Run `bash scripts/setup-tools.sh` first** (Scribus 1.6.3
+  AppImage unpacked to `/opt/scribus-1.6.3`, distro Scribus 1.6.1 as a fallback,
+  Xvfb, xdotool, fonts incl. Comic Relief, cairosvg, pypdf).
+- `scripts/export-pdf.sh FILE.sla …` exports `FILE-claude.pdf` next to it with
+  windowed Scribus 1.6.3 on a virtual screen, lossless images. It never saves the
+  `.sla`. Never save a `.sla` from this container's Scribus: the distro 1.6.1
+  would downgrade the file version.
+- **Fillable export:** Scribus (1.6.1 and 1.6.3, windowed or headless) crashes when
+  it exports form fields with embedded fonts. So files named `*-fillable*` export
+  with fonts as outlines (`fontEmbedding=1`). The page looks the same but its
+  printed text isn't selectable or searchable. `export-pdf.sh` then runs
+  `scripts/fix-form-pdf.py`, because Scribus's fields come out naming no font and
+  painting a white/black box: the fix makes them see-through, Helvetica 10 in
+  brown dark, ticks in ZapfDingbats.
 
 ## Layout
 
@@ -329,6 +364,8 @@ home/inventory/
   inventory-claude.sla/.pdf        Item · Replacement (£/$/€ boxes) · Room (Claude draft)
 home/strategy/cleaning/
   cleaning-docs-templates(-fillable).sla/.pdf   10 focus/task worksheets
+*-fillable-claude.sla/.pdf      fillable twin beside every document that has places to
+                              write (made by make-fillable.py; not covers, dividers, laminates)
 work/projects/
   projects-three-section.sla                    Projects page
   projects-three-section-claude.pdf             its export, made by Claude
@@ -344,7 +381,8 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-home-weekly.py · build-health-yearly.py ·
                               build-health-diagnoses.py · build-health-treatment.py ·
                               build-health-lookahead.py · build-health-potential.py ·
-                              build-covers.py · build-travel-laminate.py
+                              build-covers.py · build-travel-laminate.py ·
+                              make-fillable.py · fix-form-pdf.py (fillable twins)
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -372,8 +410,9 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 ## Missing / known issues
 
 - **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
-- **Stale PDFs:** every PDF predates the new icons and the Yearly split, so all
-  of them need re-exporting from Scribus.
+- **PDFs:** every `.sla` was re-exported (plain + fillable) with windowed Scribus
+  1.6.3. The user's older exports (`core/core-layouts-*.pdf`, the cleaning PDFs,
+  `budget-pages-1.pdf`) are kept as they were, next to the new `-claude.pdf`.
 - **Yearly worksheet** for Work doesn't exist yet (the Finance one could be
   the base). Home's is a tasks version of it, Health's a check-ups version.
 - **Travel** has a divider draft (`core/travel-divider-claude`, plane icon) and
@@ -424,3 +463,5 @@ Binder files Claude has created (filenames end in `-claude`):
 | `<section>/<sub-tab>/cover-claude.*` (30) | Sub-tab covers: mini divider with name + icon, for cardstock | Awaiting user's edits |
 | `core/travel-divider-claude.*` | Travel section divider: copy of the divider layout, plane icon | Awaiting user's edits |
 | `core/travel-laminate-claude.*` | Travel laminate strip: Travel, Documents, Paperwork, Planning tabs | Awaiting user's edits |
+| `*-fillable-claude.sla/.pdf` (50) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
+| `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects | Awaiting user's check |

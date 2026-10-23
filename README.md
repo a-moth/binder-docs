@@ -18,4 +18,6 @@ Printable A4 templates for a ring binder, designed in Scribus 1.6.3.
 | `scripts/`         | Icon generator and Scribus helpers                      |
 
 Edit the `.sla` source in Scribus, then export the PDF next to it.
+Most documents also have a fillable twin (`*-fillable-claude.sla` / `.pdf`) with PDF
+form fields; `scripts/make-fillable.py` makes it and `scripts/export-pdf.sh` exports both.
 See [`CLAUDE.md`](CLAUDE.md) for the full binder map and the list of missing files.
