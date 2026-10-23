@@ -3,7 +3,9 @@
 
 Usage: python3 scripts/make-fillable.py FILE.sla ...   (no args: every eligible .sla)
 Writes FILE-fillable-claude.sla (foo-claude.sla -> foo-fillable-claude.sla) next to FILE.
-The original is never changed. Export the twin with: scripts/export-pdf.sh --fillable TWIN
+The original is never changed. Export both with scripts/export-pdf.sh.
+A source that already holds the user's own form fields gets the opposite twin:
+FILE-plain-claude.sla, the same page with its fields turned back into plain frames.
 
 Fields are found from the page geometry, so they follow the drawing:
   check boxes      lens squares 8-14 pt              -> check box field on top
@@ -35,8 +37,13 @@ CURRENCY_BOXES = {"finance/daily/daily-planner-claude.sla"}  # budget, cost and 
 COMBO_W = 30.0
 # Writing areas with nothing drawn to detect: (page index, x0, y0, x1, y1), page-relative.
 EXTRA = {"core/core-layouts.sla": [(1, 46, 98, 548, 168)]}  # "State the goal of this section"
-SKIP = re.compile(r"(^|/)cover-claude\.sla$|travel-(divider|laminate)-claude\.sla$|-fillable(-claude)?\.sla$"
-                  r"|^home/strategy/cleaning/cleaning-docs-templates\.sla$")  # has the user's own twin
+SKIP = re.compile(r"(^|/)cover-claude\.sla$|travel-(divider|laminate)-claude\.sla$"
+                  r"|-(fillable|plain)(-claude)?\.sla$"
+                  # the user's own fillable twins exist for these
+                  r"|^home/strategy/cleaning/cleaning-docs-templates\.sla$"
+                  r"|^work/ask-herby-business-templates-brand\.sla$"
+                  # read-only guides, workshop cards and boards: nothing to type into
+                  r"|^work/(case study|cognitive load) ")
 
 
 def twin_name(rel):
@@ -203,8 +210,17 @@ def find_fields(objs, currency_boxes=False):
     return out
 
 
+def make_plain(rel, src):
+    """The user's fields switched off (ANNOTATION="0"): same look, nothing to fill."""
+    out = str(pathlib.PurePath(rel).with_name(f"{pathlib.PurePath(rel).stem.removesuffix('-claude')}-plain-claude.sla"))
+    (ROOT / out).write_text(src.replace('ANNOTATION="1"', 'ANNOTATION="0"'), encoding="utf-8")
+    return out
+
+
 def make(rel):
     src = (ROOT / rel).read_text(encoding="utf-8")
+    if 'ANNOTATION="1"' in src:
+        return make_plain(rel, src), -src.count('ANNOTATION="1"')
     pages = [(float(re.search(r'PAGEXPOS="([^"]+)"', p)[1]), float(re.search(r'PAGEYPOS="([^"]+)"', p)[1]))
              for p in re.findall(r"<PAGE [^>]*>", src)]
     objs = [Obj(m[1], m[3]) for m in
@@ -229,11 +245,14 @@ def make(rel):
 
 def eligible():
     files = subprocess.run(["git", "ls-files", "--others", "--cached", "--exclude-standard", "*.sla"],
-                           cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+                           cwd=ROOT, capture_output=True, text=True, check=True).stdout.splitlines()
     return [f for f in files if not SKIP.search(f)]
 
 
 if __name__ == "__main__":
     for rel in sys.argv[1:] or eligible():
         out, n = make(rel)
-        print(f"{rel}: {n} fields -> {out}" if out else f"{rel}: no fields, skipped")
+        if n < 0:
+            print(f"{rel}: already has {-n} fields -> plain copy {out}")
+        else:
+            print(f"{rel}: {n} fields -> {out}" if out else f"{rel}: no fields, skipped")

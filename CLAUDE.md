@@ -366,6 +366,11 @@ home/strategy/cleaning/
   cleaning-docs-templates(-fillable).sla/.pdf   10 focus/task worksheets
 *-fillable-claude.sla/.pdf      fillable twin beside every document that has places to
                               write (made by make-fillable.py; not covers, dividers, laminates)
+work/                         the user's Ask Herby business documents (uploaded as-is):
+  ask-herby-business-templates-{brand,v2}.sla   24 business templates (brand colours / Autumn)
+  ask-herby-business-templates-fillable.sla     the user's fillable twin of -brand
+  client-overview-template-test.sla             has the user's own fields (+ -plain-claude copy)
+  case study *.sla · cognitive load *.sla       workshop material (no fillable twins)
 work/projects/
   projects-three-section.sla                    Projects page
   projects-three-section-claude.pdf             its export, made by Claude
@@ -410,6 +415,12 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 ## Missing / known issues
 
 - **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
+- **Work images missing:** these user files link images that aren't in the repo,
+  so their `-claude.pdf` exports have no images (the user's own PDFs do):
+  `work/ask-herby-business-templates-*` (`mark.png`; maybe
+  `assets/custom/ask-herby-mark.png`, not confirmed), `work/client-overview-template-test*`
+  (`../binder/autumn-binder-icons/*.png`), `work/cognitive load day board`
+  (`../../Downloads/sun*.png`, `user-round.png`). Re-export once the images are added.
 - **PDFs:** every `.sla` was re-exported (plain + fillable) with windowed Scribus
   1.6.3. The user's older exports (`core/core-layouts-*.pdf`, the cleaning PDFs,
   `budget-pages-1.pdf`) are kept as they were, next to the new `-claude.pdf`.
@@ -463,5 +474,6 @@ Binder files Claude has created (filenames end in `-claude`):
 | `<section>/<sub-tab>/cover-claude.*` (30) | Sub-tab covers: mini divider with name + icon, for cardstock | Awaiting user's edits |
 | `core/travel-divider-claude.*` | Travel section divider: copy of the divider layout, plane icon | Awaiting user's edits |
 | `core/travel-laminate-claude.*` | Travel laminate strip: Travel, Documents, Paperwork, Planning tabs | Awaiting user's edits |
-| `*-fillable-claude.sla/.pdf` (50) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
-| `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects | Awaiting user's check |
+| `*-fillable-claude.sla/.pdf` (51, incl. `work/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
+| `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects, every `work/*.sla` | Awaiting user's check |
+| `work/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |

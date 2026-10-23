@@ -7,7 +7,7 @@
 # display, and closes its startup dialog with xdotool. Opens read-only: the .sla is never saved.
 # Uses Scribus 1.6.3 from /opt/scribus-1.6.3 (setup-tools.sh); set SCRIBUS=... to override.
 #
-# Fillable files (name contains "-fillable") keep their form fields. Scribus crashes when it
+# Fillable files (any with form fields) keep them. Scribus crashes when it
 # exports form fields with embedded fonts, so these export with fonts as outlines
 # (text not selectable) and scripts/fix-form-pdf.py then tidies the fields.
 set -euo pipefail
@@ -50,7 +50,7 @@ for src in "$@"; do
   [[ "$stem" == *-claude ]] || stem="$stem-claude"
   out="$stem.pdf"
   fillable=""
-  [[ "$(basename "$src")" == *-fillable* ]] && fillable=1
+  grep -q 'ANNOTATION="1"' "$src" && fillable=1  # has form fields
   done="$work/done"
   rm -f "$done"
   IN_SLA="$src" OUT_PDF="$out" FILLABLE="$fillable" DONE="$done" \

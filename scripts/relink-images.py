@@ -104,7 +104,7 @@ def relink(rel, area):
 if __name__ == "__main__":
     import subprocess
     files = subprocess.run(["git", "ls-files", "--others", "--cached", "--exclude-standard", "*.sla"],
-                           cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+                           cwd=ROOT, capture_output=True, text=True, check=True).stdout.splitlines()
     for rel in files:
         relink(rel, doc_area(rel))
         print(rel)
