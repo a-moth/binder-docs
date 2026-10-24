@@ -9,7 +9,7 @@ One workbook (the user's choice) so the tabs can link to each other in Excel and
   Client view  pick a client: details, projects, revenue / spending per currency
   Overview, Business spending, Business revenue, Client list   (Work > Yearly, for one year)
   Lists        the areas (travel, office, food …) shared by business and personal spending
-Admin (personal) Yearly tabs come in a later stage.
+  Private overview, Personal spending   (Admin yearly: personal money, same year and areas)
 Usage: python3 scripts/build-workbook.py   (overwrites the draft: stop once the user fills it in)
 Then:  python3 <xlsx skill>/scripts/recalc.py finance/yearly-workbook-claude.xlsx
 """
@@ -100,6 +100,10 @@ def build():
         ("Client list summarise Money for that year, in the currency picked at the top of each.", body),
         ("Money: leave Client empty for business costs that aren't for a client.", body),
         ("Lists: edit the areas (travel, office, food …). They feed the Area drop-down.", body),
+        ("", body),
+        ("Personal spending: type personal (not business) spending per area and month,", body),
+        ("in the £, $ or € block. Private overview: income is the business revenue;", body),
+        ("business spending stays on the Work tabs and is not counted here.", body),
         ("", body),
         ("Totals are kept per currency (£, $, €): they are never added together.", body),
     ]
@@ -234,12 +238,15 @@ def build():
     cv.cell(top + VIEW_PROJECTS + 1, 1, f"Shows the first {VIEW_PROJECTS} projects.").font = calc
 
     work_yearly(wb, m, cd_n, pj_n)
+    admin_yearly(wb, m)
 
     order = ["Read me", "Overview", "Business spending", "Business revenue", "Client list",
+             "Private overview", "Personal spending",
              "Client view", "Client data", "Projects", "Money", "Lists"]
     wb._sheets = [wb[t] for t in order]
     for ws in wb.worksheets:
-        ws.sheet_view.showGridLines = ws.title in ("Client data", "Projects", "Money", "Lists")
+        ws.sheet_view.showGridLines = ws.title in ("Client data", "Projects", "Money", "Lists",
+                                                    "Personal spending")
     wb.active = wb.sheetnames.index("Overview")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     wb.save(OUT)
@@ -373,6 +380,80 @@ def work_yearly(wb, m, cd_n, pj_n):
         for col in (5, 6):
             cl.cell(r, col).number_format = MONEY_FMT
     cl.freeze_panes = "B6"
+
+
+def admin_yearly(wb, m):
+    """Personal spending (typed, one block per currency) and the Private overview:
+    income = business revenue from Money; business spending is kept out (the user's choice)."""
+    year = "Overview!$B$3"
+
+    def in_month(k):
+        return (f"{m('A')},\">=\"&DATE({year},{k},1),{m('A')},\"<\"&DATE({year},{k + 1},1)")
+
+    # --- Personal spending: a months x areas block per currency ---------------------
+    ps = wb.create_sheet("Personal spending")
+    ncol = 1 + AREA_SLOTS + 1
+    title(ps, "Personal spending", [10] + [12] * (AREA_SLOTS + 1))
+    ps["A2"] = "=\"Year \"&Overview!$B$3&\": type personal spending only (business costs go in Money).\""
+    ps["A2"].font = calc
+    block = 17  # rows per currency block
+    tot_col = ps.cell(1, ncol).column_letter
+    starts = {}
+    for b, cur in enumerate(CURRENCIES):
+        top = 4 + b * block
+        starts[cur] = top
+        ps.cell(top, 1, f"Spending in {cur}").font = Font(name=FONT, bold=True, size=12, color=BROWN)
+        head = ["Month"] + [f"=IF(Lists!$A${k + 2}=\"\",\"\",Lists!$A${k + 2})" for k in range(AREA_SLOTS)]
+        cells(ps, top + 1, head + ["Total"], head_font, fill=head_fill)
+        for k in range(1, 13):
+            r = top + 1 + k
+            ps.cell(r, 1, MONTHS[k - 1]).border = box
+            ps.cell(r, 1).font = head_font
+            for j in range(2, 2 + AREA_SLOTS):
+                c = ps.cell(r, j)
+                c.border, c.font, c.number_format = box, body, MONEY_FMT
+            c = ps.cell(r, ncol, f"=SUM(B{r}:{ps.cell(r, ncol - 1).column_letter}{r})")
+            c.font, c.border, c.number_format = calc, box, MONEY_FMT
+        r = top + 14
+        cells(ps, r, ["Total"] + [f"=SUM({ps.cell(1, j).column_letter}{top + 2}:"
+                                  f"{ps.cell(1, j).column_letter}{top + 13})" for j in range(2, ncol + 1)],
+              head_font, fmt=MONEY_FMT, fill=head_fill)
+    ps.freeze_panes = "B4"
+
+    def pick_block(rel_row, col):
+        """The cell at (row offset, column) in the block of the currency on Private overview."""
+        refs = [f"'Personal spending'!{col}{starts[c] + rel_row}" for c in CURRENCIES]
+        return f"CHOOSE(MATCH($B$3,{{\"{'\",\"'.join(CURRENCIES)}\"}},0),{','.join(refs)})"
+
+    # --- Private overview ---------------------------------------------------------
+    po = wb.create_sheet("Private overview")
+    title(po, "Private finance overview", [18, 16, 18, 14, 4, 18, 16])
+    currency_pick(po)
+    cells(po, 5, ["Month", "Income (business revenue)", "Personal spending", "Left over"],
+          head_font, fill=head_fill)
+    for k in range(1, 13):
+        r = 5 + k
+        cells(po, r, [MONTHS[k - 1],
+                      f"=SUMIFS({m('F')},{m('D')},\"Revenue\",{m('E')},$B$3,{in_month(k)})",
+                      f"={pick_block(1 + k, tot_col)}",
+                      f"=B{r}-C{r}"], fmt=MONEY_FMT)
+        po.cell(r, 1).font = head_font
+    cells(po, 18, ["Year"] + [f"=SUM({c}6:{c}17)" for c in "BCD"], head_font, fmt=MONEY_FMT,
+          fill=head_fill)
+    # Personal spending by area for the year
+    po.cell(5, 6, "Area").font = head_font
+    po.cell(5, 7, "Personal spending").font = head_font
+    for j in (6, 7):
+        po.cell(5, j).fill, po.cell(5, j).border = head_fill, box
+    for a in range(AREA_SLOTS):
+        r, col = 6 + a, ps.cell(1, 2 + a).column_letter
+        po.cell(r, 6, f"=IF(Lists!$A${a + 2}=\"\",\"\",Lists!$A${a + 2})")
+        po.cell(r, 7, f"=IF(F{r}=\"\",\"\",{pick_block(14, col)})")
+        for j in (6, 7):
+            c = po.cell(r, j)
+            c.font, c.border, c.number_format = calc, box, MONEY_FMT
+    po.cell(20, 1, "Income is business revenue from Money. Business spending is kept on the "
+                   "Work tabs and not counted here.").font = calc
 
 
 if __name__ == "__main__":

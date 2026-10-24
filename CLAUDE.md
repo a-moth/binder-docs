@@ -155,7 +155,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
     income per client and what is completed / ongoing.
   - A similar yearly worksheet for **admin** = personal spending, by area (travel,
     office, food, …), linked to the business spending / revenue through the
-    overall spending entered per area. It lives in `finance/` (main area), and
+    overall spending entered per area. Built as the **Private overview**: income
+    = business revenue (from Money), personal spending typed per area and month,
+    business spending kept separate (not counted). It lives in `finance/` (main area), and
     Work Yearly + Admin Yearly are **one workbook** (tabs), so the links always
     work in Excel and Google Sheets (the user's choice).
   - Clients: a spreadsheet with a client data tab it pulls from, and a main tab
@@ -346,7 +348,9 @@ finance/
                             scripts/build-workbook.py. Work Yearly: Overview (year in B3) ·
                             Business spending (months × areas) · Business revenue (clients ×
                             months) · Client list. Clients: Client view · Client data ·
-                            Projects · Money (the one ledger) · Lists (areas). Admin Yearly to come.
+                            Projects · Money (the one ledger) · Lists (areas). Admin Yearly: Private
+                            overview (income = business revenue; business spending kept out) ·
+                            Personal spending (typed: months × areas, one block per currency).
   tracked/                  filed, filled-in Yearly/Monthly copies + Claude drafts:
                             subscriptions · savings-pockets · goals · cash-pocket ·
                             groceries-weekly · pantry-stock · freezer-stock (-claude.sla/.pdf)
@@ -512,4 +516,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `*-fillable-claude.sla/.pdf` (51, incl. `work/templates/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
 | `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects, every `work/*.sla` | Awaiting user's check |
 | `work/clients/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |
-| `finance/yearly-workbook-claude.xlsx` | Workbook. Work Yearly: Overview, Business spending (months × areas), Business revenue (clients × months), Client list; each picks a currency. Clients: Client data, Projects, Money (per currency, with Area), Client view (drop-down: details, totals per currency, projects with revenue / spending) | Awaiting user's check |
+| `finance/yearly-workbook-claude.xlsx` | Workbook. Admin Yearly: Private overview (income from business revenue, personal spending, left over; by month and area), Personal spending (typed, £/$/€ blocks). Work Yearly: Overview, Business spending (months × areas), Business revenue (clients × months), Client list; each picks a currency. Clients: Client data, Projects, Money (per currency, with Area), Client view (drop-down: details, totals per currency, projects with revenue / spending) | Awaiting user's check |
