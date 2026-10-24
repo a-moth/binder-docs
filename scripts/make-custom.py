@@ -4,7 +4,8 @@
   bigmushroom      Lucide-style mushroom (Lucide has none), outlined in the
                    disability pride colours in flag order, filled with
                    the same colours darker and duller
-  mushroomvarious  a small patch of three of those mushrooms on a yellow oval
+  mushroomvarious  a small patch of three of those mushrooms on a yellow oval,
+                   without the taupe outline, stems planted in the ground (the user's request)
 
 Usage: python3 scripts/make-custom.py   (needs `pip install cairosvg`)
 """
@@ -55,16 +56,18 @@ def gradients():
     return gradient("pride", PRIDE) + gradient("pride-fill", [muted(c) for c in PRIDE])
 
 
-def mushroom(scale=1.0):
+def mushroom(scale=1.0, underlay=True):
     """One mushroom on the 24 px grid. Stroke widths are divided by `scale`
-    so every mushroom in a group prints with the same line weight."""
+    so every mushroom in a group prints with the same line weight.
+    underlay=False drops the taupe outline under the pride lines."""
     paths = "".join(f'<path d="{d}"/>' for d in [CAP, STEM, *SPOTS])
     common = 'stroke-linecap="round" stroke-linejoin="round"'
     body = f'<path d="{CAP}"/><path d="{STEM} z"/>'
     return (
         f'<g fill="url(#pride-fill)" stroke="none">{body}</g>'
         # Taupe underlay keeps the pale stripes visible on white paper.
-        + f'<g fill="none" {common} stroke="{TAUPE}" stroke-width="{UNDERLAY / scale:.3f}">{paths}</g>'
+        + (f'<g fill="none" {common} stroke="{TAUPE}" stroke-width="{UNDERLAY / scale:.3f}">{paths}</g>'
+           if underlay else "")
         + f'<g fill="none" {common} stroke="url(#pride)" stroke-width="{LINE / scale:.3f}">{paths}</g>')
 
 
@@ -79,7 +82,10 @@ PATCH_MUSHROOMS = [(26.5, 14.5, 0.8), (3.5, 17.5, 0.65), (10.5, 6.5, 1.1)]
 
 def mushroomvarious():
     group = "".join(
-        f'<g transform="translate({x} {y}) scale({s})">{mushroom(s)}</g>'
+        f'<g transform="translate({x} {y}) scale({s})">{mushroom(s, underlay=False)}</g>'
+        # A low mound of ground over each stem's foot, so it looks planted.
+        + f'<ellipse cx="{x + 12 * s:.2f}" cy="{y + 20.2 * s + 0.6:.2f}" rx="{3 * s + 2.6:.2f}" '
+          f'ry="{1.1 * s + 0.9:.2f}" fill="{PATCH}"/>'
         for x, y, s in PATCH_MUSHROOMS)
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">'
             f'{gradients()}<ellipse cx="24" cy="31.5" rx="21" ry="6" fill="{PATCH}"/>'

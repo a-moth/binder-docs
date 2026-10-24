@@ -317,6 +317,8 @@ Scribus format notes (useful when reading or editing the XML directly):
   boxes, unlined writing boxes). The user's own `cleaning-docs-templates-fillable.sla`
   is hand-made and is left alone.
 - `scripts/split-sla-page.py SRC PAGE OUT` moves one page into its own file.
+- A text frame's `path`/`copath` is the shape Scribus lays text out in: change it
+  together with `WIDTH`/`HEIGHT`, or the extra space stays empty.
 - **New session? Run `bash scripts/setup-tools.sh` first** (Scribus 1.6.3
   AppImage unpacked to `/opt/scribus-1.6.3`, distro Scribus 1.6.1 as a fallback,
   Xvfb, xdotool, fonts incl. Comic Relief, cairosvg, pypdf).
@@ -338,11 +340,14 @@ Scribus format notes (useful when reading or editing the XML directly):
 <section>/<sub-tab>/cover-claude.sla/.pdf   cover (mini divider) for each of the 32 sub-tabs
 core/                         shared pages for every section
   core-layouts.sla          p1 cover · p2 section goal + stored docs ·
-                                p3 section context · p4–10 dividers · p11 laminate tabs
+                                p3 section context · p4–10 dividers · p11–12 laminate tabs
+                                (doubled width: plain tape ends either side of the fold;
+                                p11 Finance · Home · Health, p12 Work · Learning + Resources ·
+                                Archive + Travel; made by scripts/widen-laminate-tabs.py)
   core-layouts-*.pdf            exports: cover, section-docs, section-context, laminate
   travel-divider-claude.sla/.pdf  Travel section divider (Claude draft, plane icon)
-  travel-laminate-claude.sla/.pdf Travel laminate strip: TRAVEL · DOCUMENTS · PAPERWORK ·
-                                  PLANNING (copy of the Health strip, own sheet)
+  travel-laminate-claude.sla/.pdf Travel laminate strip (old width; superseded: Travel's
+                                  tabs are now on core-layouts p12)
 finance/
   yearly-budget.sla         Yearly budget (section main area)
   yearly-workbook-claude.xlsx  one workbook (spreadsheet, no Scribus/PDF), built by
@@ -427,7 +432,7 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-covers.py · build-travel-laminate.py ·
                               make-fillable.py · fix-form-pdf.py (fillable twins) ·
                               build-workbook.py (the .xlsx workbook) ·
-                              build-case-study-templates.py
+                              build-case-study-templates.py · widen-laminate-tabs.py (one-off)
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -470,9 +475,14 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
   `budget-pages-1.pdf`) are kept as they were, next to the new `-claude.pdf`.
 - **Yearly worksheet** for Work doesn't exist yet (the Finance one could be
   the base). Home's is a tasks version of it, Health's a check-ups version.
-- **Travel** has a divider draft (`core/travel-divider-claude`, plane icon) and
-  a laminate strip draft on its own sheet (`core/travel-laminate-claude`: the
-  main laminate sheet is full). Colour: reserve beige.
+- **Travel** has a divider draft (`core/travel-divider-claude`, plane icon). Its
+  laminate tabs are on `core/core-layouts.sla` p12 now; the old separate strip
+  (`core/travel-laminate-claude`) is superseded. Colour: reserve beige.
+- **Laminate tabs** (user's request): every tab is twice as wide, the extra half
+  split over both sides with no lines, so the tab ends can be taped. They now take
+  two sheets (p11–12), which also hold Work › Cognitive load / Disability effects
+  and Travel. Long names use Comic Relief Bold 11 (as DIAGNOSES); two-word names
+  that don't fit go on two lines.
 - **brownleaves.png** was mapped to Lucide `leaf` (brown highlight). Check that
   this is the right match.
 - **Design system vs laminate:** the design system lists 9 cardstock sections

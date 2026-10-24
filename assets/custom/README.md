@@ -5,6 +5,6 @@ script and rerun it rather than editing the files.
 
 | File | What it is | Used by |
 |------|------------|---------|
-| `mushroomvarious.*` | Small patch of three `bigmushroom`-style mushrooms on a yellow `#E3CD9E` oval, the yellow taken from the user's original pixel mark | every master page and divider |
+| `mushroomvarious.*` | Small patch of three `bigmushroom`-style mushrooms on a yellow `#E3CD9E` oval, the yellow taken from the user's original pixel mark. No taupe outline, and each stem ends in a small mound of ground (the user's request) | every master page and divider |
 | `bigmushroom.*` | Lucide-style mushroom (Lucide has none). Outline (2.6 px) in brand pride colours, flag order, over a taupe underlay so the pale stripes show on white; filled with the same stripes darker and duller | cleaning worksheets |
 | `ask-herby-mark.png` | The user's original mark artwork (375 px), the geometry source | not linked |
