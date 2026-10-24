@@ -149,6 +149,20 @@ The user hand-edits everything Claude makes until it's right for the binder.
   - Rest strategies: a flow chart the user will design (maybe in Canva) for
     Claude to convert to a print-ready `.sla`. The user hasn't settled its
     layout yet; wait for them.
+- **Work** (from the user, not built yet):
+  - Yearly worksheet: a spreadsheet (`.xlsx` / Google Sheets), not Scribus. Tabs:
+    overview of all areas, business spending, business revenue, client list with
+    income per client and what is completed / ongoing.
+  - A similar yearly worksheet for **admin** = personal spending, by area (travel,
+    office, food, …), linked to the business spending / revenue through the
+    overall spending entered per area.
+  - Clients: a spreadsheet with a client data tab it pulls from, and a main tab
+    where a drop-down picks a client and shows all their projects, revenue,
+    spending, etc. on one tab.
+  - Planning: cover sheet only (planning docs are loose notes).
+  - Templates: the Ask Herby business templates. More will be added over time;
+    still to make: a **case study template**.
+  - Archived: cover sheet only.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.
