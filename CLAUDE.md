@@ -342,9 +342,11 @@ core/                         shared pages for every section
                                   PLANNING (copy of the Health strip, own sheet)
 finance/
   yearly-budget.sla         Yearly budget (section main area)
-  yearly-workbook-claude.xlsx  one workbook (spreadsheet, no Scribus/PDF): Clients tabs
-                            (Client data · Projects · Money · Client view); Work Yearly and
-                            Admin Yearly tabs to come. Built by scripts/build-workbook.py
+  yearly-workbook-claude.xlsx  one workbook (spreadsheet, no Scribus/PDF), built by
+                            scripts/build-workbook.py. Work Yearly: Overview (year in B3) ·
+                            Business spending (months × areas) · Business revenue (clients ×
+                            months) · Client list. Clients: Client view · Client data ·
+                            Projects · Money (the one ledger) · Lists (areas). Admin Yearly to come.
   tracked/                  filed, filled-in Yearly/Monthly copies + Claude drafts:
                             subscriptions · savings-pockets · goals · cash-pocket ·
                             groceries-weekly · pantry-stock · freezer-stock (-claude.sla/.pdf)
@@ -432,7 +434,7 @@ down, Task break down, Set up environment.
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
 | Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (condition pages + event logs) |
-| Work      | Yearly ⬜ (spreadsheet) | Clients ✅ (overview test; Clients tabs 📝 in finance/yearly-workbook-claude.xlsx) · Projects ✅ · Planning ✅ (cover only) · Templates ✅ (case study template ⬜) · Archived ✅ (cover only) · Cognitive load ✅ (cover 📝) · Disability effects ✅ (cover 📝) |
+| Work      | Yearly 📝 (workbook tabs) | Clients ✅ (overview test; Clients tabs 📝 in finance/yearly-workbook-claude.xlsx) · Projects ✅ · Planning ✅ (cover only) · Templates ✅ (case study template ⬜) · Archived ✅ (cover only) · Cognitive load ✅ (cover 📝) · Disability effects ✅ (cover 📝) |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
 | Archive   | n/a       | 2025 ⬜ · 2026 ⬜ · 2027 ⬜ · Digitised ⬜ |
@@ -510,4 +512,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `*-fillable-claude.sla/.pdf` (51, incl. `work/templates/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
 | `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects, every `work/*.sla` | Awaiting user's check |
 | `work/clients/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |
-| `finance/yearly-workbook-claude.xlsx` | Workbook, stage 1 (Clients): Client data, Projects, Money (per currency, with Area), Client view (drop-down: details, totals per currency, projects with revenue / spending) | Awaiting user's check |
+| `finance/yearly-workbook-claude.xlsx` | Workbook. Work Yearly: Overview, Business spending (months × areas), Business revenue (clients × months), Client list; each picks a currency. Clients: Client data, Projects, Money (per currency, with Area), Client view (drop-down: details, totals per currency, projects with revenue / spending) | Awaiting user's check |

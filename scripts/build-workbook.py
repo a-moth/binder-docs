@@ -7,7 +7,9 @@ One workbook (the user's choice) so the tabs can link to each other in Excel and
   Projects     one row per project, picked client       (Work > Clients)
   Money        one row per payment in or out            (Work > Clients, later Work Yearly)
   Client view  pick a client: details, projects, revenue / spending per currency
-Work Yearly and Admin (personal) Yearly tabs come in later stages.
+  Overview, Business spending, Business revenue, Client list   (Work > Yearly, for one year)
+  Lists        the areas (travel, office, food …) shared by business and personal spending
+Admin (personal) Yearly tabs come in a later stage.
 Usage: python3 scripts/build-workbook.py   (overwrites the draft: stop once the user fills it in)
 Then:  python3 <xlsx skill>/scripts/recalc.py finance/yearly-workbook-claude.xlsx
 """
@@ -29,6 +31,10 @@ CLIENT_STATUS = ["Active", "Paused", "Retainer", "Iterate"]  # from the client o
 PROJECT_STATUS = ["Ongoing", "Completed"]
 MONEY_TYPES = ["Revenue", "Spending"]
 ROWS = {"Client data": 100, "Projects": 300, "Money": 1000}  # rows ready to fill in
+AREAS = ["Travel", "Office", "Food", "Software", "Equipment", "Training", "Marketing", "Other"]
+AREA_SLOTS = 15  # the area list can grow to this many
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MONEY_FMT = "#,##0.00;-#,##0.00;-"
 VIEW_PROJECTS = 20  # projects listed on Client view
 
 head_font = Font(name=FONT, bold=True, color=BROWN)
@@ -90,10 +96,25 @@ def build():
         ("Money: one row per payment in (Revenue) or out (Spending), with its currency.", body),
         ("Client view: pick a client in B3 to see everything about them on one tab.", body),
         ("", body),
+        ("Work yearly: type the year on Overview (B3). Business spending, Business revenue and", body),
+        ("Client list summarise Money for that year, in the currency picked at the top of each.", body),
+        ("Money: leave Client empty for business costs that aren't for a client.", body),
+        ("Lists: edit the areas (travel, office, food …). They feed the Area drop-down.", body),
+        ("", body),
         ("Totals are kept per currency (£, $, €): they are never added together.", body),
     ]
     for i, (text, font) in enumerate(lines, 1):
         rd.cell(i, 1, text).font = font
+
+    # --- Lists ----------------------------------------------------------------
+    ls = wb.create_sheet("Lists")
+    header(ls, 1, ["Area"], [24])
+    grid(ls, 2, AREA_SLOTS + 1, 1)
+    for i, a in enumerate(AREAS, 2):
+        ls.cell(i, 1, a)
+    ls.cell(1, 3, f"Edit or add areas (up to {AREA_SLOTS}). Business and personal spending "
+                  "use the same list.").font = calc
+    areas = f"Lists!$A$2:$A${AREA_SLOTS + 1}"
 
     # --- Client data ----------------------------------------------------------
     cd = wb.create_sheet("Client data")
@@ -140,6 +161,7 @@ def build():
     pick(mo, f"C2:C{n}", projects)
     pick(mo, f"D2:D{n}", MONEY_TYPES)
     pick(mo, f"E2:E{n}", CURRENCIES)
+    pick(mo, f"G2:G{n}", areas)
     for r in range(2, n + 1):
         mo.cell(r, 1).number_format = "dd/mm/yyyy"
         mo.cell(r, 6).number_format = "#,##0.00"
@@ -147,8 +169,11 @@ def build():
     for col, v in enumerate(["Example Ltd", "Website accessibility review", "Revenue", "£", 450,
                              "", "Example row: overwrite or delete"], 2):
         mo.cell(2, col, v)
-    mo["G1"].comment = Comment("Area (travel, office, food …) links business spending to the "
-                               "Admin yearly tabs, which come in a later stage.", "Claude")
+    mo["G1"].comment = Comment("Area (travel, office, food …): edit the list on the Lists tab. "
+                               "It will also link business spending to the Admin yearly tabs.",
+                               "Claude")
+    mo["B1"].comment = Comment("Leave empty for business costs that aren't for a client.", "Claude")
+    cd_n = ROWS["Client data"] + 1
     m = lambda col: f"Money!${col}$2:${col}${n}"  # noqa: E731
 
     # --- Client view ----------------------------------------------------------
@@ -208,12 +233,146 @@ def build():
             c.font, c.border, c.number_format = calc, box, "#,##0.00;-#,##0.00;-"
     cv.cell(top + VIEW_PROJECTS + 1, 1, f"Shows the first {VIEW_PROJECTS} projects.").font = calc
 
+    work_yearly(wb, m, cd_n, pj_n)
+
+    order = ["Read me", "Overview", "Business spending", "Business revenue", "Client list",
+             "Client view", "Client data", "Projects", "Money", "Lists"]
+    wb._sheets = [wb[t] for t in order]
     for ws in wb.worksheets:
-        ws.sheet_view.showGridLines = ws.title not in ("Read me", "Client view")
-    wb.active = wb.sheetnames.index("Client view")
+        ws.sheet_view.showGridLines = ws.title in ("Client data", "Projects", "Money", "Lists")
+    wb.active = wb.sheetnames.index("Overview")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     wb.save(OUT)
     return OUT
+
+
+def title(ws, text, widths):
+    for i, w in enumerate(widths, 1):
+        ws.column_dimensions[ws.cell(1, i).column_letter].width = w
+    ws["A1"] = text
+    ws["A1"].font = Font(name=FONT, bold=True, size=14, color=BROWN)
+
+
+def currency_pick(ws):
+    ws["A3"], ws["A3"].font = "Currency", head_font
+    ws["B3"] = CURRENCIES[0]
+    ws["B3"].font, ws["B3"].border = Font(name=FONT, bold=True), box
+    pick(ws, "B3", CURRENCIES)
+    ws["C3"], ws["C3"].font = "← pick a currency", calc
+    ws["E3"], ws["E3"].font = "=\"Year \"&Overview!$B$3", head_font
+
+
+def cells(ws, r, values, font=calc, fmt=None, fill=None):
+    for j, v in enumerate(values, 1):
+        c = ws.cell(r, j, v)
+        c.font, c.border = font, box
+        if fmt and j > 1:
+            c.number_format = fmt
+        if fill:
+            c.fill = fill
+
+
+def work_yearly(wb, m, cd_n, pj_n):
+    """Overview, Business spending, Business revenue and Client list for the year on Overview."""
+    year = "Overview!$B$3"
+    in_year = (f"{m('A')},\">=\"&DATE({year},1,1),{m('A')},\"<\"&DATE({year}+1,1,1)")
+
+    def in_month(k):  # k = 1..12
+        return (f"{m('A')},\">=\"&DATE({year},{k},1),{m('A')},\"<\"&DATE({year},{k + 1},1)")
+
+    # --- Overview -------------------------------------------------------------
+    ov = wb.create_sheet("Overview")
+    title(ov, "Work yearly overview", [30, 14, 14, 14])
+    ov["A3"], ov["A3"].font = "Year", head_font
+    ov["B3"] = 2026
+    ov["B3"].font, ov["B3"].border = Font(name=FONT, bold=True), box
+    ov["C3"], ov["C3"].font = "← type the year", calc
+    cells(ov, 5, ["", *CURRENCIES], head_font, fill=head_fill)
+    for i, kind in enumerate(MONEY_TYPES, 6):
+        cells(ov, i, [kind] + [f"=SUMIFS({m('F')},{m('D')},\"{kind}\",{m('E')},\"{c}\",{in_year})"
+                               for c in CURRENCIES], fmt=MONEY_FMT)
+        ov.cell(i, 1).font = head_font
+    cells(ov, 8, ["Profit"] + [f"={col}6-{col}7" for col in "BCD"], fmt=MONEY_FMT)
+    ov["A8"].font = head_font
+    counts = [
+        ("Clients", f"=COUNTIF('Client data'!$A$2:$A${cd_n},\"?*\")"),
+        ("Active clients", f"=COUNTIF('Client data'!$G$2:$G${cd_n},\"Active\")"),
+        ("Projects ongoing", f"=COUNTIF(Projects!$C$2:$C${pj_n},\"Ongoing\")"),
+        ("Projects completed this year",
+         f"=COUNTIFS(Projects!$C$2:$C${pj_n},\"Completed\",Projects!$E$2:$E${pj_n},"
+         f"\">=\"&DATE({year},1,1),Projects!$E$2:$E${pj_n},\"<\"&DATE({year}+1,1,1))"),
+    ]
+    for i, (label, f) in enumerate(counts, 10):
+        cells(ov, i, [label, f])
+        ov.cell(i, 1).font = head_font
+    ov.cell(15, 1, "Spending and revenue by month: see Business spending and Business revenue. "
+                   "Completed projects count by their End date.").font = calc
+
+    # --- Business spending: months x areas ----------------------------------------
+    bs = wb.create_sheet("Business spending")
+    ncol = 1 + AREA_SLOTS + 2
+    title(bs, "Business spending", [10] + [12] * (AREA_SLOTS + 2))
+    currency_pick(bs)
+    head = ["Month"] + [f"=IF(Lists!$A${k + 2}=\"\",\"\",Lists!$A${k + 2})" for k in range(AREA_SLOTS)]
+    cells(bs, 5, head + ["No area", "Total"], head_font, fill=head_fill)
+    last_area = bs.cell(5, 1 + AREA_SLOTS).column_letter
+    for k in range(1, 13):
+        r = 5 + k
+        row = [MONTHS[k - 1]]
+        for a in range(AREA_SLOTS):
+            col = bs.cell(5, 2 + a).column_letter
+            row.append(f"=IF({col}$5=\"\",\"\",SUMIFS({m('F')},{m('D')},\"Spending\","
+                       f"{m('E')},$B$3,{m('G')},{col}$5,{in_month(k)}))")
+        row.append(f"=SUMIFS({m('F')},{m('D')},\"Spending\",{m('E')},$B$3,{m('G')},\"\",{in_month(k)})")
+        row.append(f"=SUM(B{r}:{bs.cell(r, ncol - 1).column_letter}{r})")
+        cells(bs, r, row, fmt=MONEY_FMT)
+    tot = ["Total"] + [f"=IF({bs.cell(5, j).column_letter}$5=\"\",\"\",SUM({bs.cell(6, j).column_letter}6:"
+                       f"{bs.cell(17, j).column_letter}17))" if j <= 1 + AREA_SLOTS else
+                       f"=SUM({bs.cell(6, j).column_letter}6:{bs.cell(17, j).column_letter}17)"
+                       for j in range(2, ncol + 1)]
+    cells(bs, 18, tot, head_font, fmt=MONEY_FMT, fill=head_fill)
+    bs.freeze_panes = "B6"
+
+    # --- Business revenue: clients x months ---------------------------------------
+    br = wb.create_sheet("Business revenue")
+    title(br, "Business revenue", [28] + [11] * 13)
+    currency_pick(br)
+    cells(br, 5, ["Client", *MONTHS, "Total"], head_font, fill=head_fill)
+    for i in range(cd_n - 1):  # one row per Client data row
+        r = 6 + i
+        row = [f"=IF('Client data'!$A${i + 2}=\"\",\"\",'Client data'!$A${i + 2})"]
+        for k in range(1, 13):
+            row.append(f"=IF($A{r}=\"\",\"\",SUMIFS({m('F')},{m('D')},\"Revenue\",{m('E')},$B$3,"
+                       f"{m('B')},$A{r},{in_month(k)}))")
+        row.append(f"=IF($A{r}=\"\",\"\",SUM(B{r}:M{r}))")
+        cells(br, r, row, fmt=MONEY_FMT)
+    r = 6 + cd_n - 1
+    cells(br, r, ["No client"] + [f"=SUMIFS({m('F')},{m('D')},\"Revenue\",{m('E')},$B$3,{m('B')},\"\","
+                                  f"{in_month(k)})" for k in range(1, 13)] + [f"=SUM(B{r}:M{r})"],
+          fmt=MONEY_FMT)
+    cells(br, r + 1, ["Total"] + [f"=SUM({c}6:{c}{r})" for c in "BCDEFGHIJKLMN"], head_font,
+          fmt=MONEY_FMT, fill=head_fill)
+    br.freeze_panes = "B6"
+
+    # --- Client list ----------------------------------------------------------
+    cl = wb.create_sheet("Client list")
+    title(cl, "Client list", [28, 12, 14, 16, 16, 16])
+    currency_pick(cl)
+    cells(cl, 5, ["Client", "Status", "Projects ongoing", "Projects completed", "Income this year",
+                  "Spending this year"], head_font, fill=head_fill)
+    for i in range(cd_n - 1):
+        r, src = 6 + i, i + 2
+        cells(cl, r, [
+            f"=IF('Client data'!$A${src}=\"\",\"\",'Client data'!$A${src})",
+            f"=IF($A{r}=\"\",\"\",'Client data'!$G${src}&\"\")",
+            f"=IF($A{r}=\"\",\"\",COUNTIFS(Projects!$B$2:$B${pj_n},$A{r},Projects!$C$2:$C${pj_n},\"Ongoing\"))",
+            f"=IF($A{r}=\"\",\"\",COUNTIFS(Projects!$B$2:$B${pj_n},$A{r},Projects!$C$2:$C${pj_n},\"Completed\"))",
+            f"=IF($A{r}=\"\",\"\",SUMIFS({m('F')},{m('D')},\"Revenue\",{m('E')},$B$3,{m('B')},$A{r},{in_year}))",
+            f"=IF($A{r}=\"\",\"\",SUMIFS({m('F')},{m('D')},\"Spending\",{m('E')},$B$3,{m('B')},$A{r},{in_year}))",
+        ])
+        for col in (5, 6):
+            cl.cell(r, col).number_format = MONEY_FMT
+    cl.freeze_panes = "B6"
 
 
 if __name__ == "__main__":
