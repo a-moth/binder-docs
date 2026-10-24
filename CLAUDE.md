@@ -160,6 +160,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
     where a drop-down picks a client and shows all their projects, revenue,
     spending, etc. on one tab.
   - Planning: cover sheet only (planning docs are loose notes).
+  - Cognitive load and Disability effects: two new sub-tabs (user's request),
+    holding the cognitive load workshop files and the case studies.
   - Templates: the Ask Herby business templates. More will be added over time;
     still to make: a **case study template**.
   - Archived: cover sheet only.
@@ -380,11 +382,14 @@ home/strategy/cleaning/
   cleaning-docs-templates(-fillable).sla/.pdf   10 focus/task worksheets
 *-fillable-claude.sla/.pdf      fillable twin beside every document that has places to
                               write (made by make-fillable.py; not covers, dividers, laminates)
-work/                         the user's Ask Herby business documents (uploaded as-is):
+work/templates/               the user's Ask Herby business templates (uploaded as-is):
   ask-herby-business-templates-{brand,v2}.sla   24 business templates (brand colours / Autumn)
   ask-herby-business-templates-fillable.sla     the user's fillable twin of -brand
+work/clients/
   client-overview-template-test.sla             has the user's own fields (+ -plain-claude copy)
-  case study *.sla · cognitive load *.sla       workshop material (no fillable twins)
+work/cognitive-load/          cognitive load *.sla: workshop cards, day board, facilitator
+                              sheet, guide (no fillable twins) + the day board's .xlsx/.pptx
+work/disability-effects/      case study *.sla: case studies + overview (no fillable twins)
 work/projects/
   projects-three-section.sla                    Projects page
   projects-three-section-claude.pdf             its export, made by Claude
@@ -421,7 +426,7 @@ down, Task break down, Set up environment.
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
 | Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (condition pages + event logs) |
-| Work      | Yearly ⬜ | Clients ⬜ · Projects ✅ (no PDF) · Planning ⬜ · Templates ⬜ · Archived ⬜ |
+| Work      | Yearly ⬜ (spreadsheet) | Clients ✅ (overview test; spreadsheet ⬜) · Projects ✅ · Planning ✅ (cover only) · Templates ✅ (case study template ⬜) · Archived ✅ (cover only) · Cognitive load ✅ (no cover yet) · Disability effects ✅ (no cover yet) |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
 | Archive   | n/a       | 2025 ⬜ · 2026 ⬜ · 2027 ⬜ · Digitised ⬜ |
@@ -434,12 +439,12 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 
 - **Cover portraits:** the two photos sit next to `core/core-layouts.sla` in `core/`
   and are linked from there (they used to point to `../../Downloads/`).
-- **Work images:** `work/client-overview-template-test.sla` now links the user's
+- **Work images:** `work/clients/client-overview-template-test.sla` now links the user's
   `assets/autumn-claude-icons/` (was `../binder/autumn-binder-icons/`), and the day
   board links `assets/supplied/`. The user's own `client-overview-template-test.pdf`
   comes from an older version of that `.sla` (other colours and icon spots), so it
   doesn't match the new `-claude.pdf` exports.
-- **Ask Herby mark:** the `work/ask-herby-business-templates-*` files linked a
+- **Ask Herby mark:** the `work/templates/ask-herby-business-templates-*` files linked a
   missing `mark.png` (240 px). With the user's OK they now link
   `assets/custom/ask-herby-mark.png` (same mark, 375 px), with the frame scale
   adjusted so it prints at the same size.
@@ -496,6 +501,6 @@ Binder files Claude has created (filenames end in `-claude`):
 | `<section>/<sub-tab>/cover-claude.*` (30) | Sub-tab covers: mini divider with name + icon, for cardstock | Awaiting user's edits |
 | `core/travel-divider-claude.*` | Travel section divider: copy of the divider layout, plane icon | Awaiting user's edits |
 | `core/travel-laminate-claude.*` | Travel laminate strip: Travel, Documents, Paperwork, Planning tabs | Awaiting user's edits |
-| `*-fillable-claude.sla/.pdf` (51, incl. `work/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
+| `*-fillable-claude.sla/.pdf` (51, incl. `work/templates/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
 | `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects, every `work/*.sla` | Awaiting user's check |
-| `work/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |
+| `work/clients/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |

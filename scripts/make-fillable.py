@@ -41,9 +41,9 @@ SKIP = re.compile(r"(^|/)cover-claude\.sla$|travel-(divider|laminate)-claude\.sl
                   r"|-(fillable|plain)(-claude)?\.sla$"
                   # the user's own fillable twins exist for these
                   r"|^home/strategy/cleaning/cleaning-docs-templates\.sla$"
-                  r"|^work/ask-herby-business-templates-brand\.sla$"
+                  r"|^work/templates/ask-herby-business-templates-brand\.sla$"
                   # read-only guides, workshop cards and boards: nothing to type into
-                  r"|^work/(case study|cognitive load) ")
+                  r"|^work/(disability-effects|cognitive-load)/")
 
 
 def twin_name(rel):
