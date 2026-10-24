@@ -5,7 +5,7 @@
 Same layout as the user's section dividers in core/core-layouts.sla: a cream box with
 the name in Mono 16 and an icon, and the mushroom patch below-left. Printed on the
 section's cardstock. Icons are cream outline (4.9:1 on the cream box).
-Usage: python3 scripts/build-covers.py
+Usage: python3 scripts/build-covers.py [section/folder ...]   (no args: every cover)
 Then:  python3 scripts/relink-images.py && scripts/export-pdf.sh <section>/<tab>/cover-claude.sla
 Rerunning overwrites the drafts, so stop using this once the user starts editing them.
 """
@@ -30,7 +30,8 @@ TABS = {
                ("potential", "Potential", "search")],
     "work": [("clients", "Clients", "users"), ("projects", "Projects", "folder-kanban"),
              ("planning", "Planning", "calendar-days"), ("templates", "Templates", "layout-template"),
-             ("archived", "Archived", "archive")],
+             ("archived", "Archived", "archive"), ("cognitive-load", "Cognitive load", "brain"),
+             ("disability-effects", "Disability effects", "accessibility")],
     "learning": [("interest", "Interest", "lightbulb"), ("explore", "Explore", "compass")],
     "resources": [("templates", "Templates", "layout-template")],
     "archive": [("2025", "2025", "calendar"), ("2026", "2026", "calendar"),
@@ -51,12 +52,17 @@ def cover(section, name, icon):
 
 
 if __name__ == "__main__":
+    import sys
+    only = set(sys.argv[1:])  # build just these, so other drafts keep the user's edits
     n = 0
     for section, tabs in TABS.items():
         for folder, name, icon in tabs:
+            if only and f"{section}/{folder}" not in only:
+                continue
             cover(section, name, icon).write(f"{section}/{folder}/cover-claude.sla")
             n += 1
     print(n, "covers")
-    # Travel's section divider (the user's other dividers live in core-layouts.sla).
-    cover("travel", "Travel", "plane").write("core/travel-divider-claude.sla")
-    print("core/travel-divider-claude.sla")
+    if not only:
+        # Travel's section divider (the user's other dividers live in core-layouts.sla).
+        cover("travel", "Travel", "plane").write("core/travel-divider-claude.sla")
+        print("core/travel-divider-claude.sla")

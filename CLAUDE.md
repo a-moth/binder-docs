@@ -96,7 +96,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Finance › Digitise** is a log of digitised paperwork: what it is,
   amount (currency + cost), a wide "saved to" column (where the file is),  Scanned ☐, Archived ☐
   (paper moved to the Archive pocket).
-- **Sub-tab covers**: every sub-tab (all 30) has a cover page, a mini divider
+- **Sub-tab covers**: every sub-tab (all 32) has a cover page, a mini divider
   in the section-divider layout (cream box, name in Mono 16, one icon, mushroom
   below-left), printed on the section's cardstock. File:
   `<section>/<sub-tab>/cover-claude.sla`. Archive's years use folders `2025/`
@@ -155,7 +155,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
     income per client and what is completed / ongoing.
   - A similar yearly worksheet for **admin** = personal spending, by area (travel,
     office, food, …), linked to the business spending / revenue through the
-    overall spending entered per area.
+    overall spending entered per area. It lives in `finance/` (main area), and
+    Work Yearly + Admin Yearly are **one workbook** (tabs), so the links always
+    work in Excel and Google Sheets (the user's choice).
   - Clients: a spreadsheet with a client data tab it pulls from, and a main tab
     where a drop-down picks a client and shows all their projects, revenue,
     spending, etc. on one tab.
@@ -330,7 +332,7 @@ Scribus format notes (useful when reading or editing the XML directly):
 ## Layout
 
 ```
-<section>/<sub-tab>/cover-claude.sla/.pdf   cover (mini divider) for each of the 30 sub-tabs
+<section>/<sub-tab>/cover-claude.sla/.pdf   cover (mini divider) for each of the 32 sub-tabs
 core/                         shared pages for every section
   core-layouts.sla          p1 cover · p2 section goal + stored docs ·
                                 p3 section context · p4–10 dividers · p11 laminate tabs
@@ -426,7 +428,7 @@ down, Task break down, Set up environment.
 | Finance   | Yearly ✅ | Tracked 📝 (7 Claude drafts) · Monthly ✅ · Digitise 📝 (log draft) · Weekly ✅ · Daily 📝 (planner draft; old one-off PDF log in budgets/) |
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
 | Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (condition pages + event logs) |
-| Work      | Yearly ⬜ (spreadsheet) | Clients ✅ (overview test; spreadsheet ⬜) · Projects ✅ · Planning ✅ (cover only) · Templates ✅ (case study template ⬜) · Archived ✅ (cover only) · Cognitive load ✅ (no cover yet) · Disability effects ✅ (no cover yet) |
+| Work      | Yearly ⬜ (spreadsheet) | Clients ✅ (overview test; spreadsheet ⬜) · Projects ✅ · Planning ✅ (cover only) · Templates ✅ (case study template ⬜) · Archived ✅ (cover only) · Cognitive load ✅ (cover 📝) · Disability effects ✅ (cover 📝) |
 | Learning  | n/a       | Interest ⬜ · Explore ⬜ |
 | Resources | n/a       | Templates ⬜ |
 | Archive   | n/a       | 2025 ⬜ · 2026 ⬜ · 2027 ⬜ · Digitised ⬜ |
@@ -498,7 +500,7 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/look-ahead/goals-claude.*` | Health goals: goal text box, 10-slot donut, 10 steps | Awaiting user's edits |
 | `health/potential/{mcas,cci,neuropathy}-events-claude.*`, `events-blank-claude.*` | Event logs: 3 per page, date, notes, trigger, severity + duration scales | Awaiting user's edits |
 | `health/potential/{mcas,cci,neuropathy}-claude.*`, `potential-blank-claude.*` | Potential diagnosis: typical occurrences, medications with Effect lines, events reference | Awaiting user's edits |
-| `<section>/<sub-tab>/cover-claude.*` (30) | Sub-tab covers: mini divider with name + icon, for cardstock | Awaiting user's edits |
+| `<section>/<sub-tab>/cover-claude.*` (32) | Sub-tab covers: mini divider with name + icon, for cardstock (Work › Cognitive load: brain; Disability effects: accessibility) | Awaiting user's edits |
 | `core/travel-divider-claude.*` | Travel section divider: copy of the divider layout, plane icon | Awaiting user's edits |
 | `core/travel-laminate-claude.*` | Travel laminate strip: Travel, Documents, Paperwork, Planning tabs | Awaiting user's edits |
 | `*-fillable-claude.sla/.pdf` (51, incl. `work/templates/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
