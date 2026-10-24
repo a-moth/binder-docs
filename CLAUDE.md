@@ -418,7 +418,8 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 
 ## Missing / known issues
 
-- **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
+- **Cover portraits:** the two photos sit next to `core/core-layouts.sla` in `core/`
+  and are linked from there (they used to point to `../../Downloads/`).
 - **Work images:** `work/client-overview-template-test.sla` now links the user's
   `assets/autumn-claude-icons/` (was `../binder/autumn-binder-icons/`), and the day
   board links `assets/supplied/`. The user's own `client-overview-template-test.pdf`
