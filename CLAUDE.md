@@ -377,6 +377,7 @@ work/projects/
 travel/documents/  travel/paperwork/  travel/planning/   empty, for future documents
 assets/<area>/                Lucide icons, every colour variant (see assets/README.md)
 assets/custom/                mushroomvarious (mushroom patch), bigmushroom, original mark
+assets/autumn-claude-icons/   the user's pixel-art icon set (49 PNGs, uploaded as-is)
 assets/supplied/              images the user uploaded as-is (not generated): day board
                               icons sun · sunrise · sunset · user-round (24 px, black),
                               ask-herby-pixel-mark (128 px pixel-art mark, not placed yet)
@@ -418,13 +419,11 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 ## Missing / known issues
 
 - **Cover portraits:** still linked from `../../Downloads/…` (outside the repo).
-- **Work images missing:** these user files link images that aren't in the repo,
-  so their `-claude.pdf` exports have no images (the user's own PDFs do):
-  `work/client-overview-template-test*` (`../binder/autumn-binder-icons/*.png`:
-  beech-copper, bill-envelope, birch-gold, briefcase, calendar-page,
-  clipboard-form, fly-agaric, honey-fungus, id-card, quill-and-ink).
-  Re-export once the images are added. The day board's icons are fixed
-  (now in `assets/supplied/`).
+- **Work images:** `work/client-overview-template-test.sla` now links the user's
+  `assets/autumn-claude-icons/` (was `../binder/autumn-binder-icons/`), and the day
+  board links `assets/supplied/`. The user's own `client-overview-template-test.pdf`
+  comes from an older version of that `.sla` (other colours and icon spots), so it
+  doesn't match the new `-claude.pdf` exports.
 - **Ask Herby mark:** the `work/ask-herby-business-templates-*` files linked a
   missing `mark.png` (240 px). With the user's OK they now link
   `assets/custom/ask-herby-mark.png` (same mark, 375 px), with the frame scale
