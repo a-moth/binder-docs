@@ -170,6 +170,12 @@ The user hand-edits everything Claude makes until it's right for the binder.
     Case study templates made (user's brand style, from their own case studies):
     `work/templates/case-study-template-claude` and `case-study-overview-template-claude`.
   - Archived: cover sheet only.
+- **Learning** (from the user):
+  - Interest: special / obsessive interest pages, one set per interest: profile,
+    design planning, collection log and a collection pocket page. The user designs
+    the **AAC boards** for each interest themselves (don't make them).
+  - Explore: a log of interests to explore (ADHD ☐ / Autism ☐, how to access it),
+    and a log of certificates from work (the certificates go in sleeves behind it).
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.
@@ -411,6 +417,9 @@ work/disability-effects/      case study *.sla: case studies + overview (no fill
 work/projects/
   projects-three-section.sla                    Projects page
   projects-three-section-claude.pdf             its export, made by Claude
+learning/interest/            interest-profile · design-plan · collection-log · collection-pocket
+                              (-claude + -fillable-claude .sla/.pdf; scripts/build-learning.py)
+learning/explore/             explore-log · certificates (same)
 travel/documents/  travel/paperwork/  travel/planning/   empty, for future documents
 assets/<area>/                Lucide icons, every colour variant (see assets/README.md)
 assets/custom/                mushroomvarious (mushroom patch), bigmushroom, original mark
@@ -430,7 +439,8 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-covers.py ·
                               make-fillable.py · fix-form-pdf.py (fillable twins) ·
                               build-workbook.py (the .xlsx workbook) ·
-                              build-case-study-templates.py · widen-laminate-tabs.py (one-off)
+                              build-case-study-templates.py · widen-laminate-tabs.py (one-off) ·
+                              build-learning.py
 ```
 
 Worksheets in `home/strategy/cleaning/` (page order): Peggling, Hyperfocus,
@@ -447,7 +457,7 @@ down, Task break down, Set up environment.
 | Home      | Yearly 📝 (tasks draft) | Progress 📝 (rooms + project drafts) · Strategy ✅ (cleaning worksheets) · Monthly 📝 (overview + 7 item drafts) · Weekly 📝 (draft) · Inventory 📝 (draft) |
 | Health    | Yearly 📝 (check-ups draft) | Letters (stored only) · Diagnoses 📝 (summary + 9 pages + blanks) · Treatment 📝 (shared page draft) · Look ahead 📝 (appointments + goals) · Potential 📝 (condition pages + event logs) |
 | Work      | Yearly 📝 (workbook tabs) | Clients ✅ (overview test; Clients tabs 📝 in finance/yearly-workbook-claude.xlsx) · Projects ✅ · Planning ✅ (cover only) · Templates ✅ (case study templates 📝) · Archived ✅ (cover only) · Cognitive load ✅ (cover 📝) · Disability effects ✅ (cover 📝) |
-| Learning  | n/a       | Interest ⬜ · Explore ⬜ |
+| Learning  | n/a       | Interest 📝 (profile, design plan, collection log + pocket; AAC by the user) · Explore 📝 (explore log, certificates) |
 | Resources | n/a       | Templates ⬜ |
 | Archive   | n/a       | 2025 ⬜ · 2026 ⬜ · 2027 ⬜ · Digitised ⬜ |
 | Travel    | n/a       | Documents ⬜ · Paperwork ⬜ · Planning ⬜ |
@@ -530,3 +540,5 @@ Binder files Claude has created (filenames end in `-claude`):
 | `work/clients/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |
 | `finance/yearly-workbook-claude.xlsx` | Workbook. Admin Yearly: Private overview (income from business revenue, personal spending, left over; by month and area), Personal spending (typed, £/$/€ blocks). Work Yearly: Overview, Business spending (months × areas), Business revenue (clients × months), Client list; each picks a currency. Clients: Client data, Projects, Money (per currency, with Area), Client view (drop-down: details, totals per currency, projects with revenue / spending) | Awaiting user's check |
 | `work/templates/case-study-template(-fillable)-claude.*`, `case-study-overview-template(-fillable)-claude.*` | Case study + overview templates: copies of the user's case study one / overview with bracketed prompts (fillable twins: fields where the prompts are) | Awaiting user's edits |
+| `learning/interest/{interest-profile,design-plan,collection-log,collection-pocket}(-fillable)-claude.*` | Interest pages: profile (since, strength 1–10, love, key words, people, resources, focus), design plan (goal, sketch area, steps, materials with currency + cost), collection log (Have / Want, kept where), collection pocket | Awaiting user's edits |
+| `learning/explore/{explore-log,certificates}(-fillable)-claude.*` | Explore log (ADHD / Autism, how to access it); certificates log (from, date, Pocket / Digital) | Awaiting user's edits |
