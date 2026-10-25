@@ -6,7 +6,7 @@ the new parts, so the tab ends can be taped. The fold line and name stay in the 
 Doubled tabs fit 3 columns per A4 sheet (it was 5), so page 11 keeps Finance, Home and
 Health and a new page 12 takes Work, Learning + Resources and Archive + Travel. Adds the
 tabs that weren't on the sheet: Work > Cognitive load and Disability effects, and Travel's
-four (from core/travel-laminate-claude.sla). Each column keeps the user's tab order.
+four (they replace the old separate Travel strip). Each column keeps the user's tab order.
 Usage: python3 scripts/widen-laminate-tabs.py   (refuses to run twice)
 """
 import itertools

@@ -346,8 +346,6 @@ core/                         shared pages for every section
                                 Archive + Travel; made by scripts/widen-laminate-tabs.py)
   core-layouts-*.pdf            exports: cover, section-docs, section-context, laminate
   travel-divider-claude.sla/.pdf  Travel section divider (Claude draft, plane icon)
-  travel-laminate-claude.sla/.pdf Travel laminate strip (old width; superseded: Travel's
-                                  tabs are now on core-layouts p12)
 finance/
   yearly-budget.sla         Yearly budget (section main area)
   yearly-workbook-claude.xlsx  one workbook (spreadsheet, no Scribus/PDF), built by
@@ -429,7 +427,7 @@ scripts/                      make-icons.py · make-custom.py · relink-images.p
                               build-home-weekly.py · build-health-yearly.py ·
                               build-health-diagnoses.py · build-health-treatment.py ·
                               build-health-lookahead.py · build-health-potential.py ·
-                              build-covers.py · build-travel-laminate.py ·
+                              build-covers.py ·
                               make-fillable.py · fix-form-pdf.py (fillable twins) ·
                               build-workbook.py (the .xlsx workbook) ·
                               build-case-study-templates.py · widen-laminate-tabs.py (one-off)
@@ -455,7 +453,7 @@ down, Task break down, Set up environment.
 | Travel    | n/a       | Documents ⬜ · Paperwork ⬜ · Planning ⬜ |
 
 Every section also uses the shared `core/` pages: divider, section goal and
-section context (✅ for the original seven; Travel: divider 📝, laminate tabs 📝).
+section context (✅ for the original seven; Travel: divider 📝, laminate tabs on core-layouts p12).
 
 ## Missing / known issues
 
@@ -476,8 +474,8 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 - **Yearly worksheet** for Work doesn't exist yet (the Finance one could be
   the base). Home's is a tasks version of it, Health's a check-ups version.
 - **Travel** has a divider draft (`core/travel-divider-claude`, plane icon). Its
-  laminate tabs are on `core/core-layouts.sla` p12 now; the old separate strip
-  (`core/travel-laminate-claude`) is superseded. Colour: reserve beige.
+  laminate tabs are on `core/core-layouts.sla` p12 (the old separate strip was
+  deleted at the user's request). Colour: reserve beige.
 - **Laminate tabs** (user's request): every tab is twice as wide, the extra half
   split over both sides with no lines, so the tab ends can be taped. They now take
   two sheets (p11–12), which also hold Work › Cognitive load / Disability effects
@@ -527,7 +525,6 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/potential/{mcas,cci,neuropathy}-claude.*`, `potential-blank-claude.*` | Potential diagnosis: typical occurrences, medications with Effect lines, events reference | Awaiting user's edits |
 | `<section>/<sub-tab>/cover-claude.*` (32) | Sub-tab covers: mini divider with name + icon, for cardstock (Work › Cognitive load: brain; Disability effects: accessibility) | Awaiting user's edits |
 | `core/travel-divider-claude.*` | Travel section divider: copy of the divider layout, plane icon | Awaiting user's edits |
-| `core/travel-laminate-claude.*` | Travel laminate strip: Travel, Documents, Paperwork, Planning tabs | Awaiting user's edits |
 | `*-fillable-claude.sla/.pdf` (51, incl. `work/templates/ask-herby-business-templates-v2`) | Fillable twins of every document with places to write, the user's own included (core-layouts, yearly budget, budget templates, projects); £/$/€ drop-downs in Currency columns and the Daily boxes | Awaiting user's edits |
 | `*-claude.pdf` of the user's `.sla` files | Windowed Scribus 1.6.3 exports: core-layouts, yearly-budget, budget-templates, cleaning-docs-templates(-fillable), projects, every `work/*.sla` | Awaiting user's check |
 | `work/clients/client-overview-template-test-plain-claude.*` | Copy of the user's fillable client overview with its fields switched off | Awaiting user's check |
