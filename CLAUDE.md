@@ -186,8 +186,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
 - **Laminated pages** (from the user, used by `scripts/build-print.py`): **every
   Finance page**; Home progress (rooms + project), monthly (overview + detail pages),
   weekly; Health yearly check-ups, all diagnoses pages, treatments, appointments,
-  goals and all four event logs; Work cognitive load cards + day board; core laminate
-  tab strips. Everything else prints plain. Ask the user when unsure.
+  goals and all four event logs; Learning collection pocket + design plan; Work
+  Projects page, cognitive load cards + day board; core laminate tab strips. Everything else prints plain. Ask the user when unsure.
   Not printed: the -v2 business templates (the -brand set prints) and the old
   budget-pages-1.pdf. The client overview prints from Claude's export of the
   current .sla, not the user's older PDF.
@@ -495,6 +495,11 @@ section context (✅ for the original seven; Travel: divider 📝, laminate tabs
 
 ## Missing / known issues
 
+- **Cleaning worksheets' icons** (`home/strategy/cleaning/cleaning-docs-templates*.sla`,
+  the user's files, fixed at their request): the icons that replaced the user's
+  pixel art are sized, rotated and placed to match the originals' visible pictures
+  (frames resized; Scribus ignored the saved image scale there), and the mushrooms
+  are removed.
 - **Cover portraits:** the two photos sit next to `core/core-layouts.sla` in `core/`
   and are linked from there (they used to point to `../../Downloads/`).
 - **Work images:** `work/clients/client-overview-template-test.sla` now links the user's

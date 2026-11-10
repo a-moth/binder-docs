@@ -51,6 +51,9 @@ LAMINATE = {
     "home/progress/project-claude.sla": None,
     "home/monthly/*": None,                                   # overview + detail pages
     "home/weekly/weekly-claude.sla": None,
+    "learning/interest/collection-pocket-claude.sla": None,
+    "learning/interest/design-plan-claude.sla": None,
+    "work/projects/projects-three-section.sla": None,
     "health/look-ahead/goals-claude.sla": None,
     "health/look-ahead/appointments-claude.sla": None,
     "health/diagnoses/*": None,                               # summaries, blanks, every diagnosis
