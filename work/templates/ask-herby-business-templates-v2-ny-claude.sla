@@ -3520,7 +3520,7 @@
                 <para ALIGN="0" LINESP="15"/>
                 <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="12" FCOLOR="Black" CH="Street and number"/>
                 <para ALIGN="0" LINESP="15"/>
-                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="12" FCOLOR="Black" CH="City, state and ZIP code"/>
+                <ITEXT FONT="Latin Modern Sans 10 Regular" FONTSIZE="12" FCOLOR="Black" CH="City and state"/>
                 <trail ALIGN="0" LINESP="15"/>
             </StoryText>
         </PAGEOBJECT>

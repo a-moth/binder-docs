@@ -427,7 +427,7 @@ work/templates/               the user's Ask Herby business templates (uploaded 
   ask-herby-business-templates-fillable.sla     the user's fillable twin of -brand
   ask-herby-business-templates-{brand,fillable,v2,v2-…-fillable}-ny-claude.sla/.pdf
                               New York copies (user's request): New York, US instead of
-                              Lelystad, NL; EIN instead of KvK; City, state and ZIP code;
+                              Lelystad, NL; EIN instead of KvK; City and state (no ZIP code: the user's choice);
                               fillable hints in US dates, $, US address / phone
   case-study(-overview)-template(-fillable)-claude.sla/.pdf   case study + overview templates
                               (Claude drafts from the user's case studies, brand colours;
@@ -579,4 +579,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `work/templates/case-study-template(-fillable)-claude.*`, `case-study-overview-template(-fillable)-claude.*` | Case study + overview templates: copies of the user's case study one / overview with bracketed prompts (fillable twins: fields where the prompts are) | Awaiting user's edits |
 | `learning/interest/{interest-profile,design-plan,collection-log,collection-pocket}(-fillable)-claude.*` | Interest pages: profile (since, strength 1–10, love, key words, people, resources, focus), design plan (goal, sketch area, steps, materials with currency + cost), collection log (Have / Want, kept where), collection pocket | Awaiting user's edits |
 | `learning/explore/{explore-log,certificates}(-fillable)-claude.*` | Explore log (ADHD / Autism, how to access it); certificates log (from, date, Pocket / Digital) | Awaiting user's edits |
-| `work/templates/ask-herby-business-templates-{brand,fillable,v2}-ny-claude.*`, `…-v2-ny-fillable-claude.*` | New York copies of the business templates: location New York, US, EIN, City/state/ZIP, US example hints | Awaiting user's check |
+| `work/templates/ask-herby-business-templates-{brand,fillable,v2}-ny-claude.*`, `…-v2-ny-fillable-claude.*` | New York copies of the business templates: location New York, US, EIN, City and state (no ZIP), US example hints | Awaiting user's check |
