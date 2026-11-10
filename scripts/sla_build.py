@@ -144,7 +144,7 @@ class Page:
         if self.mushroom:
             self.image(491.7, 87.5, 89.6891408450705, 92.057336142841, "custom/mushroomvarious.png")
             self.mushroom = False
-        src = TEMPLATE.read_text(encoding="utf-8")
+        src = size_checklist(TEMPLATE.read_text(encoding="utf-8"))
         head = src[:src.index("<PAGEOBJECT")]
         last = head.rindex("<COLOR ")
         cut = head.index("\n", last) + 1
@@ -163,6 +163,33 @@ class Page:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(head + body + "\n    " + tail, encoding="utf-8")
         return out
+
+
+# --- master-page checklist ---------------------------------------------------
+# The user's size for the top-left checklist (measured from their core-layouts-fillable.sla):
+# x, y, width, height on the master page, the 512 px icon scaled proportionally.
+CHECKLIST_FRAME = (131.182102362205, 50.1971830985915, 32.5925455251192, 32.9577464788733)
+CHECKLIST_PX = 512
+
+
+def size_checklist(text):
+    """Give every master-page checklist in an .sla text the user's size."""
+    x, y, w, h = CHECKLIST_FRAME
+    scale = min(w, h) / CHECKLIST_PX
+    path = f"M0 0 L{w:g} 0 L{w:g} {h:g} L0 {h:g} L0 0 Z"
+    values = {"XPOS": x, "YPOS": y, "gXpos": x, "gYpos": y, "WIDTH": w, "HEIGHT": h,
+              "LOCALSCX": scale, "LOCALSCY": scale, "LOCALX": 0, "LOCALY": 0,
+              "SCALETYPE": 0, "RATIO": 1}
+
+    def fix(m):
+        tag = m[0]
+        for k, v in values.items():
+            tag = re.sub(rf'(?<=\s){k}="[^"]*"', f'{k}="{v!r}"' if isinstance(v, float) else f'{k}="{v}"',
+                         tag, count=1)
+        tag = re.sub(r'(?<=\s)path="[^"]*"', f'path="{path}"', tag, count=1)
+        return re.sub(r'(?<=\s)copath="[^"]*"', f'copath="{path}"', tag, count=1)
+
+    return re.sub(r'<MASTEROBJECT\b[^>]*PFILE="[^"]*list-checks[^"]*"[^>]*>', fix, text)
 
 
 # --- tables (Weekly page layout) ---------------------------------------------

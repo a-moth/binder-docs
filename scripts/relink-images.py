@@ -9,7 +9,8 @@ Rules:
                            (they sit on the dividers' cream box; 4.9:1)
   other Lucide icons    -> assets/core/<icon>-brown-highlight.png
   custom illustrations  -> assets/custom/<file>   (supplied by hand)
-Every frame linked into assets/ is scaled to its frame (checklists stretched to fill,
+Every frame linked into assets/ is scaled to its frame (proportional and centred; the
+checklist used to be stretched, until the user sized it by hand and kept its proportions,
 others proportional and centred) so a different pixel size can't change the printed size.
 """
 import os
@@ -95,7 +96,7 @@ def relink(rel, area):
         if not dest:
             return tag
         tag = tag.replace(m[0], f'PFILE="{to_assets}/{dest}"')
-        return fit(tag, ROOT / "assets" / dest, stretch="/list-checks-" in dest)
+        return fit(tag, ROOT / "assets" / dest, stretch=False)
 
     text = re.sub(r"<(?:PAGEOBJECT|MASTEROBJECT)\b[^>]*>", fix, text)
     path.write_text(text, encoding="utf-8")
