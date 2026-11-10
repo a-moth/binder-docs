@@ -188,6 +188,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
   budget-templates; Home progress (rooms + project), monthly (overview + detail
   pages), weekly; Health goals; Work cognitive load cards + day board; core laminate
   tab strips. Everything else prints plain. Ask the user when unsure.
+  Not printed: the -v2 business templates (the -brand set prints) and the old
+  budget-pages-1.pdf. The client overview prints from Claude's export of the
+  current .sla, not the user's older PDF.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.

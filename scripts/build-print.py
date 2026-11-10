@@ -55,6 +55,11 @@ LAMINATE = {
 CORE = "core/core-layouts.sla"
 # Not printed: variants and files that only exist to be edited from.
 SKIP = ("-fillable", "-plain-claude")
+# The user's choices: not printed at all, and where Claude's export of the current .sla
+# prints instead of the user's older PDF.
+NOT_PRINTED = {"work/templates/ask-herby-business-templates-v2.sla",   # -brand prints instead
+               "finance/budgets/budget-pages-1.pdf"}                   # old one-off
+PRINT_CLAUDE_EXPORT = {"work/clients/client-overview-template-test.sla"}
 
 
 def git_time(rel):
@@ -73,7 +78,8 @@ def pdf_for(sla):
     stem = p.stem
     own = p.with_name(stem + ".pdf")
     mine = p.with_name((stem if stem.endswith("-claude") else stem + "-claude") + ".pdf")
-    if (not stem.endswith("-claude") and (ROOT / own).exists() and git_time(str(own)) >= git_time(sla)
+    if (sla not in PRINT_CLAUDE_EXPORT and not stem.endswith("-claude") and (ROOT / own).exists()
+            and git_time(str(own)) >= git_time(sla)
             and len(PdfReader(ROOT / own).pages) == page_count(sla)):  # not a one-page export
         return str(own)
     return str(mine) if (ROOT / mine).exists() else None
@@ -84,7 +90,7 @@ def documents(section):
     docs = []
     for sla in sorted((ROOT / section).rglob("*.sla")):
         rel = str(sla.relative_to(ROOT))
-        if any(s in rel for s in SKIP) or "/print/" in rel:
+        if any(s in rel for s in SKIP) or "/print/" in rel or rel in NOT_PRINTED:
             continue
         pdf = pdf_for(rel)
         if pdf:
@@ -95,7 +101,7 @@ def documents(section):
     for pdf in sorted((ROOT / section).rglob("*.pdf")):
         rel = str(pdf.relative_to(ROOT))
         base = rel[:-4].removesuffix("-claude")
-        if base in slas or rel[:-4] in slas or any(s in rel for s in SKIP):
+        if base in slas or rel[:-4] in slas or any(s in rel for s in SKIP) or rel in NOT_PRINTED:
             continue
         parts = pathlib.PurePath(rel).relative_to(section).parts
         docs.append((parts[0] if len(parts) > 1 else "", rel, rel))
