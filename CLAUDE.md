@@ -187,6 +187,7 @@ The user hand-edits everything Claude makes until it's right for the binder.
   Finance and Home page**; Health: everything except the blank potential page
   (potential-blank prints plain); Learning: everything except certificates; Work
   Projects page, cognitive load cards + day board; core laminate tab strips. Everything else prints plain. Ask the user when unsure.
+  The New York business templates print the same way (-brand-ny only).
   Not printed: the -v2 business templates (the -brand set prints) and the old
   budget-pages-1.pdf. The client overview prints from Claude's export of the
   current .sla, not the user's older PDF.
@@ -424,6 +425,10 @@ home/strategy/cleaning/
 work/templates/               the user's Ask Herby business templates (uploaded as-is):
   ask-herby-business-templates-{brand,v2}.sla   24 business templates (brand colours / Autumn)
   ask-herby-business-templates-fillable.sla     the user's fillable twin of -brand
+  ask-herby-business-templates-{brand,fillable,v2,v2-…-fillable}-ny-claude.sla/.pdf
+                              New York copies (user's request): New York, US instead of
+                              Lelystad, NL; EIN instead of KvK; City, state and ZIP code;
+                              fillable hints in US dates, $, US address / phone
   case-study(-overview)-template(-fillable)-claude.sla/.pdf   case study + overview templates
                               (Claude drafts from the user's case studies, brand colours;
                               built by scripts/build-case-study-templates.py)
@@ -574,3 +579,4 @@ Binder files Claude has created (filenames end in `-claude`):
 | `work/templates/case-study-template(-fillable)-claude.*`, `case-study-overview-template(-fillable)-claude.*` | Case study + overview templates: copies of the user's case study one / overview with bracketed prompts (fillable twins: fields where the prompts are) | Awaiting user's edits |
 | `learning/interest/{interest-profile,design-plan,collection-log,collection-pocket}(-fillable)-claude.*` | Interest pages: profile (since, strength 1–10, love, key words, people, resources, focus), design plan (goal, sketch area, steps, materials with currency + cost), collection log (Have / Want, kept where), collection pocket | Awaiting user's edits |
 | `learning/explore/{explore-log,certificates}(-fillable)-claude.*` | Explore log (ADHD / Autism, how to access it); certificates log (from, date, Pocket / Digital) | Awaiting user's edits |
+| `work/templates/ask-herby-business-templates-{brand,fillable,v2}-ny-claude.*`, `…-v2-ny-fillable-claude.*` | New York copies of the business templates: location New York, US, EIN, City/state/ZIP, US example hints | Awaiting user's check |

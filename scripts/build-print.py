@@ -83,6 +83,7 @@ SKIP = ("-fillable", "-plain-claude")
 # The user's choices: not printed at all, and where Claude's export of the current .sla
 # prints instead of the user's older PDF.
 NOT_PRINTED = {"work/templates/ask-herby-business-templates-v2.sla",   # -brand prints instead
+               "work/templates/ask-herby-business-templates-v2-ny-claude.sla",
                "finance/budgets/budget-pages-1.pdf"}                   # old one-off
 PRINT_CLAUDE_EXPORT = {"work/clients/client-overview-template-test.sla"}
 
