@@ -183,6 +183,11 @@ The user hand-edits everything Claude makes until it's right for the binder.
     the **AAC boards** for each interest themselves (don't make them).
   - Explore: a log of interests to explore (ADHD ☐ / Autism ☐, how to access it),
     and a log of certificates from work (the certificates go in sleeves behind it).
+- **Laminated pages** (from the user, used by `scripts/build-print.py`): Finance cash
+  pocket, groceries, pantry + freezer stock, daily planner, the two Weekly pages of
+  budget-templates; Home progress (rooms + project), monthly (overview + detail
+  pages), weekly; Health goals; Work cognitive load cards + day board; core laminate
+  tab strips. Everything else prints plain. Ask the user when unsure.
 - **Home › Inventory**: Item · Replacement (cost to replace, with £ / $ / €
   checkboxes on the right of the same cell, each symbol centred in the gap
   after its box; no separate currency column) · Room.
@@ -436,6 +441,11 @@ travel/                       cover-{documents,paperwork,planning}-claude: cover
 finance/ health/ resources/ work/   cover-<sub-tab>-claude for sub-tabs with no other pages:
                               finance monthly · weekly, health letters, resources templates,
                               work planning · archived
+print/<section>/              what to print, made by scripts/build-print.py (rerun after changes):
+                              <section>-covers-claude.pdf (sub-tab covers, tab order, for cardstock),
+                              <section>-laminate-claude.pdf, and a copy of every other page
+                              (<sub-tab>--<file>.pdf). print/core: binder cover + all dividers,
+                              laminate tab strips, section goal + context (print one set per section)
 assets/<area>/                Lucide icons, every colour variant (see assets/README.md)
 assets/custom/                mushroomvarious (mushroom patch), bigmushroom, original mark
 assets/autumn-claude-icons/   the user's pixel-art icon set (49 PNGs, uploaded as-is)
