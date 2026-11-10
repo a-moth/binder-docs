@@ -184,9 +184,8 @@ The user hand-edits everything Claude makes until it's right for the binder.
   - Explore: a log of interests to explore (ADHD ☐ / Autism ☐, how to access it),
     and a log of certificates from work (the certificates go in sleeves behind it).
 - **Laminated pages** (from the user, used by `scripts/build-print.py`): **every
-  Finance page**; Home progress (rooms + project), monthly (overview + detail pages),
-  weekly; Health yearly check-ups, all diagnoses pages, treatments, appointments,
-  goals and all four event logs; Learning collection pocket + design plan; Work
+  Finance and Home page**; Health: everything except the blank potential page
+  (potential-blank prints plain); Learning: everything except certificates; Work
   Projects page, cognitive load cards + day board; core laminate tab strips. Everything else prints plain. Ask the user when unsure.
   Not printed: the -v2 business templates (the -brand set prints) and the old
   budget-pages-1.pdf. The client overview prints from Claude's export of the
