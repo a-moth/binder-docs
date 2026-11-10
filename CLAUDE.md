@@ -183,10 +183,10 @@ The user hand-edits everything Claude makes until it's right for the binder.
     the **AAC boards** for each interest themselves (don't make them).
   - Explore: a log of interests to explore (ADHD ☐ / Autism ☐, how to access it),
     and a log of certificates from work (the certificates go in sleeves behind it).
-- **Laminated pages** (from the user, used by `scripts/build-print.py`): Finance cash
-  pocket, groceries, pantry + freezer stock, daily planner, the two Weekly pages of
-  budget-templates; Home progress (rooms + project), monthly (overview + detail
-  pages), weekly; Health goals; Work cognitive load cards + day board; core laminate
+- **Laminated pages** (from the user, used by `scripts/build-print.py`): **every
+  Finance page**; Home progress (rooms + project), monthly (overview + detail pages),
+  weekly; Health yearly check-ups, all diagnoses pages, treatments, appointments,
+  goals and all four event logs; Work cognitive load cards + day board; core laminate
   tab strips. Everything else prints plain. Ask the user when unsure.
   Not printed: the -v2 business templates (the -brand set prints) and the old
   budget-pages-1.pdf. The client overview prints from Claude's export of the

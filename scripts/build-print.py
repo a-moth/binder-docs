@@ -41,12 +41,25 @@ LAMINATE = {
     "finance/tracked/pantry-stock-claude.sla": None,
     "finance/tracked/freezer-stock-claude.sla": None,
     "finance/daily/daily-planner-claude.sla": None,
-    "finance/budgets/budget-templates.sla": [2, 3],          # the two Weekly pages
+    "finance/budgets/budget-templates.sla": None,             # Monthly + both Weekly
+    "finance/yearly-budget.sla": None,
+    "finance/tracked/goals-claude.sla": None,
+    "finance/tracked/savings-pockets-claude.sla": None,
+    "finance/tracked/subscriptions-claude.sla": None,
+    "finance/digitise/digitised-log-claude.sla": None,
     "home/progress/rooms-progress-claude.sla": None,
     "home/progress/project-claude.sla": None,
     "home/monthly/*": None,                                   # overview + detail pages
     "home/weekly/weekly-claude.sla": None,
     "health/look-ahead/goals-claude.sla": None,
+    "health/look-ahead/appointments-claude.sla": None,
+    "health/diagnoses/*": None,                               # summaries, blanks, every diagnosis
+    "health/potential/cci-events-claude.sla": None,
+    "health/potential/mcas-events-claude.sla": None,
+    "health/potential/events-blank-claude.sla": None,
+    "health/potential/neuropathy-events-claude.sla": None,
+    "health/treatment/treatments-claude.sla": None,
+    "health/yearly-checkups-claude.sla": None,
     "work/cognitive-load/cognitive load cards.sla": None,
     "work/cognitive-load/cognitive load day board.sla": None,
     "core/core-layouts.sla": [11, 12],                        # laminate tab strips
