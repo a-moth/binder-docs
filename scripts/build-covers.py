@@ -3,7 +3,7 @@
 (Claude drafts, labelled -claude).
 
 Same layout as the user's section dividers in core/core-layouts.sla: a cream box with
-the name in Mono 16 and an icon, and the mushroom patch below-left. Printed on the
+the name in Mono 16 and an icon (no mushroom: the user's request). Printed on the
 section's cardstock. Icons are cream outline (4.9:1 on the cream box).
 Usage: python3 scripts/build-covers.py [section/folder ...]   (no args: every cover)
 Then:  python3 scripts/relink-images.py && scripts/export-pdf.sh <section>/<tab>/cover-claude.sla
@@ -15,7 +15,6 @@ from sla_build import BROWN, MONO, ROOT, Page
 BOX = (42.0, 105.2, 512.6, 115.3)
 TITLE = (47.0, 112.0, 501.5, 34.5)
 ICON_Y, ICON = 149.5, 28.3
-MUSHROOM = (3.6, 176.0, 86.1, 83.0)
 
 # section -> [(folder, name on the cover, Lucide icon in that section's assets)]
 TABS = {
@@ -56,7 +55,6 @@ def cover(section, name, icon):
     p.text(*TITLE, name.upper(), MONO, 16, color=BROWN, align=1)
     x = BOX[0] + BOX[2] / 2 - ICON / 2
     p.image(x, ICON_Y, ICON, ICON, f"{section}/{icon}-cream-outline.png")
-    p.image(*MUSHROOM, "custom/mushroomvarious.png")
     return p
 
 
