@@ -41,6 +41,15 @@ TABS = {
 }
 
 
+def cover_path(section, folder):
+    """A sub-tab with its own documents keeps its folder; a sub-tab whose only page is its
+    cover has no folder of its own (the user's rule): <section>/cover-<sub-tab>-claude.sla."""
+    tab = ROOT / section / folder
+    if tab.is_dir() and any(f.name not in ("cover-claude.sla", "cover-claude.pdf") for f in tab.iterdir()):
+        return f"{section}/{folder}/cover-claude.sla"
+    return f"{section}/cover-{folder}-claude.sla"
+
+
 def cover(section, name, icon):
     p = Page("", header=False)
     p.rect(*BOX)
@@ -59,7 +68,7 @@ if __name__ == "__main__":
         for folder, name, icon in tabs:
             if only and f"{section}/{folder}" not in only:
                 continue
-            cover(section, name, icon).write(f"{section}/{folder}/cover-claude.sla")
+            cover(section, name, icon).write(cover_path(section, folder))
             n += 1
     print(n, "covers")
     if not only:
