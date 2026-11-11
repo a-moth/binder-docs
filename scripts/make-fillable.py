@@ -37,11 +37,11 @@ CURRENCY_BOXES = {"finance/daily/daily-planner-claude.sla"}  # budget, cost and 
 COMBO_W = 30.0
 # Writing areas with nothing drawn to detect: (page index, x0, y0, x1, y1), page-relative.
 EXTRA = {"core/core-layouts.sla": [(1, 46, 98, 548, 168)]}  # "State the goal of this section"
-SKIP = re.compile(r"(^|/)cover-claude\.sla$|travel-(divider|laminate)-claude\.sla$"
+SKIP = re.compile(r"(^|/)cover(-[\w-]+)?(-claude)?\.sla$|travel-(divider|laminate)-claude\.sla$"
                   r"|-(fillable|plain)(-claude)?\.sla$"
                   # the user's own fillable twins exist for these
                   r"|^home/strategy/cleaning/cleaning-docs-templates\.sla$"
-                  r"|^work/templates/ask-herby-business-templates-brand\.sla$"
+                  r"|^work/templates/ask-herby-business-templates-brand(-ny-claude)?\.sla$"
                   # fillable twins made by build-case-study-templates.py
                   r"|^work/templates/case-study(-overview)?-template-claude\.sla$"
                   # read-only guides, workshop cards and boards: nothing to type into

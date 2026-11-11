@@ -19,6 +19,9 @@ DIAGNOSES = [
     ("cptsd", "CPTSD"), ("adhd", "ADHD"), ("autism", "Autism"), ("pots", "POTS"),
     ("heds", "hEDS"), ("allergies", "Allergies"),
 ]
+# Pages for the user's wife's copy of the binder: not on the user's summary.
+WIFE = [("neuropathic-pain", "Neuropathic pain"), ("bipolar-ii", "Bipolar II"),
+        ("hypermobility", "Hypermobility")]
 
 
 def summary(names):
@@ -66,5 +69,5 @@ if __name__ == "__main__":
     print(summary([n for _, n in DIAGNOSES]).write("health/diagnoses/summary-claude.sla").relative_to(ROOT))
     print(summary([]).write("health/diagnoses/summary-blank-claude.sla").relative_to(ROOT))
     print(detail("").write("health/diagnoses/diagnosis-blank-claude.sla").relative_to(ROOT))
-    for slug, name in DIAGNOSES:
+    for slug, name in DIAGNOSES + WIFE:
         print(detail(name).write(f"health/diagnoses/{slug}-claude.sla").relative_to(ROOT))
