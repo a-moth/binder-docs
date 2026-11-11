@@ -209,7 +209,9 @@ The user hand-edits everything Claude makes until it's right for the binder.
     **Notes** taping area (don't say what it's for). Letters / evidence live
     in a pocket behind each page (not mentioned on the page).
     Diagnoses: gastroparesis, migraines, ME, CPTSD, ADHD, autism, POTS, hEDS,
-    allergies. Blank templates (empty text boxes to type into) exist for the
+    allergies. For the user's wife's copy of the binder (not on the user's summary):
+    neuropathic pain, Bipolar II, hypermobility (`WIFE` in `build-health-diagnoses.py`).
+    Blank templates (empty text boxes to type into) exist for the
     summary and the detail page.
   - Potential diagnoses: MCAS, CCI, neuropathy (pages in Potential, below).
   - Treatment: medications, therapies, medication history, therapy history,
@@ -403,7 +405,8 @@ health/potential/
 health/diagnoses/
   summary(-blank)-claude.sla/.pdf  diagnosis summary list (pre-filled + blank)
   <diagnosis>-claude.sla/.pdf      gastroparesis · migraines · me · cptsd · adhd ·
-                                   autism · pots · heds · allergies
+                                   autism · pots · heds · allergies; wife's copy:
+                                   neuropathic-pain · bipolar-ii · hypermobility
   diagnosis-blank-claude.sla/.pdf  blank detail page (empty title box)
 home/
   yearly-tasks-claude.sla/.pdf  Yearly home tasks (section main area, Claude draft)
@@ -565,6 +568,7 @@ Binder files Claude has created (filenames end in `-claude`):
 | `health/yearly-checkups-claude.*` | Yearly check-ups: annual / biannual / quarterly, When + Booked + Clinic | Awaiting user's edits |
 | `health/diagnoses/summary-claude.*`, `summary-blank-claude.*` | Diagnoses summary: date, treated by, page, Active/Resolved + Managed/Unmanaged | Awaiting user's edits |
 | `health/diagnoses/{gastroparesis,migraines,me,cptsd,adhd,autism,pots,heds,allergies}-claude.*`, `diagnosis-blank-claude.*` | Diagnosis pages: diagnosed/by, symptoms, triggers, medications past/now/future, care team, treatments, notes area | Awaiting user's edits |
+| `health/diagnoses/{neuropathic-pain,bipolar-ii,hypermobility}-claude.*` | Diagnosis pages for the user's wife's binder (same layout, diagnosed) | Awaiting user's edits |
 | `health/treatment/treatments-claude.*` | Treatments: 2 per page, how well it treats, taped notes, details + pill photo square | Awaiting user's edits |
 | `health/look-ahead/appointments-claude.*` | Appointments: date/time/who/where, taped notes, outcome | Awaiting user's edits |
 | `health/look-ahead/goals-claude.*` | Health goals: goal text box, 10-slot donut, 10 steps | Awaiting user's edits |
